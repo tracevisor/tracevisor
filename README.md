@@ -4,7 +4,7 @@
   </a>
 
   [![License](https://img.shields.io/badge/license-MPL--2.0-4E5675)](LICENSE)
-  [![connect linkedin](https://custom-icon-badges.demolab.com/badge/linkedin-4E5675?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/company/peekvisor-analytics)
+  [![connect linkedin](https://custom-icon-badges.demolab.com/badge/linkedin-4E5675?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/company/tracevisor-analytics)
 
   [Get Started](https://tracevisor.com) •  [Pricing](https://tracevisor.com/pricing) • [Support](https://tracevisor.com/contact)
 </div>
