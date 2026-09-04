@@ -240,10 +240,6 @@ Join the Tracevisor community for updates, discussions, and support:
 - [x] AI-Powered Setup Wizard
 - [x] Lemon Squeezy Integration
 - [x] GDPR Compliance
-- [ ] Desktop App (Q1 2025)
-- [ ] Advanced Funnel Analytics (Q2 2025)
-- [ ] A/B Testing Platform (Q3 2025)
-- [ ] Custom Webhooks API (Q4 2025)
 
 ---
 
