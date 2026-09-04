@@ -858,7 +858,7 @@ export function createTrackingModal(data: any, t: (key: string) => string): HTML
         if (analyzeFileBtn.lastChild) analyzeFileBtn.lastChild.textContent = t('websites.wizard.analyzing');
         
         try {
-          const response = await fetch('https://tracevisor-troubleshooter.vercel.app/analyze-file', {
+          const response = await fetch('https://tracevisor-troubleshooter-746175915741.us-east1.run.app/analyze-file', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -941,7 +941,7 @@ export function createTrackingModal(data: any, t: (key: string) => string): HTML
         if (analyzeTreeBtn.lastChild) analyzeTreeBtn.lastChild.textContent = t('websites.wizard.analyzing');
         
         try {
-          const response = await fetch('https://tracevisor-troubleshooter.vercel.app/analyze-tree', {
+          const response = await fetch('https://tracevisor-troubleshooter-746175915741.us-east1.run.app/analyze-tree', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -1044,7 +1044,7 @@ export function createTrackingModal(data: any, t: (key: string) => string): HTML
                     if (analyzeTreeFileBtn.lastChild) analyzeTreeFileBtn.lastChild.textContent = t('websites.wizard.analyzing');
                     
                     try {
-                      const response = await fetch('https://tracevisor-troubleshooter.vercel.app/analyze-file', {
+                      const response = await fetch('https://tracevisor-troubleshooter-746175915741.us-east1.run.app/analyze-file', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
@@ -1118,7 +1118,7 @@ async function checkInstallationStatus() {
     statusIndicator.className = 'h-2 w-2 rounded-full bg-gray-400';
     
     try {
-      const response = await fetch('https://tracevisor-troubleshooter.vercel.app/api/check-installation-status', {
+      const response = await fetch('https://tracevisor-troubleshooter-746175915741.us-east1.run.app/api/check-installation-status', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ websiteId: data.website.id })
