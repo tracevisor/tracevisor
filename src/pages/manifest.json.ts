@@ -17,8 +17,8 @@ export const GET: APIRoute = () => {
   ];
 
   const manifest = {
-    short_name: "PeekVisor",
-    name: "PeekVisor",
+    short_name: "TraceVisor",
+    name: "TraceVisor",
     icons,
     display: "minimal-ui",
     id: "/",

@@ -1,24 +1,24 @@
 {
-  "subTitle": "Trouvez des réponses rapides aux questions courantes sur PeekVisor et ses fonctionnalités d'analyse axées sur la confidentialité.",
+  "subTitle": "Trouvez des réponses rapides aux questions courantes sur TraceVisor et ses fonctionnalités d'analyse axées sur la confidentialité.",
   "faqs": [
     {
-      "question": "Qu'est-ce que PeekVisor et comment protège-t-il la confidentialité des utilisateurs ?",
-      "answer": "PeekVisor est une plateforme d'analyse axée sur la confidentialité qui fournit des informations complètes sur l'audience sans compromettre les données utilisateur. Nous sommes entièrement conformes au RGPD et n'utilisons pas de cookies ni ne collectons d'informations personnelles, garantissant une protection complète de la confidentialité pour les visiteurs du site web."
+      "question": "Qu'est-ce que TraceVisor et comment protège-t-il la confidentialité des utilisateurs ?",
+      "answer": "TraceVisor est une plateforme d'analyse axée sur la confidentialité qui fournit des informations complètes sur l'audience sans compromettre les données utilisateur. Nous sommes entièrement conformes au RGPD et n'utilisons pas de cookies ni ne collectons d'informations personnelles, garantissant une protection complète de la confidentialité pour les visiteurs du site web."
     },
     {
-      "question": "Combien de sites web puis-je suivre avec PeekVisor ?",
+      "question": "Combien de sites web puis-je suivre avec TraceVisor ?",
       "answer": "Le nombre de sites web dépend de votre plan. Le plan Basic permet le suivi d'1 site web, tandis que les plans de niveau supérieur prennent en charge plusieurs sites web, notre plan le plus élevé offrant un suivi illimité de sites web."
     },
     {
-      "question": "Quelles données d'analyse PeekVisor fournit-il ?",
-      "answer": "PeekVisor fournit des analyses de base incluant les vues de page, le nombre de visiteurs, les données géographiques (pays), les informations sur les appareils et les statistiques de navigateur. Les plans avancés incluent également le suivi d'événements personnalisés, la surveillance des campagnes UTM et les rapports d'impact environnemental."
+      "question": "Quelles données d'analyse TraceVisor fournit-il ?",
+      "answer": "TraceVisor fournit des analyses de base incluant les vues de page, le nombre de visiteurs, les données géographiques (pays), les informations sur les appareils et les statistiques de navigateur. Les plans avancés incluent également le suivi d'événements personnalisés, la surveillance des campagnes UTM et les rapports d'impact environnemental."
     },
     {
       "question": "Combien de temps mes données d'analyse sont-elles conservées ?",
       "answer": "La rétention des données varie selon le plan. Le plan Basic conserve les données pendant 30 jours, tandis que les plans premium offrent des périodes de rétention étendues, notre niveau le plus élevé fournissant une rétention illimitée des données."
     },
     {
-      "question": "PeekVisor offre-t-il un suivi de l'impact environnemental ?",
+      "question": "TraceVisor offre-t-il un suivi de l'impact environnemental ?",
       "answer": "Oui, nos plans avancés incluent des fonctionnalités de suivi du CO₂ et de l'impact environnemental, vous permettant de surveiller et mesurer l'impact environnemental du trafic de votre site web et des activités numériques."
     },
     {
@@ -34,12 +34,12 @@
       "answer": "Global Impact Score est une métrique combinée qui mesure votre performance globale dans les dimensions Digitale et Environnementale (Eco). Il est calculé comme la moyenne du changement Digital (% hebdomadaire) et du changement Eco normalisé (% hebdomadaire) sur tous les sites, où un CO₂ plus faible compte comme amélioration positive. Le score est plafonné à ±100 pour réduire les valeurs aberrantes. Cette fonctionnalité est disponible exclusivement pour les abonnés Flex et Pro avec plusieurs sites web."
     },
     {
-      "question": "PeekVisor fournit-il un accès API ?",
+      "question": "TraceVisor fournit-il un accès API ?",
       "answer": "L'accès à l'API est activé pour tous les plans avec des limitations de débit différentes. Les limites sont :\nBasic: 150 requêtes / 15 minutes\nFlex: 400 requêtes / 15 minutes\nPro: 1000 requêtes / 15 minutes"
     },
     {
       "question": "Quels modes de paiement sont acceptés et comment gérer la facturation ?",
-      "answer": "Les paiements sont traités en toute sécurité via LemonSqueezy, notre partenaire de paiement de confiance. Vous pouvez accéder au portail de facturation directement depuis votre tableau de bord PeekVisor pour gérer les abonnements, mettre à jour les méthodes de paiement et consulter les factures. LemonSqueezy accepte les principales cartes de crédit et diverses méthodes de paiement internationales."
+      "answer": "Les paiements sont traités en toute sécurité via LemonSqueezy, notre partenaire de paiement de confiance. Vous pouvez accéder au portail de facturation directement depuis votre tableau de bord TraceVisor pour gérer les abonnements, mettre à jour les méthodes de paiement et consulter les factures. LemonSqueezy accepte les principales cartes de crédit et diverses méthodes de paiement internationales."
     },
     {
       "question": "Puis-je obtenir un remboursement si je ne suis pas satisfait de mon abonnement ?",
@@ -51,7 +51,7 @@
     },
     {
       "question": "Y a-t-il des limites sur les vues de page ?",
-      "answer": "Non, PeekVisor offre un suivi illimité des vues de page sur tous les plans, vous assurant de pouvoir surveiller le trafic de votre site web sans vous soucier des limites d'utilisation ou de frais supplémentaires."
+      "answer": "Non, TraceVisor offre un suivi illimité des vues de page sur tous les plans, vous assurant de pouvoir surveiller le trafic de votre site web sans vous soucier des limites d'utilisation ou de frais supplémentaires."
     }
   ]
 }

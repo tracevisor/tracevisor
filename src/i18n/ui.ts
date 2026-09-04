@@ -120,7 +120,7 @@ export const ui = {
     "publicDashboard.connecting": "Connecting...",
     "publicDashboard.noActiveVisitors": "No active visitors",
     "publicDashboard.waitingActivity": "Waiting for activity...",
-    "publicDashboard.poweredBy": "Analytics powered by PeekVisor",
+    "publicDashboard.poweredBy": "Analytics powered by TraceVisor",
     "publicDashboard.environmentalImpact": "Environmental Impact",
     "publicDashboard.co2Emissions": "CO₂ Emissions",
     "publicDashboard.energyConsumption": "Energy Consumption",
@@ -148,11 +148,11 @@ export const ui = {
     "api.rateLimits.flex": "400 requests / 15 minutes",
     "api.rateLimits.pro": "1000 requests / 15 minutes",
     "nav.dashboard": "Dashboard",
-    "api.doc.title": "API Documentation - PeekVisor",
-    "api.doc.description": "Complete API reference documentation for PeekVisor Analytics",
+    "api.doc.title": "API Documentation - TraceVisor",
+    "api.doc.description": "Complete API reference documentation for TraceVisor Analytics",
     "api.doc.header.title": "API Documentation",
     "api.section.gettingStarted": "Getting Started",
-    "api.section.gettingStarted.subtitle": "Everything you need to integrate with PeekVisor API",
+    "api.section.gettingStarted.subtitle": "Everything you need to integrate with TraceVisor API",
     "api.card.keyManagement.title": "API Key Management",
     "api.key.button.copy": "Copy",
     "api.key.button.regenerate": "Regenerate Key",
@@ -403,7 +403,7 @@ export const ui = {
     "homepage.hero.fiveMinSetup": "5-min Setup",
 
     // Trust & Help Section
-    "homepage.trust.title": "Why organizations rely on PeekVisor",
+    "homepage.trust.title": "Why organizations rely on TraceVisor",
     "homepage.trust.security.title": "A trusted alternative to Google Analytics",
     "homepage.trust.security.description": "Access advanced audience insights without cookies, invasive tracking, or reliance on Big Tech",
     "homepage.trust.ownership.title": "Privacy-first and complete data control",
@@ -416,7 +416,7 @@ export const ui = {
     "homepage.help.description": "Our team assists with migration from Google Analytics and ensures a seamless onboarding experience",
     "homepage.help.faq": "Explore frequently asked questions",
     "homepage.help.contact": "Connect directly with our experts",
-    "homepage.help.updates": "Stay informed with the latest from PeekVisor",
+    "homepage.help.updates": "Stay informed with the latest from TraceVisor",
 
 
     "homepage.value.title": "Analytics that respects your visitors",
@@ -447,7 +447,7 @@ export const ui = {
     "homepage.how.step3.description": "Analytics data flows in immediately, no waiting period",
 
     "homepage.privacy.title": "A trusted alternative to Google Analytics",
-    "homepage.privacy.description": "We believe in a web where understanding your audience doesn't mean violating their privacy. That's why we built PeekVisor from the ground up with privacy at its core.",
+    "homepage.privacy.description": "We believe in a web where understanding your audience doesn't mean violating their privacy. That's why we built TraceVisor from the ground up with privacy at its core.",
     "homepage.privacy.gdpr": "GDPR Compliant",
     "homepage.privacy.ccpa": "CCPA Ready",
     "homepage.privacy.pecr": "PECR Compliant",
@@ -473,9 +473,9 @@ export const ui = {
 
     // Maintenance Page (English)
     "maintenance.title": "Under Development",
-    "maintenance.metaDescription": "PeekVisor is currently under active development. Some features may be limited.",
-    "maintenance.ogTitle": "Under Development | PeekVisor",
-    "maintenance.description": "We're actively building PeekVisor to bring you the best privacy-first analytics experience. Some features are still in development.",
+    "maintenance.metaDescription": "TraceVisor is currently under active development. Some features may be limited.",
+    "maintenance.ogTitle": "Under Development | TraceVisor",
+    "maintenance.description": "We're actively building TraceVisor to bring you the best privacy-first analytics experience. Some features are still in development.",
     "maintenance.features.title": "Current Status",
     "maintenance.features.tracking": "Website tracking is fully functional",
     "maintenance.features.analytics": "Basic analytics dashboard available",
@@ -487,10 +487,10 @@ export const ui = {
     "pageNotFound.title": "Page Not Found",
     "pageNotFound.subTitle": "Oops, this isn't the page you were looking for!",
     "pageNotFound.metaDescription": "The page you are looking for does not exist. Use the navigation to find what you are looking for.",
-    "pageNotFound.ogTitle": "404: Page Not Found | PeekVisor",
+    "pageNotFound.ogTitle": "404: Page Not Found | TraceVisor",
 
     // Dashboard (ENGLISH)
-    "dashboard.pageTitle": "PeekVisor | Dashboard",
+    "dashboard.pageTitle": "TraceVisor | Dashboard",
     "dashboard.title": "Dashboard",
     "dashboard.welcome": "Welcome back",
     "dashboard.userCard.title": "Your Profile",
@@ -522,7 +522,7 @@ export const ui = {
 
     // Websites Management (ENGLISH)
 
-    "websites.pageTitle": "PeekVisor | Domains",
+    "websites.pageTitle": "TraceVisor | Domains",
     "websites.title": " Domains",
     "websites.addWebsite": "Add Domain",
     "websites.noWebsites": "No domains added yet",
@@ -569,7 +569,7 @@ export const ui = {
     "websites.deleteModal.invalidDomain": "Domain name does not match",
 
     // Analytics (ENGLISH)
-    "analytics.pageTitle": "PeekVisor | Analytics",
+    "analytics.pageTitle": "TraceVisor | Analytics",
     "analytics.title": "Analytics",
     "analytics.overview": "Overview",
     "analytics.realtime": "Real-time",
@@ -658,7 +658,7 @@ export const ui = {
      "analytics.session": "Session",
      "analytics.mapUnavailable": "Map unavailable",
      "analytics.noDataToExport": "No analytics data to export.",
-     "analytics.reportFor": "PeekVisor Analytics Report for {websiteName}",
+     "analytics.reportFor": "TraceVisor Analytics Report for {websiteName}",
      "analytics.generatedOn": "Generated on: {date}",
      "analytics.metric": "Metric",
      "analytics.value": "Value",
@@ -676,7 +676,7 @@ export const ui = {
     "analytics.resolution": "Resolution",
 
     // Settings (ENGLISH)
-    "settings.pageTitle": "PeekVisor | Settings",
+    "settings.pageTitle": "TraceVisor | Settings",
     "settings.title": "Settings",
     "settings.profile.title": "Profile Settings",
     "settings.profile.personalInfo": "Personal Information",
@@ -755,9 +755,9 @@ export const ui = {
     "footer.resources.contact": "Contact",
 
     // FAQ Page
-    "faq.pageTitle": "PeekVisor | FAQ",
-    "faq.metaDescription": "Find answers to frequently asked questions about PeekVisor, including how to set up tracking, privacy features, and analytics.",
-    "faq.ogTitle": "Frequently Asked Questions | PeekVisor",
+    "faq.pageTitle": "TraceVisor | FAQ",
+    "faq.metaDescription": "Find answers to frequently asked questions about TraceVisor, including how to set up tracking, privacy features, and analytics.",
+    "faq.ogTitle": "Frequently Asked Questions | TraceVisor",
     "faq.title": "Frequently<br />asked questions",
 
 
@@ -766,16 +766,16 @@ export const ui = {
     "terms.title": "Terms of Service",
     "terms.effectiveDate": "Effective Date: July 31, 2025",
     "terms.section1.title": "1. Acceptance of Terms",
-    "terms.section1.content": "By accessing or using <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (the \"Service\"), you agree to be bound by these Terms of Service (\"Terms\") and our <a href=\"/en/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Privacy Policy</a>. By accessing or using this website, including its domain name(s) or ip addresses, content, or any interaction (such as clicking on links), you acknowledge and declare that you accept this terms of service and you are 18 years of age or older. Your access and use indicate your acknowledgment, acceptance, and unconditional agreement to all the terms and conditions set forth herein without modification, and this agreement takes effect immediately. To reject, simply refrain from using the website and close all its windows. However, you may not access or use this website if you (or your guardian or legal representative) cannot enter into a binding contract or in any jurisdiction where this user agreement is not enforceable. You agree that your use constitutes acknowledgment that you have read, understood, and accepted all terms. If you are the owner or operator of the equipment used to access this website, by allowing such use, you consent and agree to be bound by the terms and conditions of this user agreement. If acting on behalf of organizations, you declare that you are authorized to act as an agent and accept this user agreement on behalf of your employer and organizations. You agree to use the website only in accordance with these usage rights and all applicable laws and regulations.",
+    "terms.section1.content": "By accessing or using <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (the \"Service\"), you agree to be bound by these Terms of Service (\"Terms\") and our <a href=\"/en/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Privacy Policy</a>. By accessing or using this website, including its domain name(s) or ip addresses, content, or any interaction (such as clicking on links), you acknowledge and declare that you accept this terms of service and you are 18 years of age or older. Your access and use indicate your acknowledgment, acceptance, and unconditional agreement to all the terms and conditions set forth herein without modification, and this agreement takes effect immediately. To reject, simply refrain from using the website and close all its windows. However, you may not access or use this website if you (or your guardian or legal representative) cannot enter into a binding contract or in any jurisdiction where this user agreement is not enforceable. You agree that your use constitutes acknowledgment that you have read, understood, and accepted all terms. If you are the owner or operator of the equipment used to access this website, by allowing such use, you consent and agree to be bound by the terms and conditions of this user agreement. If acting on behalf of organizations, you declare that you are authorized to act as an agent and accept this user agreement on behalf of your employer and organizations. You agree to use the website only in accordance with these usage rights and all applicable laws and regulations.",
     "terms.section2.title": "2. Description of Service",
-    "terms.section2.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> is a privacy-first analytics platform that delivers comprehensive audience insights without compromising user data. Our Service allows you to track unlimited page views, monitor marketing campaigns, measure environmental impact of your digital presence, and obtain detailed analytics while maintaining complete GDPR compliance. We offer a free tier with basic analytics features and a premium subscription tier (\"PeekVisor Pro\") with advanced insights, extended data retention, and enhanced environmental impact tracking.",
+    "terms.section2.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> is a privacy-first analytics platform that delivers comprehensive audience insights without compromising user data. Our Service allows you to track unlimited page views, monitor marketing campaigns, measure environmental impact of your digital presence, and obtain detailed analytics while maintaining complete GDPR compliance. We offer a free tier with basic analytics features and a premium subscription tier (\"TraceVisor Pro\") with advanced insights, extended data retention, and enhanced environmental impact tracking.",
     "terms.section3.title": "3. Analytics Data and Privacy Compliance",
-    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Privacy-First Approach:</strong> <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> processes analytics data with privacy as our primary concern. We collect only the minimum data necessary to provide meaningful insights and never store personally identifiable information without explicit consent. All data processing complies with GDPR, CCPA, and other applicable privacy regulations.",
+    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Privacy-First Approach:</strong> <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> processes analytics data with privacy as our primary concern. We collect only the minimum data necessary to provide meaningful insights and never store personally identifiable information without explicit consent. All data processing complies with GDPR, CCPA, and other applicable privacy regulations.",
     "terms.section3.dataOwnership": "<strong class=\"!uppercase !text-[10px]\">Data Ownership:</strong> You retain full ownership of all data collected through our analytics platform. We act solely as a data processor on your behalf. You have complete control over your data, including the right to export, delete, or modify data collection settings at any time.",
     "terms.section3.technicalOperation": "<strong class=\"!uppercase !text-[10px]\">Technical Operation:</strong> Our analytics platform operates by collecting anonymized visitor metrics, page performance data, campaign attribution information, and environmental impact calculations. We use advanced privacy techniques including data anonymization, IP masking, and cookieless tracking options to protect visitor privacy while delivering accurate insights.",
     "terms.section4.title": "4. User Accounts and Subscriptions",
     "terms.section4.accountCreation": "<strong class=\"!uppercase !text-[10px]\">Account Creation:</strong> To access analytics features, dashboard customization, and data export capabilities, you need to create an account. You are responsible for maintaining the confidentiality of your account credentials and API keys.",
-    "terms.section4.peekvisorPro": "<strong class=\"!uppercase !text-[10px]\">PeekVisor Pro:</strong> Subscriptions to PeekVisor Pro are billed on a recurring basis as specified at the time of purchase. Payments are processed by a secure third-party payment processor. You may cancel your subscription at any time through your account dashboard.",
+    "terms.section4.tracevisorPro": "<strong class=\"!uppercase !text-[10px]\">TraceVisor Pro:</strong> Subscriptions to TraceVisor Pro are billed on a recurring basis as specified at the time of purchase. Payments are processed by a secure third-party payment processor. You may cancel your subscription at any time through your account dashboard.",
     "terms.section4.proFeatures": "Pro subscriptions provide enhanced analytics capabilities including unlimited website tracking, extended data retention periods, advanced campaign attribution, detailed environmental impact reports, custom dashboard configurations, and priority support. Free-tier users have limitations on the number of tracked websites, data retention period, and access to advanced features.",
     "terms.section5.title": "5. Prohibited Conduct",
     "terms.section5.intro": "You agree <strong class=\"font-bold\">NOT</strong> to:",
@@ -786,21 +786,21 @@ export const ui = {
     "terms.section5.item5": "- Use the Service to track users across websites without their knowledge or consent, or for any illegal or unauthorized purpose.",
     "terms.section5.item6": "- Violate any applicable privacy laws, regulations, or data protection requirements when using our analytics platform.",
     "terms.section6.title": "6. Disclaimers and Limitation of Liability",
-    "terms.section6.warranty": "THE SERVICE IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> DISCLAIMS ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.",
-    "terms.section6.liability": "IN NO EVENT SHALL <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE OR ANY ANALYTICS DATA PROCESSED THROUGH OUR PLATFORM.",
+    "terms.section6.warranty": "THE SERVICE IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> DISCLAIMS ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.",
+    "terms.section6.liability": "IN NO EVENT SHALL <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE OR ANY ANALYTICS DATA PROCESSED THROUGH OUR PLATFORM.",
     "terms.section7.title": "7. Changes to Terms",
     "terms.section7.content": "We reserve the right to modify these Terms at any time. We will notify you of any changes by posting the new Terms on this page. Your continued use of the Service after any such change constitutes your acceptance of the new Terms.",
     "terms.section8.title": "8. Contact Us",
-    "terms.section8.content": "If you have any questions about these Terms, please contact us through our <a href=\"/en/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">contact page</a> or by sending an email to <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "terms.section8.content": "If you have any questions about these Terms, please contact us through our <a href=\"/en/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">contact page</a> or by sending an email to <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
 
     "privacy.title": "Privacy Policy",
     "privacy.effectiveDate": "Effective Date: July 31, 2025",
     "privacy.section1.title": "1. Introduction",
-    "privacy.section1.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (\"we,\" \"our,\" \"us\") is committed to protecting your privacy and the privacy of your website visitors. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our privacy-first analytics platform. As a GDPR-compliant service, we prioritize data protection and transparent data practices. By using <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a>, you consent to the data practices described in this policy.",
+    "privacy.section1.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (\"we,\" \"our,\" \"us\") is committed to protecting your privacy and the privacy of your website visitors. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our privacy-first analytics platform. As a GDPR-compliant service, we prioritize data protection and transparent data practices. By using <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a>, you consent to the data practices described in this policy.",
     "privacy.section2.title": "2. Information We Collect",
     "privacy.section2.intro": "We collect different types of information depending on how you use our Service:",
     "privacy.section2.personal": "<strong class=\"!uppercase !text-[10px]\">Account Information:</strong> When you create an account, we collect your name, email address, and billing information. This information is necessary to provide the Service and process payments.",
-    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Payment Information:</strong> For PeekVisor Pro subscriptions, payments are processed by a third-party payment processor. We do not collect or store your full payment card details. We only receive information about your subscription status and billing history.",
+    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Payment Information:</strong> For TraceVisor Pro subscriptions, payments are processed by a third-party payment processor. We do not collect or store your full payment card details. We only receive information about your subscription status and billing history.",
     "privacy.section2.usage": "<strong class=\"!uppercase !text-[10px]\">Platform Usage Data:</strong> We collect information about how you use our analytics platform, such as dashboard views, report generation, feature usage, and configuration settings to improve our Service.",
     "privacy.section2.analytics": "<strong class=\"!uppercase !text-[10px]\">Website Analytics Data:</strong> Through our analytics service, we process anonymized visitor data from your websites, including page views, referrer information, device types, and geographic regions. This data is processed with privacy-preserving techniques and never includes personally identifiable information unless explicitly configured by you with proper consent mechanisms.",
     "privacy.section3.title": "3. How We Use Your Information",
@@ -826,12 +826,12 @@ export const ui = {
     "privacy.section8.title": "8. Changes to This Privacy Policy",
     "privacy.section8.content": "We may update this Privacy Policy to reflect changes in our practices or legal requirements. We will notify you of significant changes through your account dashboard and email. Continued use of the Service after changes constitutes acceptance of the updated policy.",
     "privacy.section9.title": "9. Contact Us",
-    "privacy.section9.content": "If you have any questions about this Privacy Policy, data protection practices, or wish to exercise your data rights, please contact us through our <a href=\"/en/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">contact page</a> or by sending an email to <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "privacy.section9.content": "If you have any questions about this Privacy Policy, data protection practices, or wish to exercise your data rights, please contact us through our <a href=\"/en/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">contact page</a> or by sending an email to <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
 
     // Contact Page
-    "contact.pageTitle": "PeekVisor | Contact",
-    "contact.metaDescription": "Contact PeekVisor for support, analytics questions, or any other inquiries. We're here to help you get the most from your privacy-first analytics.",
-    "contact.ogTitle": "Contact Us | PeekVisor",
+    "contact.pageTitle": "TraceVisor | Contact",
+    "contact.metaDescription": "Contact TraceVisor for support, analytics questions, or any other inquiries. We're here to help you get the most from your privacy-first analytics.",
+    "contact.ogTitle": "Contact Us | TraceVisor",
     "contact.title": "Contact us",
     "contact.subTitle": "Have a question, a suggestion, or a problem? We're here to help.",
     "contact.form.title": "Fill in the form below",
@@ -856,10 +856,10 @@ export const ui = {
     "contact.blocks.email.content": "Prefer the written word? Send us an email at",
 
     // Changelog Page
-    "changelog.pageTitle": "PeekVisor | Changelog",
+    "changelog.pageTitle": "TraceVisor | Changelog",
     "changelog.title": "Changelog",
-    "changelog.metaDescription": "Stay updated with the latest features, improvements, and bug fixes in PeekVisor.",
-    "changelog.ogTitle": "Changelog | PeekVisor",
+    "changelog.metaDescription": "Stay updated with the latest features, improvements, and bug fixes in TraceVisor.",
+    "changelog.ogTitle": "Changelog | TraceVisor",
     "changelog.loading": "Loading changelog...",
     "changelog.error": "Error loading changelog",
     "changelog.noReleases": "No releases found",
@@ -868,11 +868,11 @@ export const ui = {
     "changelog.viewOnGitHub": "View on GitHub",
 
     // Pricing Page
-    "pricing.pageTitle": "PeekVisor | Pricing",
+    "pricing.pageTitle": "TraceVisor | Pricing",
     "pricing.title": "Simple, transparent pricing",
     "pricing.subtitle": "Choose the plan that fits your needs. Start free, upgrade when you grow.",
-    "pricing.metaDescription": "Choose the perfect PeekVisor plan for your analytics needs. Start free with our Basic plan or upgrade to Pro for advanced features.",
-    "pricing.ogTitle": "Pricing Plans | PeekVisor",
+    "pricing.metaDescription": "Choose the perfect TraceVisor plan for your analytics needs. Start free with our Basic plan or upgrade to Pro for advanced features.",
+    "pricing.ogTitle": "Pricing Plans | TraceVisor",
     "pricing.currentPlan": "Current Plan",
     "pricing.subscribe": "Subscribe",
     "pricing.getStarted": "Get Started",
@@ -921,7 +921,7 @@ export const ui = {
     "pricing.features.prioritySupport": "Priority support",
 
     // Login Page
-    "login.pageTitle": "PeekVisor | Login",
+    "login.pageTitle": "TraceVisor | Login",
 
     // Homepage
     "homepage.hero.title": "Know your audience, protect their privacy.",
@@ -936,13 +936,13 @@ export const ui = {
     "homepage.features.setup.title": "Easy setup",
     "homepage.features.setup.description": "Add one line of code and start tracking. No complex configuration needed.",
     "homepage.stats.title": "Trusted by developers worldwide",
-    "homepage.stats.subtitle": "Join hundreds of websites using PeekVisor for privacy-first analytics",
+    "homepage.stats.subtitle": "Join hundreds of websites using TraceVisor for privacy-first analytics",
     "homepage.stats.websites": "Websites tracked",
     "homepage.stats.pageviews": "Page views analyzed",
     "homepage.stats.countries": "Countries served",
     "homepage.stats.co2": "CO₂ saved",
     "homepage.howItWorks.title": "How it works",
-    "homepage.howItWorks.subtitle": "Get started with PeekVisor in just a few simple steps",
+    "homepage.howItWorks.subtitle": "Get started with TraceVisor in just a few simple steps",
     "homepage.howItWorks.step1.title": "Add tracking code",
     "homepage.howItWorks.step1.description": "Copy and paste one line of code into your website. No complex setup required.",
     "homepage.howItWorks.step2.title": "Start collecting data",
@@ -957,9 +957,9 @@ export const ui = {
 
     "seePricing": "See pricing",
 
-    "subscription.pageTitle": "PeekVisor | Subscription Details",
+    "subscription.pageTitle": "TraceVisor | Subscription Details",
     "subscription.title": "Subscription",
-    "subscription.description": "Manage your PeekVisor subscription and billing",
+    "subscription.description": "Manage your TraceVisor subscription and billing",
     "subscription.planOverview": "Plan Overview",
     "subscription.billingInfo": "Billing Information",
     "subscription.customer": "Customer",
@@ -1101,7 +1101,7 @@ export const ui = {
     "publicDashboard.connecting": "Conectando...",
     "publicDashboard.noActiveVisitors": "No hay visitantes activos",
     "publicDashboard.waitingActivity": "Esperando actividad...",
-    "publicDashboard.poweredBy": "Análisis impulsado por PeekVisor",
+    "publicDashboard.poweredBy": "Análisis impulsado por TraceVisor",
     "publicDashboard.environmentalImpact": "Impacto Ambiental",
     "publicDashboard.co2Emissions": "Emisiones de CO₂",
     "publicDashboard.energyConsumption": "Consumo de Energía",
@@ -1130,11 +1130,11 @@ export const ui = {
     "api.rateLimits.flex": "400 solicitudes / 15 minutos",
     "api.rateLimits.basic": "150 solicitudes / 15 minutos",
     "api.rateLimits.pro": "1000 solicitudes / 15 minutos",
-    "api.doc.title": "Documentación API - PeekVisor",
-    "api.doc.description": "Documentación completa de referencia API para PeekVisor Analytics",
+    "api.doc.title": "Documentación API - TraceVisor",
+    "api.doc.description": "Documentación completa de referencia API para TraceVisor Analytics",
     "api.doc.header.title": "Documentación API",
     "api.section.gettingStarted": "Comenzando",
-    "api.section.gettingStarted.subtitle": "Todo lo que necesitas para integrarte con la API de PeekVisor",
+    "api.section.gettingStarted.subtitle": "Todo lo que necesitas para integrarte con la API de TraceVisor",
     "api.card.keyManagement.title": "Gestión de Clave API",
     "api.key.button.copy": "Copiar",
     "api.key.button.regenerate": "Regenerar Clave",
@@ -1379,7 +1379,7 @@ export const ui = {
     "homepage.hero.noCookies": "Sin Cookies",
     "homepage.hero.fiveMinSetup": "Configuración 5 min",
     // Trust & Help Section (ESPAÑOL)
-    "homepage.trust.title": "Por qué las organizaciones confían en PeekVisor",
+    "homepage.trust.title": "Por qué las organizaciones confían en TraceVisor",
     "homepage.trust.security.title": "La alternativa confiable a Google Analytics",
     "homepage.trust.security.description": "Accede a información avanzada sin cookies y sin rastreo intrusivos",
     "homepage.trust.ownership.title": "Privacidad y control absoluto de datos",
@@ -1392,7 +1392,7 @@ export const ui = {
     "homepage.help.description": "Nuestro equipo facilita la migración desde Google Analytics y garantiza una integración sin fricciones",
     "homepage.help.faq": "Consulta las preguntas frecuentes",
     "homepage.help.contact": "Contacta directamente con nuestros expertos",
-    "homepage.help.updates": "Mantente al día con las novedades de PeekVisor",
+    "homepage.help.updates": "Mantente al día con las novedades de TraceVisor",
 
 
     "homepage.value.title": "Analíticas que respetan a tus visitantes",
@@ -1423,7 +1423,7 @@ export const ui = {
     "homepage.how.step3.description": "Los datos analíticos fluyen inmediatamente, sin período de espera",
 
     "homepage.privacy.title": "Una alternativa segura a Google Analytics",
-    "homepage.privacy.description": "Creemos en una web donde entender a tu audiencia no significa violar su privacidad. Por eso construimos PeekVisor desde cero con la privacidad en su núcleo.",
+    "homepage.privacy.description": "Creemos en una web donde entender a tu audiencia no significa violar su privacidad. Por eso construimos TraceVisor desde cero con la privacidad en su núcleo.",
     "homepage.privacy.gdpr": "Compatible GDPR",
     "homepage.privacy.ccpa": "Listo para CCPA",
     "homepage.privacy.pecr": "Compatible PECR",
@@ -1431,10 +1431,10 @@ export const ui = {
     "homepage.cta.comparePlans": "Comparar planes",
     "homepage.cta.viewDashboard": "Ir al Panel",
     // Changelog Page (ESPAÑOL)
-    "changelog.pageTitle": "PeekVisor | Registro de Cambios",
+    "changelog.pageTitle": "TraceVisor | Registro de Cambios",
     "changelog.title": "Registro de Cambios",
-    "changelog.metaDescription": "Mantente actualizado con las últimas características, mejoras y correcciones de errores en PeekVisor.",
-    "changelog.ogTitle": "Registro de Cambios | PeekVisor",
+    "changelog.metaDescription": "Mantente actualizado con las últimas características, mejoras y correcciones de errores en TraceVisor.",
+    "changelog.ogTitle": "Registro de Cambios | TraceVisor",
     "changelog.loading": "Cargando registro de cambios...",
     "changelog.error": "Error cargando registro de cambios",
     "changelog.noReleases": "No se encontraron versiones",
@@ -1443,11 +1443,11 @@ export const ui = {
     "changelog.viewOnGitHub": "Ver en GitHub",
 
     // Pricing Page (ESPAÑOL)
-    "pricing.pageTitle": "PeekVisor | Precios",
+    "pricing.pageTitle": "TraceVisor | Precios",
     "pricing.title": "Precios simples y transparentes",
     "pricing.subtitle": "Elige el plan que se adapte a tus necesidades. Comienza gratis, actualiza cuando crezcas.",
-    "pricing.metaDescription": "Elige el plan perfecto de PeekVisor para tus necesidades de analíticas. Comienza gratis con nuestro plan Básico o actualiza a Pro para funciones avanzadas.",
-    "pricing.ogTitle": "Planes de Precios | PeekVisor",
+    "pricing.metaDescription": "Elige el plan perfecto de TraceVisor para tus necesidades de analíticas. Comienza gratis con nuestro plan Básico o actualiza a Pro para funciones avanzadas.",
+    "pricing.ogTitle": "Planes de Precios | TraceVisor",
     "pricing.currentPlan": "Plan Actual",
     "pricing.subscribe": "Suscribirse",
     "pricing.getStarted": "Comenzar",
@@ -1500,7 +1500,7 @@ export const ui = {
     "tagline": "Conoce tu audiencia, protege su privacidad",
 
     // Dashboard (ESPAÑOL)
-    "dashboard.pageTitle": "PeekVisor | Panel",
+    "dashboard.pageTitle": "TraceVisor | Panel",
     "dashboard.title": "Panel",
     "dashboard.welcome": "Bienvenido de vuelta",
     "dashboard.userCard.title": "Tu Perfil",
@@ -1529,7 +1529,7 @@ export const ui = {
     "dashboard.quickActions.subscriptionDetails": "Detalles de Suscripción",
 
     // Websites Management (ESPAÑOL)
-    "websites.pageTitle": "PeekVisor | Sitios Web",
+    "websites.pageTitle": "TraceVisor | Sitios Web",
     "websites.title": "Tus Sitios Web",
     "websites.addWebsite": "Agregar",
     "websites.noWebsites": "Aún no hay sitios web agregados",
@@ -1580,7 +1580,7 @@ export const ui = {
     "websites.deleteModal.invalidDomain": "El nombre del dominio no coincide",
 
     // Analytics (ESPAÑOL)
-    "analytics.pageTitle": "PeekVisor | Analíticas",
+    "analytics.pageTitle": "TraceVisor | Analíticas",
     "analytics.title": "Analíticas",
     // Added missing labels used in analytics UI
     "analytics.utmCampaigns": "Campañas UTM",
@@ -1676,7 +1676,7 @@ export const ui = {
     "analytics.mapUnavailable": "Mapa no disponible",
     "analytics.noDataToExport": "No hay datos de análisis para exportar.",
     "analytics.reportFor":
-      "Informe de Análisis de PeekVisor para {websiteName}",
+      "Informe de Análisis de TraceVisor para {websiteName}",
     "analytics.generatedOn": "Generado el: {date}",
     "analytics.metric": "Métrica",
     "analytics.value": "Valor",
@@ -1694,7 +1694,7 @@ export const ui = {
     "pageNotFound.title": "Página No Encontrada",
     "pageNotFound.subTitle": "¡Ups, esta no es la página que buscabas!",
     "pageNotFound.metaDescription": "La página que buscas no existe. Usa la navegación para encontrar lo que buscas.",
-    "pageNotFound.ogTitle": "404: Página No Encontrada | PeekVisor",
+    "pageNotFound.ogTitle": "404: Página No Encontrada | TraceVisor",
 
     // Navigation
     "nav.home": "Inicio",
@@ -1709,9 +1709,9 @@ export const ui = {
 
     // Maintenance Page (ESPAÑOL)
     "maintenance.title": "En Desarrollo",
-    "maintenance.metaDescription": "PeekVisor está actualmente en desarrollo activo. Algunas funciones pueden estar limitadas.",
-    "maintenance.ogTitle": "En Desarrollo | PeekVisor",
-    "maintenance.description": "Estamos construyendo activamente PeekVisor para brindarte la mejor experiencia de analytics centrada en privacidad. Algunas funciones aún están en desarrollo.",
+    "maintenance.metaDescription": "TraceVisor está actualmente en desarrollo activo. Algunas funciones pueden estar limitadas.",
+    "maintenance.ogTitle": "En Desarrollo | TraceVisor",
+    "maintenance.description": "Estamos construyendo activamente TraceVisor para brindarte la mejor experiencia de analytics centrada en privacidad. Algunas funciones aún están en desarrollo.",
     "maintenance.features.title": "Estado Actual",
     "maintenance.features.tracking": "El seguimiento de sitios web está completamente funcional",
     "maintenance.features.analytics": "Dashboard básico de analytics disponible",
@@ -1721,7 +1721,7 @@ export const ui = {
     "maintenance.viewProgress": "Ver Progreso de Desarrollo",
 
     // Settings (ESPAÑOL)
-    "settings.pageTitle": "PeekVisor | Configuración",
+    "settings.pageTitle": "TraceVisor | Configuración",
     "settings.title": "Configuración",
     "settings.profile.title": "Configuración del Perfil",
     "settings.profile.personalInfo": "Información Personal",
@@ -1791,13 +1791,13 @@ export const ui = {
     "homepage.features.setup.title": "Configuración fácil",
     "homepage.features.setup.description": "Agrega una línea de código y comienza a rastrear. No se requiere configuración compleja.",
     "homepage.stats.title": "Confiado por desarrolladores en todo el mundo",
-    "homepage.stats.subtitle": "Únete a cientos de sitios web que usan PeekVisor para analíticas que respetan la privacidad",
+    "homepage.stats.subtitle": "Únete a cientos de sitios web que usan TraceVisor para analíticas que respetan la privacidad",
     "homepage.stats.websites": "Sitios web rastreados",
     "homepage.stats.pageviews": "Páginas vistas analizadas",
     "homepage.stats.countries": "Países atendidos",
     "homepage.stats.co2": "CO₂ ahorrado",
     "homepage.howItWorks.title": "Cómo funciona",
-    "homepage.howItWorks.subtitle": "Comienza con PeekVisor en solo unos simples pasos",
+    "homepage.howItWorks.subtitle": "Comienza con TraceVisor en solo unos simples pasos",
     "homepage.howItWorks.step1.title": "Agrega el código de seguimiento",
     "homepage.howItWorks.step1.description": "Copia y pega una línea de código en tu sitio web. No se requiere configuración compleja.",
     "homepage.howItWorks.step2.title": "Comienza a recopilar datos",
@@ -1823,9 +1823,9 @@ export const ui = {
     "footer.resources.contact": "Contacto",
 
     // Contact Page
-    "contact.pageTitle": "PeekVisor | Contacto",
-    "contact.metaDescription": "Contacta con PeekVisor para soporte, preguntas sobre analytics o cualquier otra consulta. Estamos aquí para ayudarte a obtener el máximo de tus analytics centradas en privacidad.",
-    "contact.ogTitle": "Contáctanos | PeekVisor",
+    "contact.pageTitle": "TraceVisor | Contacto",
+    "contact.metaDescription": "Contacta con TraceVisor para soporte, preguntas sobre analytics o cualquier otra consulta. Estamos aquí para ayudarte a obtener el máximo de tus analytics centradas en privacidad.",
+    "contact.ogTitle": "Contáctanos | TraceVisor",
     "contact.title": "Contáctanos",
     "contact.subTitle": "¿Tiene alguna pregunta, una sugerencia o un problema? Estamos aquí para ayudar.",
     "contact.form.title": "Rellena el formulario a continuación",
@@ -1850,9 +1850,9 @@ export const ui = {
     "contact.blocks.email.content": "¿Prefiere contactarse de otra forma? Envíenos un correo electrónico a:",
 
     // FAQ Page
-    "faq.pageTitle": "PeekVisor | Preguntas Frecuentes",
-    "faq.metaDescription": "Encuentra respuestas a las preguntas más frecuentes sobre PeekVisor, incluyendo cómo configurar el seguimiento, características de privacidad y analytics.",
-    "faq.ogTitle": "Preguntas Frecuentes | PeekVisor",
+    "faq.pageTitle": "TraceVisor | Preguntas Frecuentes",
+    "faq.metaDescription": "Encuentra respuestas a las preguntas más frecuentes sobre TraceVisor, incluyendo cómo configurar el seguimiento, características de privacidad y analytics.",
+    "faq.ogTitle": "Preguntas Frecuentes | TraceVisor",
     "faq.title": "Preguntas<br />frecuentes",
 
 
@@ -1861,19 +1861,19 @@ export const ui = {
     "terms.title": "Términos de Servicio",
     "terms.effectiveDate": "Fecha de Vigencia: 31 de julio de 2025",
     "terms.section1.title": "1. Aceptación de los Términos",
-    "terms.section1.content": "Al acceder o usar <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (el \"Servicio\"), usted acepta estar sujeto a estos Términos de Servicio (\"Términos\") y a nuestra <a href=\"/es/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Política de Privacidad</a>. Al acceder o usar este sitio web, incluyendo sus nombres de dominio o direcciones IP, contenido o cualquier interacción (como hacer clic en enlaces), usted reconoce y declara que acepta estos términos de servicio y que tiene 18 años de edad o más. Su acceso y uso indican su reconocimiento, aceptación y acuerdo incondicional con todos los términos y condiciones establecidos en este documento sin modificación, y este acuerdo entra en vigencia inmediatamente. Para rechazar, simplemente absténgase de usar el sitio web y cierre todas sus ventanas. Sin embargo, no puede acceder o usar este sitio web si usted (o su tutor o representante legal) no puede celebrar un contrato vinculante o en cualquier jurisdicción donde este acuerdo de usuario no sea ejecutable. Usted acepta que su uso constituye reconocimiento de que ha leído, entendido y aceptado todos los términos. Si usted es el propietario u operador del equipo utilizado para acceder a este sitio web, al permitir dicho uso, usted consiente y acepta estar sujeto a los términos y condiciones de este acuerdo de usuario. Si actúa en nombre de organizaciones, usted declara que está autorizado para actuar como agente y aceptar este acuerdo de usuario en nombre de su empleador y organizaciones. Usted acepta usar el sitio web solo de acuerdo con estos derechos de uso y todas las leyes y regulaciones aplicables.",
+    "terms.section1.content": "Al acceder o usar <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (el \"Servicio\"), usted acepta estar sujeto a estos Términos de Servicio (\"Términos\") y a nuestra <a href=\"/es/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Política de Privacidad</a>. Al acceder o usar este sitio web, incluyendo sus nombres de dominio o direcciones IP, contenido o cualquier interacción (como hacer clic en enlaces), usted reconoce y declara que acepta estos términos de servicio y que tiene 18 años de edad o más. Su acceso y uso indican su reconocimiento, aceptación y acuerdo incondicional con todos los términos y condiciones establecidos en este documento sin modificación, y este acuerdo entra en vigencia inmediatamente. Para rechazar, simplemente absténgase de usar el sitio web y cierre todas sus ventanas. Sin embargo, no puede acceder o usar este sitio web si usted (o su tutor o representante legal) no puede celebrar un contrato vinculante o en cualquier jurisdicción donde este acuerdo de usuario no sea ejecutable. Usted acepta que su uso constituye reconocimiento de que ha leído, entendido y aceptado todos los términos. Si usted es el propietario u operador del equipo utilizado para acceder a este sitio web, al permitir dicho uso, usted consiente y acepta estar sujeto a los términos y condiciones de este acuerdo de usuario. Si actúa en nombre de organizaciones, usted declara que está autorizado para actuar como agente y aceptar este acuerdo de usuario en nombre de su empleador y organizaciones. Usted acepta usar el sitio web solo de acuerdo con estos derechos de uso y todas las leyes y regulaciones aplicables.",
 
     "terms.section2.title": "2. Descripción del Servicio",
-    "terms.section2.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> es una plataforma de análisis que prioriza la privacidad y que ofrece información integral sobre audiencias sin comprometer los datos del usuario. Nuestro Servicio le permite rastrear vistas de página ilimitadas, monitorear campañas de marketing, medir el impacto ambiental de su presencia digital y obtener análisis detallados manteniendo el cumplimiento completo del GDPR. Ofrecemos un nivel gratuito con funciones básicas de análisis y un nivel de suscripción premium (\"PeekVisor Pro\") con información avanzada, retención de datos extendida y seguimiento mejorado del impacto ambiental.",
+    "terms.section2.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> es una plataforma de análisis que prioriza la privacidad y que ofrece información integral sobre audiencias sin comprometer los datos del usuario. Nuestro Servicio le permite rastrear vistas de página ilimitadas, monitorear campañas de marketing, medir el impacto ambiental de su presencia digital y obtener análisis detallados manteniendo el cumplimiento completo del GDPR. Ofrecemos un nivel gratuito con funciones básicas de análisis y un nivel de suscripción premium (\"TraceVisor Pro\") con información avanzada, retención de datos extendida y seguimiento mejorado del impacto ambiental.",
 
     "terms.section3.title": "3. Datos Analíticos y Cumplimiento de Privacidad",
-    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Enfoque de Privacidad Primero:</strong> <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> procesa datos analíticos con la privacidad como nuestra principal preocupación. Recopilamos solo los datos mínimos necesarios para proporcionar información significativa y nunca almacenamos información de identificación personal sin consentimiento explícito. Todo el procesamiento de datos cumple con GDPR, CCPA y otras regulaciones de privacidad aplicables.",
+    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Enfoque de Privacidad Primero:</strong> <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> procesa datos analíticos con la privacidad como nuestra principal preocupación. Recopilamos solo los datos mínimos necesarios para proporcionar información significativa y nunca almacenamos información de identificación personal sin consentimiento explícito. Todo el procesamiento de datos cumple con GDPR, CCPA y otras regulaciones de privacidad aplicables.",
     "terms.section3.dataOwnership": "<strong class=\"!uppercase !text-[10px]\">Propiedad de Datos:</strong> Usted conserva la propiedad completa de todos los datos recopilados a través de nuestra plataforma de análisis. Actuamos únicamente como procesador de datos en su nombre. Tiene control completo sobre sus datos, incluyendo el derecho de exportar, eliminar o modificar la configuración de recopilación de datos en cualquier momento.",
     "terms.section3.technicalOperation": "<strong class=\"!uppercase !text-[10px]\">Operación Técnica:</strong> Nuestra plataforma de análisis opera recopilando métricas anónimas de visitantes, datos de rendimiento de páginas, información de atribución de campañas y cálculos de impacto ambiental. Utilizamos técnicas avanzadas de privacidad incluyendo anonimización de datos, enmascaramiento de IP y opciones de seguimiento sin cookies para proteger la privacidad del visitante mientras proporcionamos información precisa.",
 
     "terms.section4.title": "4. Cuentas de Usuario y Suscripciones",
     "terms.section4.accountCreation": "<strong class=\"!uppercase !text-[10px]\">Creación de Cuenta:</strong> Para acceder a las funciones de análisis, personalización del panel y capacidades de exportación de datos, necesita crear una cuenta. Usted es responsable de mantener la confidencialidad de las credenciales de su cuenta y claves API.",
-    "terms.section4.peekvisorPro": "<strong class=\"!uppercase !text-[10px]\">PeekVisor Pro:</strong> Las suscripciones a PeekVisor Pro se facturan de forma recurrente según se especifica al momento de la compra. Los pagos son procesados por un procesador de pagos seguro de terceros. Puede cancelar su suscripción en cualquier momento a través del panel de su cuenta.",
+    "terms.section4.tracevisorPro": "<strong class=\"!uppercase !text-[10px]\">TraceVisor Pro:</strong> Las suscripciones a TraceVisor Pro se facturan de forma recurrente según se especifica al momento de la compra. Los pagos son procesados por un procesador de pagos seguro de terceros. Puede cancelar su suscripción en cualquier momento a través del panel de su cuenta.",
     "terms.section4.proFeatures": "Las suscripciones Pro proporcionan capacidades de análisis mejoradas incluyendo seguimiento ilimitado de sitios web, períodos de retención de datos extendidos, atribución avanzada de campañas, informes detallados de impacto ambiental, configuraciones personalizadas del panel y soporte prioritario. Los usuarios del nivel gratuito tienen limitaciones en el número de sitios web rastreados, período de retención de datos y acceso a funciones avanzadas.",
 
     "terms.section5.title": "5. Conducta Prohibida",
@@ -1886,24 +1886,24 @@ export const ui = {
     "terms.section5.item6": "- Violar cualquier ley de privacidad aplicable, regulaciones o requisitos de protección de datos al usar nuestra plataforma de análisis.",
 
     "terms.section6.title": "6. Descargos de Responsabilidad y Limitación de Responsabilidad",
-    "terms.section6.warranty": "EL SERVICIO SE PROPORCIONA \"TAL COMO ESTÁ\" Y \"SEGÚN DISPONIBILIDAD\" SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS O IMPLÍCITAS. <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> RENUNCIA A TODAS LAS GARANTÍAS, INCLUYENDO, PERO NO LIMITADO A, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.",
-    "terms.section6.liability": "EN NINGÚN EVENTO <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> SERÁ RESPONSABLE POR CUALQUIER DAÑO INDIRECTO, INCIDENTAL, ESPECIAL, CONSECUENCIAL O PUNITIVO QUE SURJA DE O ESTÉ RELACIONADO CON SU USO DEL SERVICIO O CUALQUIER DATO ANALÍTICO PROCESADO A TRAVÉS DE NUESTRA PLATAFORMA.",
+    "terms.section6.warranty": "EL SERVICIO SE PROPORCIONA \"TAL COMO ESTÁ\" Y \"SEGÚN DISPONIBILIDAD\" SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS O IMPLÍCITAS. <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> RENUNCIA A TODAS LAS GARANTÍAS, INCLUYENDO, PERO NO LIMITADO A, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.",
+    "terms.section6.liability": "EN NINGÚN EVENTO <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> SERÁ RESPONSABLE POR CUALQUIER DAÑO INDIRECTO, INCIDENTAL, ESPECIAL, CONSECUENCIAL O PUNITIVO QUE SURJA DE O ESTÉ RELACIONADO CON SU USO DEL SERVICIO O CUALQUIER DATO ANALÍTICO PROCESADO A TRAVÉS DE NUESTRA PLATAFORMA.",
 
     "terms.section7.title": "7. Cambios en los Términos",
     "terms.section7.content": "Nos reservamos el derecho de modificar estos Términos en cualquier momento. Le notificaremos cualquier cambio publicando los nuevos Términos en esta página. Su uso continuado del Servicio después de cualquier cambio constituye su aceptación de los nuevos Términos.",
 
     "terms.section8.title": "8. Contáctenos",
-    "terms.section8.content": "Si tiene alguna pregunta sobre estos Términos, por favor contáctenos a través de nuestra <a href=\"/es/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">página de contacto</a> o enviando un correo electrónico a <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "terms.section8.content": "Si tiene alguna pregunta sobre estos Términos, por favor contáctenos a través de nuestra <a href=\"/es/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">página de contacto</a> o enviando un correo electrónico a <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
 
     "privacy.title": "Política de Privacidad",
     "privacy.effectiveDate": "Fecha de Vigencia: 31 de julio de 2025",
     "privacy.section1.title": "1. Introducción",
-    "privacy.section1.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (\"nosotros,\" \"nuestro,\" \"nos\") está comprometido con proteger su privacidad y la privacidad de los visitantes de su sitio web. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando usa nuestra plataforma de análisis que prioriza la privacidad. Como un servicio compatible con GDPR, priorizamos la protección de datos y prácticas transparentes de datos. Al usar <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a>, usted consiente a las prácticas de datos descritas en esta política.",
+    "privacy.section1.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (\"nosotros,\" \"nuestro,\" \"nos\") está comprometido con proteger su privacidad y la privacidad de los visitantes de su sitio web. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando usa nuestra plataforma de análisis que prioriza la privacidad. Como un servicio compatible con GDPR, priorizamos la protección de datos y prácticas transparentes de datos. Al usar <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a>, usted consiente a las prácticas de datos descritas en esta política.",
 
     "privacy.section2.title": "2. Información que Recopilamos",
     "privacy.section2.intro": "Recopilamos diferentes tipos de información dependiendo de cómo use nuestro Servicio:",
     "privacy.section2.personal": "<strong class=\"!uppercase !text-[10px]\">Información de Cuenta:</strong> Cuando crea una cuenta, recopilamos su nombre, dirección de correo electrónico e información de facturación. Esta información es necesaria para proporcionar el Servicio y procesar pagos.",
-    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Información de Pago:</strong> Para las suscripciones de PeekVisor Pro, los pagos son procesados por un procesador de pagos de terceros. No recopilamos ni almacenamos los detalles completos de su tarjeta de pago. Solo recibimos información sobre el estado de su suscripción e historial de facturación.",
+    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Información de Pago:</strong> Para las suscripciones de TraceVisor Pro, los pagos son procesados por un procesador de pagos de terceros. No recopilamos ni almacenamos los detalles completos de su tarjeta de pago. Solo recibimos información sobre el estado de su suscripción e historial de facturación.",
     "privacy.section2.usage": "<strong class=\"!uppercase !text-[10px]\">Datos de Uso de la Plataforma:</strong> Recopilamos información sobre cómo usa nuestra plataforma de análisis, como vistas del panel, generación de informes, uso de funciones y configuraciones para mejorar nuestro Servicio.",
     "privacy.section2.analytics": "<strong class=\"!uppercase !text-[10px]\">Datos Analíticos del Sitio Web:</strong> A través de nuestro servicio de análisis, procesamos datos anónimos de visitantes de sus sitios web, incluyendo vistas de página, información de referencia, tipos de dispositivos y regiones geográficas. Estos datos se procesan con técnicas que preservan la privacidad y nunca incluyen información de identificación personal a menos que sea configurado explícitamente por usted con mecanismos de consentimiento apropiados.",
 
@@ -1936,11 +1936,11 @@ export const ui = {
     "privacy.section8.content": "Podemos actualizar esta Política de Privacidad para reflejar cambios en nuestras prácticas o requisitos legales. Le notificaremos de cambios significativos a través del panel de su cuenta y correo electrónico. El uso continuado del Servicio después de los cambios constituye aceptación de la política actualizada.",
 
     "privacy.section9.title": "9. Contáctenos",
-    "privacy.section9.content": "Si tiene alguna pregunta sobre esta Política de Privacidad, prácticas de protección de datos, o desea ejercer sus derechos de datos, por favor contáctenos a través de nuestra <a href=\"/es/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">página de contacto</a> o enviando un correo electrónico a <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "privacy.section9.content": "Si tiene alguna pregunta sobre esta Política de Privacidad, prácticas de protección de datos, o desea ejercer sus derechos de datos, por favor contáctenos a través de nuestra <a href=\"/es/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">página de contacto</a> o enviando un correo electrónico a <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
 
-    "subscription.pageTitle": "PeekVisor | Detalles de Suscripción",
+    "subscription.pageTitle": "TraceVisor | Detalles de Suscripción",
     "subscription.title": "Suscripción",
-    "subscription.description": "Gestiona tu suscripción y facturación de PeekVisor",
+    "subscription.description": "Gestiona tu suscripción y facturación de TraceVisor",
     "subscription.planOverview": "Resumen del Plan",
     "subscription.billingInfo": "Información de Facturación",
     "subscription.customer": "Cliente",
@@ -2081,7 +2081,7 @@ export const ui = {
     "publicDashboard.connecting": "Connexion en cours...",
     "publicDashboard.noActiveVisitors": "Aucun visiteur actif",
     "publicDashboard.waitingActivity": "En attente d'activité...",
-    "publicDashboard.poweredBy": "Analytique propulsée par PeekVisor",
+    "publicDashboard.poweredBy": "Analytique propulsée par TraceVisor",
     "publicDashboard.environmentalImpact": "Impact Environnemental",
     "publicDashboard.co2Emissions": "Émissions de CO₂",
     "publicDashboard.energyConsumption": "Consommation d'Énergie",
@@ -2110,11 +2110,11 @@ export const ui = {
     "api.rateLimits.flex": "400 requêtes / 15 minutes",
     "api.rateLimits.basic": "150 requêtes / 15 minutes",
     "api.rateLimits.pro": "1000 requêtes / 15 minutes",
-    "api.doc.title": "Documentation API - PeekVisor",
-    "api.doc.description": "Documentation de référence API complète pour PeekVisor Analytics",
+    "api.doc.title": "Documentation API - TraceVisor",
+    "api.doc.description": "Documentation de référence API complète pour TraceVisor Analytics",
     "api.doc.header.title": "Documentation API",
     "api.section.gettingStarted": "Pour commencer",
-    "api.section.gettingStarted.subtitle": "Tout ce dont vous avez besoin pour intégrer l'API PeekVisor",
+    "api.section.gettingStarted.subtitle": "Tout ce dont vous avez besoin pour intégrer l'API TraceVisor",
     "api.card.keyManagement.title": "Gestion de la clé API",
     "api.key.button.copy": "Copier",
     "api.key.button.regenerate": "Régénérer la clé",
@@ -2375,7 +2375,7 @@ export const ui = {
     "homepage.value.insights.description": "Comprenez votre audience avec données géographiques, analyses d'appareils et suivi de campagnes.",
 
     // Trust & Help Section (FRANÇAIS)
-    "homepage.trust.title": "Pourquoi les organisations font confiance à PeekVisor",
+    "homepage.trust.title": "Pourquoi les organisations font confiance à TraceVisor",
     "homepage.trust.security.title": "L’alternative fiable à Google Analytics",
     "homepage.trust.security.description": "Accédez à des analyses avancées sans cookies, sans suivi intrusif et sans dépendance aux géants du web",
     "homepage.trust.ownership.title": "Confidentialité et maîtrise totale des données",
@@ -2388,7 +2388,7 @@ export const ui = {
     "homepage.help.description": "Notre équipe vous aide à migrer depuis Google Analytics et garantit une intégration fluide",
     "homepage.help.faq": "Consulter les questions fréquentes",
     "homepage.help.contact": "Échangez directement avec nos experts",
-    "homepage.help.updates": "Restez informé des dernières nouveautés de PeekVisor",
+    "homepage.help.updates": "Restez informé des dernières nouveautés de TraceVisor",
 
 
 
@@ -2411,7 +2411,7 @@ export const ui = {
     "homepage.how.step3.description": "Les données analytiques arrivent immédiatement, sans période d'attente",
 
     "homepage.privacy.title": "L’alternative sûr à Google Analytics",
-    "homepage.privacy.description": "Nous croyons en un web où comprendre votre audience ne signifie pas violer leur vie privée. C'est pourquoi nous avons construit PeekVisor avec la confidentialité au cœur.",
+    "homepage.privacy.description": "Nous croyons en un web où comprendre votre audience ne signifie pas violer leur vie privée. C'est pourquoi nous avons construit TraceVisor avec la confidentialité au cœur.",
     "homepage.privacy.gdpr": "Conforme GDPR",
     "homepage.privacy.ccpa": "Prêt pour CCPA",
     "homepage.privacy.pecr": "Conforme PECR",
@@ -2419,10 +2419,10 @@ export const ui = {
     "homepage.cta.comparePlans": "Comparer les plans",
     "homepage.cta.viewDashboard": "Aller au Tableau de Bord",
     // Changelog Page (FRANÇAIS)
-    "changelog.pageTitle": "PeekVisor | Journal des Modifications",
+    "changelog.pageTitle": "TraceVisor | Journal des Modifications",
     "changelog.title": "Journal des Modifications",
-    "changelog.metaDescription": "Restez informé des dernières fonctionnalités, améliorations et corrections de bugs dans PeekVisor.",
-    "changelog.ogTitle": "Journal des Modifications | PeekVisor",
+    "changelog.metaDescription": "Restez informé des dernières fonctionnalités, améliorations et corrections de bugs dans TraceVisor.",
+    "changelog.ogTitle": "Journal des Modifications | TraceVisor",
     "changelog.loading": "Chargement du journal des modifications...",
     "changelog.error": "Erreur lors du chargement du journal des modifications",
     "changelog.noReleases": "Aucune version trouvée",
@@ -2431,11 +2431,11 @@ export const ui = {
     "changelog.viewOnGitHub": "Voir sur GitHub",
 
     // Pricing Page (FRANÇAIS)
-    "pricing.pageTitle": "PeekVisor | Tarifs",
+    "pricing.pageTitle": "TraceVisor | Tarifs",
     "pricing.title": "Tarification simple et transparente",
     "pricing.subtitle": "Choisissez le plan qui correspond à vos besoins. Commencez gratuitement, évoluez quand vous grandissez.",
-    "pricing.metaDescription": "Choisissez le plan PeekVisor parfait pour vos besoins d'analyse. Commencez gratuitement avec notre plan de base ou passez à Pro pour des fonctionnalités avancées.",
-    "pricing.ogTitle": "Plans Tarifaires | PeekVisor",
+    "pricing.metaDescription": "Choisissez le plan TraceVisor parfait pour vos besoins d'analyse. Commencez gratuitement avec notre plan de base ou passez à Pro pour des fonctionnalités avancées.",
+    "pricing.ogTitle": "Plans Tarifaires | TraceVisor",
     "pricing.currentPlan": "Plan Actuel",
     "pricing.subscribe": "S'abonner",
     "pricing.getStarted": "Commencer",
@@ -2487,7 +2487,7 @@ export const ui = {
     "tagline": "Connaissez votre audience, protégez leur vie privée",
 
     // Dashboard (FRANÇAIS)
-    "dashboard.pageTitle": "PeekVisor | Tableau de Bord",
+    "dashboard.pageTitle": "TraceVisor | Tableau de Bord",
     "dashboard.title": "Tableau de Bord",
     "dashboard.welcome": "Bon retour",
     "dashboard.userCard.title": "Votre Profil",
@@ -2516,7 +2516,7 @@ export const ui = {
     "dashboard.quickActions.subscriptionDetails": "Détails de l'abonnement",
 
     // Websites Management (FRANÇAIS)
-    "websites.pageTitle": "PeekVisor | Sites Web",
+    "websites.pageTitle": "TraceVisor | Sites Web",
     "websites.title": "Vos Sites Web",
     "websites.addWebsite": "Ajouter",
     "websites.noWebsites": "Aucun site web ajouté pour le moment",
@@ -2567,7 +2567,7 @@ export const ui = {
     "websites.deleteModal.invalidDomain": "Le nom de domaine ne correspond pas",
 
     // Analytics (FRANÇAIS)
-    "analytics.pageTitle": "PeekVisor | Analyses",
+    "analytics.pageTitle": "TraceVisor | Analyses",
     "analytics.title": "Analyses",
     // Added missing labels used in analytics UI
     "analytics.utmCampaigns": "Campagnes UTM",
@@ -2659,7 +2659,7 @@ export const ui = {
     "analytics.session": "Session",
     "analytics.mapUnavailable": "Carte non disponible",
     "analytics.noDataToExport": "Aucune donnée d'analyse à exporter.",
-    "analytics.reportFor": "Rapport d'Analyse PeekVisor pour {websiteName}",
+    "analytics.reportFor": "Rapport d'Analyse TraceVisor pour {websiteName}",
     "analytics.generatedOn": "Généré le: {date}",
     "analytics.metric": "Métrique",
     "analytics.value": "Valeur",
@@ -2681,7 +2681,7 @@ export const ui = {
     "pageNotFound.title": "Page Non Trouvée",
     "pageNotFound.subTitle": "Oups, ce n'est pas la page que vous cherchiez !",
     "pageNotFound.metaDescription": "La page que vous cherchez n'existe pas. Utilisez la navigation pour trouver ce que vous cherchez.",
-    "pageNotFound.ogTitle": "404: Page Non Trouvée | PeekVisor",
+    "pageNotFound.ogTitle": "404: Page Non Trouvée | TraceVisor",
 
     // Navigation
     "nav.home": "Accueil",
@@ -2696,9 +2696,9 @@ export const ui = {
 
     // Maintenance Page (FRANÇAIS)
     "maintenance.title": "En Développement",
-    "maintenance.metaDescription": "PeekVisor est actuellement en développement actif. Certaines fonctionnalités peuvent être limitées.",
-    "maintenance.ogTitle": "En Développement | PeekVisor",
-    "maintenance.description": "Nous construisons activement PeekVisor pour vous offrir la meilleure expérience d'analytics axée sur la confidentialité. Certaines fonctionnalités sont encore en développement.",
+    "maintenance.metaDescription": "TraceVisor est actuellement en développement actif. Certaines fonctionnalités peuvent être limitées.",
+    "maintenance.ogTitle": "En Développement | TraceVisor",
+    "maintenance.description": "Nous construisons activement TraceVisor pour vous offrir la meilleure expérience d'analytics axée sur la confidentialité. Certaines fonctionnalités sont encore en développement.",
     "maintenance.features.title": "État Actuel",
     "maintenance.features.tracking": "Le suivi des sites web est entièrement fonctionnel",
     "maintenance.features.analytics": "Tableau de bord d'analytics de base disponible",
@@ -2708,7 +2708,7 @@ export const ui = {
     "maintenance.viewProgress": "Voir les Progrès de Développement",
 
     // Settings (FR)
-    "settings.pageTitle": "PeekVisor | Paramètres",
+    "settings.pageTitle": "TraceVisor | Paramètres",
     "settings.title": "Paramètres",
     "settings.profile.title": "Paramètres du Profil",
     "settings.profile.personalInfo": "Informations Personnelles",
@@ -2848,19 +2848,19 @@ export const ui = {
     "terms.title": "Conditions d'Utilisation",
     "terms.effectiveDate": "Date d'Entrée en Vigueur : 31 juillet 2025",
     "terms.section1.title": "1. Acceptation des Conditions",
-    "terms.section1.content": "En accédant ou en utilisant <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (le \"Service\"), vous acceptez d'être lié par ces Conditions d'Utilisation (\"Conditions\") et notre <a href=\"/fr/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Politique de Confidentialité</a>. En accédant ou en utilisant ce site web, y compris ses noms de domaine ou adresses IP, son contenu, ou toute interaction (comme cliquer sur des liens), vous reconnaissez et déclarez que vous acceptez ces conditions d'utilisation et que vous avez 18 ans ou plus. Votre accès et utilisation indiquent votre reconnaissance, acceptation et accord inconditionnel avec tous les termes et conditions énoncés ici sans modification, et cet accord prend effet immédiatement. Pour refuser, abstenez-vous simplement d'utiliser le site web et fermez toutes ses fenêtres. Cependant, vous ne pouvez pas accéder ou utiliser ce site web si vous (ou votre tuteur ou représentant légal) ne pouvez pas conclure un contrat contraignant ou dans toute juridiction où cet accord d'utilisateur n'est pas exécutoire. Vous acceptez que votre utilisation constitue une reconnaissance que vous avez lu, compris et accepté tous les termes. Si vous êtes le propriétaire ou l'opérateur de l'équipement utilisé pour accéder à ce site web, en permettant une telle utilisation, vous consentez et acceptez d'être lié par les termes et conditions de cet accord d'utilisateur. Si vous agissez au nom d'organisations, vous déclarez que vous êtes autorisé à agir en tant qu'agent et à accepter cet accord d'utilisateur au nom de votre employeur et organisations. Vous acceptez d'utiliser le site web uniquement conformément à ces droits d'utilisation et à toutes les lois et réglementations applicables.",
+    "terms.section1.content": "En accédant ou en utilisant <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (le \"Service\"), vous acceptez d'être lié par ces Conditions d'Utilisation (\"Conditions\") et notre <a href=\"/fr/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Politique de Confidentialité</a>. En accédant ou en utilisant ce site web, y compris ses noms de domaine ou adresses IP, son contenu, ou toute interaction (comme cliquer sur des liens), vous reconnaissez et déclarez que vous acceptez ces conditions d'utilisation et que vous avez 18 ans ou plus. Votre accès et utilisation indiquent votre reconnaissance, acceptation et accord inconditionnel avec tous les termes et conditions énoncés ici sans modification, et cet accord prend effet immédiatement. Pour refuser, abstenez-vous simplement d'utiliser le site web et fermez toutes ses fenêtres. Cependant, vous ne pouvez pas accéder ou utiliser ce site web si vous (ou votre tuteur ou représentant légal) ne pouvez pas conclure un contrat contraignant ou dans toute juridiction où cet accord d'utilisateur n'est pas exécutoire. Vous acceptez que votre utilisation constitue une reconnaissance que vous avez lu, compris et accepté tous les termes. Si vous êtes le propriétaire ou l'opérateur de l'équipement utilisé pour accéder à ce site web, en permettant une telle utilisation, vous consentez et acceptez d'être lié par les termes et conditions de cet accord d'utilisateur. Si vous agissez au nom d'organisations, vous déclarez que vous êtes autorisé à agir en tant qu'agent et à accepter cet accord d'utilisateur au nom de votre employeur et organisations. Vous acceptez d'utiliser le site web uniquement conformément à ces droits d'utilisation et à toutes les lois et réglementations applicables.",
 
     "terms.section2.title": "2. Description du Service",
-    "terms.section2.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> est une plateforme d'analyse axée sur la confidentialité qui fournit des informations complètes sur l'audience sans compromettre les données des utilisateurs. Notre Service vous permet de suivre des vues de pages illimitées, de surveiller les campagnes marketing, de mesurer l'impact environnemental de votre présence numérique et d'obtenir des analyses détaillées tout en maintenant une conformité GDPR complète. Nous offrons un niveau gratuit avec des fonctionnalités d'analyse de base et un niveau d'abonnement premium (\"PeekVisor Pro\") avec des informations avancées, une rétention de données étendue et un suivi amélioré de l'impact environnemental.",
+    "terms.section2.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> est une plateforme d'analyse axée sur la confidentialité qui fournit des informations complètes sur l'audience sans compromettre les données des utilisateurs. Notre Service vous permet de suivre des vues de pages illimitées, de surveiller les campagnes marketing, de mesurer l'impact environnemental de votre présence numérique et d'obtenir des analyses détaillées tout en maintenant une conformité GDPR complète. Nous offrons un niveau gratuit avec des fonctionnalités d'analyse de base et un niveau d'abonnement premium (\"TraceVisor Pro\") avec des informations avancées, une rétention de données étendue et un suivi amélioré de l'impact environnemental.",
 
     "terms.section3.title": "3. Données Analytiques et Conformité à la Confidentialité",
-    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Approche Axée sur la Confidentialité :</strong> <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> traite les données analytiques avec la confidentialité comme notre préoccupation principale. Nous collectons uniquement les données minimales nécessaires pour fournir des informations significatives et ne stockons jamais d'informations personnellement identifiables sans consentement explicite. Tout traitement de données est conforme au GDPR, CCPA et autres réglementations de confidentialité applicables.",
+    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Approche Axée sur la Confidentialité :</strong> <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> traite les données analytiques avec la confidentialité comme notre préoccupation principale. Nous collectons uniquement les données minimales nécessaires pour fournir des informations significatives et ne stockons jamais d'informations personnellement identifiables sans consentement explicite. Tout traitement de données est conforme au GDPR, CCPA et autres réglementations de confidentialité applicables.",
     "terms.section3.dataOwnership": "<strong class=\"!uppercase !text-[10px]\">Propriété des Données :</strong> Vous conservez la propriété complète de toutes les données collectées via notre plateforme d'analyse. Nous agissons uniquement en tant que processeur de données en votre nom. Vous avez un contrôle complet sur vos données, y compris le droit d'exporter, supprimer ou modifier les paramètres de collecte de données à tout moment.",
     "terms.section3.technicalOperation": "<strong class=\"!uppercase !text-[10px]\">Fonctionnement Technique :</strong> Notre plateforme d'analyse fonctionne en collectant des métriques anonymisées de visiteurs, des données de performance de pages, des informations d'attribution de campagnes et des calculs d'impact environnemental. Nous utilisons des techniques avancées de confidentialité incluant l'anonymisation des données, le masquage d'IP et des options de suivi sans cookies pour protéger la confidentialité des visiteurs tout en fournissant des informations précises.",
 
     "terms.section4.title": "4. Comptes Utilisateurs et Abonnements",
     "terms.section4.accountCreation": "<strong class=\"!uppercase !text-[10px]\">Création de Compte :</strong> Pour accéder aux fonctionnalités d'analyse, à la personnalisation du tableau de bord et aux capacités d'exportation de données, vous devez créer un compte. Vous êtes responsable de maintenir la confidentialité de vos identifiants de compte et clés API.",
-    "terms.section4.peekvisorPro": "<strong class=\"!uppercase !text-[10px]\">PeekVisor Pro :</strong> Les abonnements à PeekVisor Pro sont facturés de manière récurrente comme spécifié au moment de l'achat. Les paiements sont traités par un processeur de paiement tiers sécurisé. Vous pouvez annuler votre abonnement à tout moment via votre tableau de bord de compte.",
+    "terms.section4.tracevisorPro": "<strong class=\"!uppercase !text-[10px]\">TraceVisor Pro :</strong> Les abonnements à TraceVisor Pro sont facturés de manière récurrente comme spécifié au moment de l'achat. Les paiements sont traités par un processeur de paiement tiers sécurisé. Vous pouvez annuler votre abonnement à tout moment via votre tableau de bord de compte.",
     "terms.section4.proFeatures": "Les abonnements Pro fournissent des capacités d'analyse améliorées incluant le suivi illimité de sites web, des périodes de rétention de données étendues, une attribution avancée de campagnes, des rapports détaillés d'impact environnemental, des configurations personnalisées de tableau de bord et un support prioritaire. Les utilisateurs du niveau gratuit ont des limitations sur le nombre de sites web suivis, la période de rétention des données et l'accès aux fonctionnalités avancées.",
 
     "terms.section5.title": "5. Conduite Interdite",
@@ -2873,24 +2873,24 @@ export const ui = {
     "terms.section5.item6": "- Violer toute loi de confidentialité applicable, réglementations ou exigences de protection des données lors de l'utilisation de notre plateforme d'analyse.",
 
     "terms.section6.title": "6. Décharges de Responsabilité et Limitation de Responsabilité",
-    "terms.section6.warranty": "LE SERVICE EST FOURNI \"TEL QUEL\" ET \"SELON DISPONIBILITÉ\" SANS GARANTIES D'AUCUNE SORTE, EXPRESSES OU IMPLICITES. <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> RENONCE À TOUTES LES GARANTIES, Y COMPRIS, MAIS SANS LIMITATION, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON.",
-    "terms.section6.liability": "EN AUCUN CAS <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> NE SERA RESPONSABLE DE TOUT DOMMAGE INDIRECT, ACCESSOIRE, SPÉCIAL, CONSÉCUTIF OU PUNITIF DÉCOULANT DE OU LIÉ À VOTRE UTILISATION DU SERVICE OU DE TOUTE DONNÉE ANALYTIQUE TRAITÉE VIA NOTRE PLATEFORME.",
+    "terms.section6.warranty": "LE SERVICE EST FOURNI \"TEL QUEL\" ET \"SELON DISPONIBILITÉ\" SANS GARANTIES D'AUCUNE SORTE, EXPRESSES OU IMPLICITES. <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> RENONCE À TOUTES LES GARANTIES, Y COMPRIS, MAIS SANS LIMITATION, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON.",
+    "terms.section6.liability": "EN AUCUN CAS <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> NE SERA RESPONSABLE DE TOUT DOMMAGE INDIRECT, ACCESSOIRE, SPÉCIAL, CONSÉCUTIF OU PUNITIF DÉCOULANT DE OU LIÉ À VOTRE UTILISATION DU SERVICE OU DE TOUTE DONNÉE ANALYTIQUE TRAITÉE VIA NOTRE PLATEFORME.",
 
     "terms.section7.title": "7. Modifications des Conditions",
     "terms.section7.content": "Nous nous réservons le droit de modifier ces Conditions à tout moment. Nous vous notifierons de tout changement en publiant les nouvelles Conditions sur cette page. Votre utilisation continue du Service après tout changement constitue votre acceptation des nouvelles Conditions.",
 
     "terms.section8.title": "8. Nous Contacter",
-    "terms.section8.content": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter via notre <a href=\"/fr/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">page de contact</a> ou en envoyant un email à <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "terms.section8.content": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter via notre <a href=\"/fr/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">page de contact</a> ou en envoyant un email à <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
 
     "privacy.title": "Politique de Confidentialité",
     "privacy.effectiveDate": "Date d'Entrée en Vigueur : 31 juillet 2025",
     "privacy.section1.title": "1. Introduction",
-    "privacy.section1.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (\"nous,\" \"notre,\" \"nos\") s'engage à protéger votre confidentialité et celle des visiteurs de votre site web. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre plateforme d'analyse axée sur la confidentialité. En tant que service conforme au GDPR, nous priorisons la protection des données et les pratiques transparentes de données. En utilisant <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a>, vous consentez aux pratiques de données décrites dans cette politique.",
+    "privacy.section1.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (\"nous,\" \"notre,\" \"nos\") s'engage à protéger votre confidentialité et celle des visiteurs de votre site web. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre plateforme d'analyse axée sur la confidentialité. En tant que service conforme au GDPR, nous priorisons la protection des données et les pratiques transparentes de données. En utilisant <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a>, vous consentez aux pratiques de données décrites dans cette politique.",
 
     "privacy.section2.title": "2. Informations que Nous Collectons",
     "privacy.section2.intro": "Nous collectons différents types d'informations selon la façon dont vous utilisez notre Service :",
     "privacy.section2.personal": "<strong class=\"!uppercase !text-[10px]\">Informations de Compte :</strong> Lorsque vous créez un compte, nous collectons votre nom, adresse email et informations de facturation. Ces informations sont nécessaires pour fournir le Service et traiter les paiements.",
-    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Informations de Paiement :</strong> Pour les abonnements PeekVisor Pro, les paiements sont traités par un processeur de paiement tiers. Nous ne collectons ni ne stockons les détails complets de votre carte de paiement. Nous recevons uniquement des informations sur le statut de votre abonnement et l'historique de facturation.",
+    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Informations de Paiement :</strong> Pour les abonnements TraceVisor Pro, les paiements sont traités par un processeur de paiement tiers. Nous ne collectons ni ne stockons les détails complets de votre carte de paiement. Nous recevons uniquement des informations sur le statut de votre abonnement et l'historique de facturation.",
     "privacy.section2.usage": "<strong class=\"!uppercase !text-[10px]\">Données d'Utilisation de la Plateforme :</strong> Nous collectons des informations sur la façon dont vous utilisez notre plateforme d'analyse, telles que les vues du tableau de bord, la génération de rapports, l'utilisation des fonctionnalités et les paramètres de configuration pour améliorer notre Service.",
     "privacy.section2.analytics": "<strong class=\"!uppercase !text-[10px]\">Données Analytiques du Site Web :</strong> Via notre service d'analyse, nous traitons des données anonymisées de visiteurs de vos sites web, incluant les vues de pages, informations de référence, types d'appareils et régions géographiques. Ces données sont traitées avec des techniques préservant la confidentialité et n'incluent jamais d'informations personnellement identifiables sauf si explicitement configuré par vous avec des mécanismes de consentement appropriés.",
 
@@ -2923,18 +2923,18 @@ export const ui = {
     "privacy.section8.content": "Nous pouvons mettre à jour cette Politique de Confidentialité pour refléter les changements dans nos pratiques ou exigences légales. Nous vous notifierons des changements significatifs via votre tableau de bord de compte et par email. L'utilisation continue du Service après les changements constitue l'acceptation de la politique mise à jour.",
 
     "privacy.section9.title": "9. Nous Contacter",
-    "privacy.section9.content": "Si vous avez des questions concernant cette Politique de Confidentialité, les pratiques de protection des données, ou souhaitez exercer vos droits sur les données, veuillez nous contacter via notre <a href=\"/fr/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">page de contact</a> ou en envoyant un email à <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "privacy.section9.content": "Si vous avez des questions concernant cette Politique de Confidentialité, les pratiques de protection des données, ou souhaitez exercer vos droits sur les données, veuillez nous contacter via notre <a href=\"/fr/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">page de contact</a> ou en envoyant un email à <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
 
     // FAQ Page
-    "faq.pageTitle": "PeekVisor | FAQ",
-    "faq.metaDescription": "Trouvez les réponses aux questions fréquemment posées sur PeekVisor, y compris la configuration du suivi, les préoccupations de confidentialité et les questions d'analytics.",
-    "faq.ogTitle": "Foire Aux Questions | PeekVisor",
+    "faq.pageTitle": "TraceVisor | FAQ",
+    "faq.metaDescription": "Trouvez les réponses aux questions fréquemment posées sur TraceVisor, y compris la configuration du suivi, les préoccupations de confidentialité et les questions d'analytics.",
+    "faq.ogTitle": "Foire Aux Questions | TraceVisor",
     "faq.title": "Foire aux<br />questions",
 
     // Contact Page
-    "contact.pageTitle": "PeekVisor | Contact",
-    "contact.metaDescription": "Contactez PeekVisor pour du support, des questions sur les analytics ou toute autre demande. Nous sommes là pour vous aider à tirer le meilleur parti de vos analytics axées sur la confidentialité.",
-    "contact.ogTitle": "Contactez-nous | PeekVisor",
+    "contact.pageTitle": "TraceVisor | Contact",
+    "contact.metaDescription": "Contactez TraceVisor pour du support, des questions sur les analytics ou toute autre demande. Nous sommes là pour vous aider à tirer le meilleur parti de vos analytics axées sur la confidentialité.",
+    "contact.ogTitle": "Contactez-nous | TraceVisor",
     "contact.title": "Contactez-nous",
     "contact.subTitle": "Vous avez une question, une suggestion ou un problème ? Nous sommes là pour vous aider.",
     "contact.form.title": "Remplissez le formulaire ci-dessous",
@@ -2966,9 +2966,9 @@ export const ui = {
     "homepage.cta.getStarted": "Commencer Gratuitement",
     "seePricing": "Voir les Tarifs",
 
-    "subscription.pageTitle": "PeekVisor | Détails de l'abonnement",
+    "subscription.pageTitle": "TraceVisor | Détails de l'abonnement",
     "subscription.title": "Abonnement",
-    "subscription.description": "Gérez votre abonnement et facturation PeekVisor",
+    "subscription.description": "Gérez votre abonnement et facturation TraceVisor",
     "subscription.planOverview": "Aperçu du Plan",
     "subscription.billingInfo": "Informations de Facturation",
     "subscription.customer": "Client",
@@ -3109,7 +3109,7 @@ export const ui = {
     "publicDashboard.connecting": "Conectando...",
     "publicDashboard.noActiveVisitors": "Nenhum visitante ativo",
     "publicDashboard.waitingActivity": "Aguardando atividade...",
-    "publicDashboard.poweredBy": "Analytics alimentado por PeekVisor",
+    "publicDashboard.poweredBy": "Analytics alimentado por TraceVisor",
     "publicDashboard.environmentalImpact": "Impacto Ambiental",
     "publicDashboard.co2Emissions": "Emissões de CO₂",
     "publicDashboard.energyConsumption": "Consumo de Energia",
@@ -3136,11 +3136,11 @@ export const ui = {
     "api.rateLimits.flex": "400 solicitações / 15 minutos",
     "api.rateLimits.basic": "150 solicitações / 15 minutos",
     "api.rateLimits.pro": "1000 solicitações / 15 minutos",
-    "api.doc.title": "Documentação API - PeekVisor",
-    "api.doc.description": "Documentação de referência API completa para PeekVisor Analytics",
+    "api.doc.title": "Documentação API - TraceVisor",
+    "api.doc.description": "Documentação de referência API completa para TraceVisor Analytics",
     "api.doc.header.title": "Documentação API",
     "api.section.gettingStarted": "Começando",
-    "api.section.gettingStarted.subtitle": "Tudo o que você precisa para integrar com a API PeekVisor",
+    "api.section.gettingStarted.subtitle": "Tudo o que você precisa para integrar com a API TraceVisor",
     "api.card.keyManagement.title": "Gerenciamento de Chave API",
     "api.key.button.copy": "Copiar",
     "api.key.button.regenerate": "Regenerar Chave",
@@ -3393,7 +3393,7 @@ export const ui = {
     "homepage.hero.fiveMinSetup": "Configuração em 5 min",
 
     // Trust & Help Section
-    "homepage.trust.title": "Por que as organizações confiam no PeekVisor",
+    "homepage.trust.title": "Por que as organizações confiam no TraceVisor",
     "homepage.trust.security.title": "A alternativa confiável ao Google Analytics",
     "homepage.trust.security.description": "Aceda a insights avançados sem cookies, rastreamento invasivo ou dependência das gigantes tecnológicas",
     "homepage.trust.ownership.title": "Privacidade e controlo total dos dados",
@@ -3406,7 +3406,7 @@ export const ui = {
     "homepage.help.description": "A nossa equipa ajuda na migração do Google Analytics e garante uma integração perfeita",
     "homepage.help.faq": "Explore perguntas frequentes",
     "homepage.help.contact": "Contacte diretamente os nossos especialistas",
-    "homepage.help.updates": "Mantenha-se atualizado com as novidades do PeekVisor",
+    "homepage.help.updates": "Mantenha-se atualizado com as novidades do TraceVisor",
 
     "homepage.value.title": "Análise que respeita os seus visitantes",
     "homepage.value.subtitle": "Criada para a web moderna, desenhada com privacidade no seu núcleo",
@@ -3436,7 +3436,7 @@ export const ui = {
     "homepage.how.step3.description": "Os dados analíticos fluem imediatamente, sem período de espera",
 
     "homepage.privacy.title": "Uma alternativa confiável ao Google Analytics",
-    "homepage.privacy.description": "Acreditamos numa web onde compreender o seu público não significa violar a sua privacidade. Por isso criámos o PeekVisor com a privacidade no seu núcleo.",
+    "homepage.privacy.description": "Acreditamos numa web onde compreender o seu público não significa violar a sua privacidade. Por isso criámos o TraceVisor com a privacidade no seu núcleo.",
     "homepage.privacy.gdpr": "Conformidade RGPD",
     "homepage.privacy.ccpa": "Preparado para CCPA",
     "homepage.privacy.pecr": "Conformidade PECR",
@@ -3462,9 +3462,9 @@ export const ui = {
 
     // Maintenance Page
     "maintenance.title": "Em Desenvolvimento",
-    "maintenance.metaDescription": "O PeekVisor está atualmente em desenvolvimento ativo. Algumas funcionalidades podem estar limitadas.",
-    "maintenance.ogTitle": "Em Desenvolvimento | PeekVisor",
-    "maintenance.description": "Estamos a construir ativamente o PeekVisor para lhe trazer a melhor experiência de análise com privacidade. Algumas funcionalidades ainda estão em desenvolvimento.",
+    "maintenance.metaDescription": "O TraceVisor está atualmente em desenvolvimento ativo. Algumas funcionalidades podem estar limitadas.",
+    "maintenance.ogTitle": "Em Desenvolvimento | TraceVisor",
+    "maintenance.description": "Estamos a construir ativamente o TraceVisor para lhe trazer a melhor experiência de análise com privacidade. Algumas funcionalidades ainda estão em desenvolvimento.",
     "maintenance.features.title": "Estado Atual",
     "maintenance.features.tracking": "O rastreamento de websites está totalmente funcional",
     "maintenance.features.analytics": "Painel de análise básico disponível",
@@ -3477,10 +3477,10 @@ export const ui = {
     "pageNotFound.title": "Página Não Encontrada",
     "pageNotFound.subTitle": "Ups, esta não é a página que procurava!",
     "pageNotFound.metaDescription": "A página que procura não existe. Use a navegação para encontrar o que procura.",
-    "pageNotFound.ogTitle": "404: Página Não Encontrada | PeekVisor",
+    "pageNotFound.ogTitle": "404: Página Não Encontrada | TraceVisor",
 
     // Dashboard
-    "dashboard.pageTitle": "PeekVisor | Painel",
+    "dashboard.pageTitle": "TraceVisor | Painel",
     "dashboard.title": "Painel",
     "dashboard.welcome": "Bem-vindo de volta",
     "dashboard.userCard.title": "O Seu Perfil",
@@ -3509,7 +3509,7 @@ export const ui = {
     "dashboard.quickActions.subscriptionDetails": "Detalhes da Assinatura",
 
     // Websites Management
-    "websites.pageTitle": "PeekVisor | Domínios",
+    "websites.pageTitle": "TraceVisor | Domínios",
     "websites.title": "Domínios",
     "websites.addWebsite": "Adicionar Domínio",
     "websites.noWebsites": "Ainda sem domínios adicionados",
@@ -3560,7 +3560,7 @@ export const ui = {
     "websites.deleteModal.invalidDomain": "O nome do domínio não corresponde",
 
     // Analytics
-    "analytics.pageTitle": "PeekVisor | Análise",
+    "analytics.pageTitle": "TraceVisor | Análise",
     "analytics.title": "Análise",
     "analytics.overview": "Visão Geral",
     "analytics.realtime": "Tempo Real",
@@ -3651,7 +3651,7 @@ export const ui = {
     "analytics.session": "Sessão",
     "analytics.mapUnavailable": "Mapa indisponível",
     "analytics.noDataToExport": "Sem dados analíticos para exportar.",
-    "analytics.reportFor": "Relatório de Análise PeekVisor para {websiteName}",
+    "analytics.reportFor": "Relatório de Análise TraceVisor para {websiteName}",
     "analytics.generatedOn": "Gerado em: {date}",
     "analytics.metric": "Métrica",
     "analytics.value": "Valor",
@@ -3666,7 +3666,7 @@ export const ui = {
     "analytics.showingPages": "A mostrar {page} de {pages} páginas",
 
     // Settings
-    "settings.pageTitle": "PeekVisor | Definições",
+    "settings.pageTitle": "TraceVisor | Definições",
     "settings.title": "Definições",
     "settings.profile.title": "Definições do Perfil",
     "settings.profile.personalInfo": "Informação Pessoal",
@@ -3744,25 +3744,25 @@ export const ui = {
     "footer.resources.contact": "Contacto",
 
     // FAQ Page
-    "faq.pageTitle": "PeekVisor | FAQ",
-    "faq.metaDescription": "Encontre respostas às perguntas frequentes sobre o PeekVisor, incluindo como configurar o rastreamento, funcionalidades de privacidade e análise.",
-    "faq.ogTitle": "Perguntas Frequentes | PeekVisor",
+    "faq.pageTitle": "TraceVisor | FAQ",
+    "faq.metaDescription": "Encontre respostas às perguntas frequentes sobre o TraceVisor, incluindo como configurar o rastreamento, funcionalidades de privacidade e análise.",
+    "faq.ogTitle": "Perguntas Frequentes | TraceVisor",
     "faq.title": "Perguntas<br />frequentes",
 
     // Terms & Privacy
     "terms.title": "Termos de Serviço",
     "terms.effectiveDate": "Data de Vigência: 31 de julho de 2025",
     "terms.section1.title": "1. Aceitação dos Termos",
-    "terms.section1.content": "Ao aceder ou usar <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (o \"Serviço\"), concorda em estar vinculado a estes Termos de Serviço (\"Termos\") e à nossa <a href=\"/pt/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Política de Privacidade</a>. Ao aceder ou usar este website, incluindo os seus nomes de domínio ou endereços IP, conteúdo ou qualquer interação (como clicar em links), reconhece e declara que aceita estes termos de serviço e que tem 18 anos ou mais. O seu acesso e uso indicam o seu reconhecimento, aceitação e acordo incondicional com todos os termos e condições aqui estabelecidos sem modificação, e este acordo entra em vigor imediatamente. Para rejeitar, simplesmente abstenha-se de usar o website e feche todas as suas janelas. No entanto, não pode aceder ou usar este website se você (ou o seu tutor ou representante legal) não puder celebrar um contrato vinculativo ou em qualquer jurisdição onde este acordo de utilizador não seja aplicável. Concorda que o seu uso constitui reconhecimento de que leu, compreendeu e aceitou todos os termos. Se é o proprietário ou operador do equipamento usado para aceder a este website, ao permitir tal uso, consente e concorda em estar vinculado pelos termos e condições deste acordo de utilizador. Se atua em nome de organizações, declara que está autorizado a atuar como agente e aceitar este acordo de utilizador em nome do seu empregador e organizações. Concorda em usar o website apenas de acordo com estes direitos de uso e todas as leis e regulamentos aplicáveis.",
+    "terms.section1.content": "Ao aceder ou usar <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (o \"Serviço\"), concorda em estar vinculado a estes Termos de Serviço (\"Termos\") e à nossa <a href=\"/pt/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Política de Privacidade</a>. Ao aceder ou usar este website, incluindo os seus nomes de domínio ou endereços IP, conteúdo ou qualquer interação (como clicar em links), reconhece e declara que aceita estes termos de serviço e que tem 18 anos ou mais. O seu acesso e uso indicam o seu reconhecimento, aceitação e acordo incondicional com todos os termos e condições aqui estabelecidos sem modificação, e este acordo entra em vigor imediatamente. Para rejeitar, simplesmente abstenha-se de usar o website e feche todas as suas janelas. No entanto, não pode aceder ou usar este website se você (ou o seu tutor ou representante legal) não puder celebrar um contrato vinculativo ou em qualquer jurisdição onde este acordo de utilizador não seja aplicável. Concorda que o seu uso constitui reconhecimento de que leu, compreendeu e aceitou todos os termos. Se é o proprietário ou operador do equipamento usado para aceder a este website, ao permitir tal uso, consente e concorda em estar vinculado pelos termos e condições deste acordo de utilizador. Se atua em nome de organizações, declara que está autorizado a atuar como agente e aceitar este acordo de utilizador em nome do seu empregador e organizações. Concorda em usar o website apenas de acordo com estes direitos de uso e todas as leis e regulamentos aplicáveis.",
     "terms.section2.title": "2. Descrição do Serviço",
-    "terms.section2.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> é uma plataforma de análise focada na privacidade que fornece insights abrangentes sobre o público sem comprometer os dados do utilizador. O nosso Serviço permite-lhe rastrear visualizações de página ilimitadas, monitorizar campanhas de marketing, medir o impacto ambiental da sua presença digital e obter análises detalhadas mantendo conformidade total com o RGPD. Oferecemos um nível gratuito com funcionalidades básicas de análise e um nível de subscrição premium (\"PeekVisor Pro\") com insights avançados, retenção de dados estendida e rastreamento melhorado do impacto ambiental.",
+    "terms.section2.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> é uma plataforma de análise focada na privacidade que fornece insights abrangentes sobre o público sem comprometer os dados do utilizador. O nosso Serviço permite-lhe rastrear visualizações de página ilimitadas, monitorizar campanhas de marketing, medir o impacto ambiental da sua presença digital e obter análises detalhadas mantendo conformidade total com o RGPD. Oferecemos um nível gratuito com funcionalidades básicas de análise e um nível de subscrição premium (\"TraceVisor Pro\") com insights avançados, retenção de dados estendida e rastreamento melhorado do impacto ambiental.",
     "terms.section3.title": "3. Dados Analíticos e Conformidade de Privacidade",
-    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Abordagem de Privacidade Primeiro:</strong> <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> processa dados analíticos com a privacidade como nossa principal preocupação. Recolhemos apenas os dados mínimos necessários para fornecer insights significativos e nunca armazenamos informações pessoalmente identificáveis sem consentimento explícito. Todo o processamento de dados está em conformidade com o RGPD, CCPA e outros regulamentos de privacidade aplicáveis.",
+    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Abordagem de Privacidade Primeiro:</strong> <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> processa dados analíticos com a privacidade como nossa principal preocupação. Recolhemos apenas os dados mínimos necessários para fornecer insights significativos e nunca armazenamos informações pessoalmente identificáveis sem consentimento explícito. Todo o processamento de dados está em conformidade com o RGPD, CCPA e outros regulamentos de privacidade aplicáveis.",
     "terms.section3.dataOwnership": "<strong class=\"!uppercase !text-[10px]\">Propriedade dos Dados:</strong> Mantém a propriedade total de todos os dados recolhidos através da nossa plataforma de análise. Atuamos apenas como processador de dados em seu nome. Tem controlo total sobre os seus dados, incluindo o direito de exportar, eliminar ou modificar as configurações de recolha de dados a qualquer momento.",
     "terms.section3.technicalOperation": "<strong class=\"!uppercase !text-[10px]\">Operação Técnica:</strong> A nossa plataforma de análise opera recolhendo métricas anonimizadas de visitantes, dados de desempenho de páginas, informações de atribuição de campanhas e cálculos de impacto ambiental. Usamos técnicas avançadas de privacidade incluindo anonimização de dados, mascaramento de IP e opções de rastreamento sem cookies para proteger a privacidade do visitante enquanto fornecemos insights precisos.",
     "terms.section4.title": "4. Contas de Utilizador e Subscrições",
     "terms.section4.accountCreation": "<strong class=\"!uppercase !text-[10px]\">Criação de Conta:</strong> Para aceder às funcionalidades de análise, personalização do painel e capacidades de exportação de dados, precisa de criar uma conta. É responsável por manter a confidencialidade das suas credenciais de conta e chaves API.",
-    "terms.section4.peekvisorPro": "<strong class=\"!uppercase !text-[10px]\">PeekVisor Pro:</strong> As subscrições do PeekVisor Pro são cobradas de forma recorrente conforme especificado no momento da compra. Os pagamentos são processados por um processador de pagamentos seguro de terceiros. Pode cancelar a sua subscrição a qualquer momento através do painel da sua conta.",
+    "terms.section4.tracevisorPro": "<strong class=\"!uppercase !text-[10px]\">TraceVisor Pro:</strong> As subscrições do TraceVisor Pro são cobradas de forma recorrente conforme especificado no momento da compra. Os pagamentos são processados por um processador de pagamentos seguro de terceiros. Pode cancelar a sua subscrição a qualquer momento através do painel da sua conta.",
     "terms.section4.proFeatures": "As subscrições Pro fornecem capacidades analíticas melhoradas incluindo rastreamento ilimitado de websites, períodos de retenção de dados estendidos, atribuição avançada de campanhas, relatórios detalhados de impacto ambiental, configurações personalizadas do painel e suporte prioritário. Os utilizadores do nível gratuito têm limitações no número de websites rastreados, período de retenção de dados e acesso a funcionalidades avançadas.",
     "terms.section5.title": "5. Conduta Proibida",
     "terms.section5.intro": "Concorda em <strong class=\"font-bold\">NÃO</strong>:",
@@ -3773,20 +3773,20 @@ export const ui = {
     "terms.section5.item5": "- Usar o Serviço para rastrear utilizadores através de websites sem o seu conhecimento ou consentimento, ou para qualquer propósito ilegal ou não autorizado.",
     "terms.section5.item6": "- Violar quaisquer leis de privacidade aplicáveis, regulamentos ou requisitos de proteção de dados ao usar a nossa plataforma de análise.",
     "terms.section6.title": "6. Isenções de Responsabilidade e Limitação de Responsabilidade",
-    "terms.section6.warranty": "O SERVIÇO É FORNECIDO \"COMO ESTÁ\" E \"CONFORME DISPONÍVEL\" SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS. <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> RENUNCIA A TODAS AS GARANTIAS, INCLUINDO, MAS NÃO LIMITADO A, AS GARANTIAS IMPLÍCITAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM PROPÓSITO PARTICULAR E NÃO VIOLAÇÃO.",
-    "terms.section6.liability": "EM NENHUMA CIRCUNSTÂNCIA A <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> SERÁ RESPONSÁVEL POR QUAISQUER DANOS INDIRETOS, INCIDENTAIS, ESPECIAIS, CONSEQUENCIAIS OU PUNITIVOS DECORRENTES OU RELACIONADOS COM O SEU USO DO SERVIÇO OU QUAISQUER DADOS ANALÍTICOS PROCESSADOS ATRAVÉS DA NOSSA PLATAFORMA.",
+    "terms.section6.warranty": "O SERVIÇO É FORNECIDO \"COMO ESTÁ\" E \"CONFORME DISPONÍVEL\" SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS. <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> RENUNCIA A TODAS AS GARANTIAS, INCLUINDO, MAS NÃO LIMITADO A, AS GARANTIAS IMPLÍCITAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM PROPÓSITO PARTICULAR E NÃO VIOLAÇÃO.",
+    "terms.section6.liability": "EM NENHUMA CIRCUNSTÂNCIA A <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> SERÁ RESPONSÁVEL POR QUAISQUER DANOS INDIRETOS, INCIDENTAIS, ESPECIAIS, CONSEQUENCIAIS OU PUNITIVOS DECORRENTES OU RELACIONADOS COM O SEU USO DO SERVIÇO OU QUAISQUER DADOS ANALÍTICOS PROCESSADOS ATRAVÉS DA NOSSA PLATAFORMA.",
     "terms.section7.title": "7. Alterações aos Termos",
     "terms.section7.content": "Reservamo-nos o direito de modificar estes Termos a qualquer momento. Notificaremos sobre quaisquer alterações publicando os novos Termos nesta página. O seu uso continuado do Serviço após qualquer alteração constitui a sua aceitação dos novos Termos.",
     "terms.section8.title": "8. Contacte-nos",
-    "terms.section8.content": "Se tiver alguma questão sobre estes Termos, por favor contacte-nos através da nossa <a href=\"/pt/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">página de contacto</a> ou enviando um email para <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "terms.section8.content": "Se tiver alguma questão sobre estes Termos, por favor contacte-nos através da nossa <a href=\"/pt/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">página de contacto</a> ou enviando um email para <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
     "privacy.title": "Política de Privacidade",
     "privacy.effectiveDate": "Data de Vigência: 31 de julho de 2025",
     "privacy.section1.title": "1. Introdução",
-    "privacy.section1.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (\"nós,\" \"nosso,\" \"nos\") está comprometido em proteger a sua privacidade e a privacidade dos visitantes do seu website. Esta Política de Privacidade explica como recolhemos, usamos, divulgamos e protegemos a sua informação quando usa a nossa plataforma de análise focada na privacidade. Como um serviço em conformidade com o RGPD, priorizamos a proteção de dados e práticas transparentes de dados. Ao usar <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a>, consente com as práticas de dados descritas nesta política.",
+    "privacy.section1.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (\"nós,\" \"nosso,\" \"nos\") está comprometido em proteger a sua privacidade e a privacidade dos visitantes do seu website. Esta Política de Privacidade explica como recolhemos, usamos, divulgamos e protegemos a sua informação quando usa a nossa plataforma de análise focada na privacidade. Como um serviço em conformidade com o RGPD, priorizamos a proteção de dados e práticas transparentes de dados. Ao usar <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a>, consente com as práticas de dados descritas nesta política.",
     "privacy.section2.title": "2. Informação que Recolhemos",
     "privacy.section2.intro": "Recolhemos diferentes tipos de informação dependendo de como usa o nosso Serviço:",
     "privacy.section2.personal": "<strong class=\"!uppercase !text-[10px]\">Informação da Conta:</strong> Quando cria uma conta, recolhemos o seu nome, endereço de email e informação de faturação. Esta informação é necessária para fornecer o Serviço e processar pagamentos.",
-    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Informação de Pagamento:</strong> Para subscrições PeekVisor Pro, os pagamentos são processados por um processador de pagamentos seguro de terceiros. Não recolhemos nem armazenamos os detalhes completos do seu cartão de pagamento. Apenas recebemos informação sobre o estado da sua subscrição e histórico de faturação.",
+    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Informação de Pagamento:</strong> Para subscrições TraceVisor Pro, os pagamentos são processados por um processador de pagamentos seguro de terceiros. Não recolhemos nem armazenamos os detalhes completos do seu cartão de pagamento. Apenas recebemos informação sobre o estado da sua subscrição e histórico de faturação.",
     "privacy.section2.usage": "<strong class=\"!uppercase !text-[10px]\">Dados de Uso da Plataforma:</strong> Recolhemos informação sobre como usa a nossa plataforma de análise, como visualizações do painel, geração de relatórios, uso de funcionalidades e configurações para melhorar o nosso Serviço.",
     "privacy.section2.analytics": "<strong class=\"!uppercase !text-[10px]\">Dados Analíticos do Website:</strong> Através do nosso serviço de análise, processamos dados anonimizados de visitantes dos seus websites, incluindo visualizações de páginas, informação de referência, tipos de dispositivos e regiões geográficas. Estes dados são processados com técnicas de preservação de privacidade e nunca incluem informação pessoalmente identificável a menos que explicitamente configurado por si com mecanismos de consentimento adequados.",
     "privacy.section3.title": "3. Como Usamos a Sua Informação",
@@ -3812,10 +3812,10 @@ export const ui = {
     "privacy.section8.title": "8. Alterações a Esta Política de Privacidade",
     "privacy.section8.content": "Podemos atualizar esta Política de Privacidade para refletir mudanças nas nossas práticas ou requisitos legais. Notificaremos sobre mudanças significativas através do painel da sua conta e email. O uso continuado do Serviço após mudanças constitui aceitação da política atualizada.",
     "privacy.section9.title": "9. Contacte-nos",
-    "privacy.section9.content": "Se tiver questões sobre esta Política de Privacidade, práticas de proteção de dados, ou desejar exercer os seus direitos sobre dados, por favor contacte-nos através da nossa <a href=\"/pt/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">página de contacto</a> ou enviando um email para <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
-    "contact.pageTitle": "PeekVisor | Contacto",
-    "contact.metaDescription": "Contacte o PeekVisor para suporte, questões sobre análise ou outras consultas. Estamos aqui para ajudá-lo a tirar o máximo partido da sua análise focada na privacidade.",
-    "contact.ogTitle": "Contacte-nos | PeekVisor",
+    "privacy.section9.content": "Se tiver questões sobre esta Política de Privacidade, práticas de proteção de dados, ou desejar exercer os seus direitos sobre dados, por favor contacte-nos através da nossa <a href=\"/pt/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">página de contacto</a> ou enviando um email para <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
+    "contact.pageTitle": "TraceVisor | Contacto",
+    "contact.metaDescription": "Contacte o TraceVisor para suporte, questões sobre análise ou outras consultas. Estamos aqui para ajudá-lo a tirar o máximo partido da sua análise focada na privacidade.",
+    "contact.ogTitle": "Contacte-nos | TraceVisor",
     "contact.title": "Contacte-nos",
     "contact.subTitle": "Tem uma pergunta, sugestão ou problema? Estamos aqui para ajudar.",
     "contact.form.title": "Preencha o formulário abaixo",
@@ -3838,10 +3838,10 @@ export const ui = {
     "contact.blocks.faq.linkTitle": "Visitar FAQ",
     "contact.blocks.email.heading": "Contacte-nos por email",
     "contact.blocks.email.content": "Prefere a palavra escrita? Envie-nos um email para",
-    "changelog.pageTitle": "PeekVisor | Histórico de Alterações",
+    "changelog.pageTitle": "TraceVisor | Histórico de Alterações",
     "changelog.title": "Histórico de Alterações",
-    "changelog.metaDescription": "Mantenha-se atualizado com as últimas funcionalidades, melhorias e correções de bugs no PeekVisor.",
-    "changelog.ogTitle": "Histórico de Alterações | PeekVisor",
+    "changelog.metaDescription": "Mantenha-se atualizado com as últimas funcionalidades, melhorias e correções de bugs no TraceVisor.",
+    "changelog.ogTitle": "Histórico de Alterações | TraceVisor",
     "changelog.loading": "A carregar histórico de alterações...",
     "changelog.error": "Erro ao carregar o histórico de alterações",
     "changelog.noReleases": "Nenhuma versão encontrada",
@@ -3850,11 +3850,11 @@ export const ui = {
     "changelog.viewOnGitHub": "Ver no GitHub",
 
     // Pricing Page
-    "pricing.pageTitle": "PeekVisor | Preços",
+    "pricing.pageTitle": "TraceVisor | Preços",
     "pricing.title": "Preços simples e transparentes",
     "pricing.subtitle": "Escolha o plano que se adapta às suas necessidades. Comece grátis, atualize quando crescer.",
-    "pricing.metaDescription": "Escolha o plano PeekVisor perfeito para as suas necessidades de análise. Comece gratuitamente com o nosso plano Básico ou atualize para o Pro para funcionalidades avançadas.",
-    "pricing.ogTitle": "Planos de Preços | PeekVisor",
+    "pricing.metaDescription": "Escolha o plano TraceVisor perfeito para as suas necessidades de análise. Comece gratuitamente com o nosso plano Básico ou atualize para o Pro para funcionalidades avançadas.",
+    "pricing.ogTitle": "Planos de Preços | TraceVisor",
     "pricing.currentPlan": "Plano Atual",
     "pricing.subscribe": "Subscrever",
     "pricing.getStarted": "Começar",
@@ -3899,7 +3899,7 @@ export const ui = {
     "pricing.features.prioritySupport": "Suporte prioritário",
 
     // Login Page
-    "login.pageTitle": "PeekVisor | Login",
+    "login.pageTitle": "TraceVisor | Login",
 
     // Homepage
     "homepage.hero.title": "Conheça o seu público, proteja a sua privacidade.",
@@ -3914,13 +3914,13 @@ export const ui = {
     "homepage.features.setup.title": "Configuração fácil",
     "homepage.features.setup.description": "Adicione uma linha de código e comece a rastrear. Não é necessária configuração complexa.",
     "homepage.stats.title": "Confiado por programadores em todo o mundo",
-    "homepage.stats.subtitle": "Junte-se a centenas de websites que usam o PeekVisor para análises focadas na privacidade",
+    "homepage.stats.subtitle": "Junte-se a centenas de websites que usam o TraceVisor para análises focadas na privacidade",
     "homepage.stats.websites": "Websites rastreados",
     "homepage.stats.pageviews": "Visualizações de página analisadas",
     "homepage.stats.countries": "Países servidos",
     "homepage.stats.co2": "CO₂ poupado",
     "homepage.howItWorks.title": "Como funciona",
-    "homepage.howItWorks.subtitle": "Comece com o PeekVisor em apenas alguns passos simples",
+    "homepage.howItWorks.subtitle": "Comece com o TraceVisor em apenas alguns passos simples",
     "homepage.howItWorks.step1.title": "Adicione o código de rastreamento",
     "homepage.howItWorks.step1.description": "Copie e cole uma linha de código no seu website. Não é necessária configuração complexa.",
     "homepage.howItWorks.step2.title": "Comece a recolher dados",
@@ -3935,9 +3935,9 @@ export const ui = {
 
     "homepage.cta.getStarted": "Começar Gratuitamente",
 
-    "subscription.pageTitle": "PeekVisor | Detalhes da Assinatura",
+    "subscription.pageTitle": "TraceVisor | Detalhes da Assinatura",
     "subscription.title": "Assinatura",
-    "subscription.description": "Gerencie sua assinatura e faturamento do PeekVisor",
+    "subscription.description": "Gerencie sua assinatura e faturamento do TraceVisor",
     "subscription.planOverview": "Visão Geral do Plano",
     "subscription.billingInfo": "Informações de Faturamento",
     "subscription.customer": "Cliente",
@@ -4079,7 +4079,7 @@ export const ui = {
     "publicDashboard.connecting": "Verbinde...",
     "publicDashboard.noActiveVisitors": "Keine aktiven Besucher",
     "publicDashboard.waitingActivity": "Warte auf Aktivität...",
-    "publicDashboard.poweredBy": "Analytik von PeekVisor",
+    "publicDashboard.poweredBy": "Analytik von TraceVisor",
     "publicDashboard.environmentalImpact": "Umweltimpact",
     "publicDashboard.co2Emissions": "CO₂-Emissionen",
     "publicDashboard.energyConsumption": "Energieverbrauch",
@@ -4106,11 +4106,11 @@ export const ui = {
     "api.rateLimits.flex": "400 Anfragen / 15 Minuten",
     "api.rateLimits.basic": "150 Anfragen / 15 Minuten",
     "api.rateLimits.pro": "1000 Anfragen / 15 Minuten",
-    "api.doc.title": "API-Dokumentation - PeekVisor",
-    "api.doc.description": "Vollständige API-Referenzdokumentation für PeekVisor Analytics",
+    "api.doc.title": "API-Dokumentation - TraceVisor",
+    "api.doc.description": "Vollständige API-Referenzdokumentation für TraceVisor Analytics",
     "api.doc.header.title": "API-Dokumentation",
     "api.section.gettingStarted": "Erste Schritte",
-    "api.section.gettingStarted.subtitle": "Alles was Sie für die Integration mit der PeekVisor API benötigen",
+    "api.section.gettingStarted.subtitle": "Alles was Sie für die Integration mit der TraceVisor API benötigen",
     "api.card.keyManagement.title": "API-Schlüsselverwaltung",
     "api.key.button.copy": "Kopieren",
     "api.key.button.regenerate": "Schlüssel regenerieren",
@@ -4363,7 +4363,7 @@ export const ui = {
     "homepage.hero.fiveMinSetup": "5-Minuten-Einrichtung",
 
     // Trust & Help Section
-    "homepage.trust.title": "Warum Organisationen auf PeekVisor vertrauen",
+    "homepage.trust.title": "Warum Organisationen auf TraceVisor vertrauen",
     "homepage.trust.security.title": "Eine vertrauenswürdige Alternative zu Google Analytics",
     "homepage.trust.security.description": "Erhalten Sie erweiterte Einblicke in Ihr Publikum ohne Cookies, invasives Tracking oder Abhängigkeit von Big Tech",
     "homepage.trust.ownership.title": "Datenschutz an erster Stelle und vollständige Datenkontrolle",
@@ -4376,7 +4376,7 @@ export const ui = {
     "homepage.help.description": "Unser Team unterstützt Sie bei der Migration von Google Analytics und sorgt für ein reibungsloses Onboarding-Erlebnis",
     "homepage.help.faq": "Häufig gestellte Fragen ansehen",
     "homepage.help.contact": "Direkt mit unseren Experten verbinden",
-    "homepage.help.updates": "Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten von PeekVisor",
+    "homepage.help.updates": "Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten von TraceVisor",
 
     "homepage.value.title": "Analytik, die Ihre Besucher respektiert",
     "homepage.value.subtitle": "Für das moderne Web entwickelt, mit Datenschutz im Kern",
@@ -4406,7 +4406,7 @@ export const ui = {
     "homepage.how.step3.description": "Analysedaten fließen sofort ein, keine Wartezeit",
 
     "homepage.privacy.title": "Eine vertrauenswürdige Alternative zu Google Analytics",
-    "homepage.privacy.description": "Wir glauben an ein Web, in dem das Verständnis Ihres Publikums nicht bedeutet, deren Privatsphäre zu verletzen. Deshalb haben wir PeekVisor von Grund auf mit Datenschutz im Kern entwickelt.",
+    "homepage.privacy.description": "Wir glauben an ein Web, in dem das Verständnis Ihres Publikums nicht bedeutet, deren Privatsphäre zu verletzen. Deshalb haben wir TraceVisor von Grund auf mit Datenschutz im Kern entwickelt.",
     "homepage.privacy.gdpr": "DSGVO-konform",
     "homepage.privacy.ccpa": "CCPA-konform",
     "homepage.privacy.pecr": "PECR-konform",
@@ -4432,9 +4432,9 @@ export const ui = {
 
     // Maintenance Page
     "maintenance.title": "In Entwicklung",
-    "maintenance.metaDescription": "PeekVisor befindet sich derzeit in aktiver Entwicklung. Einige Funktionen können eingeschränkt sein.",
-    "maintenance.ogTitle": "In Entwicklung | PeekVisor",
-    "maintenance.description": "Wir bauen PeekVisor aktiv aus, um Ihnen das beste datenschutzfreundliche Analyseerlebnis zu bieten. Einige Funktionen sind noch in der Entwicklung.",
+    "maintenance.metaDescription": "TraceVisor befindet sich derzeit in aktiver Entwicklung. Einige Funktionen können eingeschränkt sein.",
+    "maintenance.ogTitle": "In Entwicklung | TraceVisor",
+    "maintenance.description": "Wir bauen TraceVisor aktiv aus, um Ihnen das beste datenschutzfreundliche Analyseerlebnis zu bieten. Einige Funktionen sind noch in der Entwicklung.",
     "maintenance.features.title": "Aktueller Status",
     "maintenance.features.tracking": "Website-Tracking ist voll funktionsfähig",
     "maintenance.features.analytics": "Grundlegendes Analyse-Dashboard verfügbar",
@@ -4447,10 +4447,10 @@ export const ui = {
     "pageNotFound.title": "Seite nicht gefunden",
     "pageNotFound.subTitle": "Hoppla, das ist nicht die Seite, die Sie gesucht haben!",
     "pageNotFound.metaDescription": "Die von Ihnen gesuchte Seite existiert nicht. Nutzen Sie die Navigation, um zu finden, was Sie suchen.",
-    "pageNotFound.ogTitle": "404: Seite nicht gefunden | PeekVisor",
+    "pageNotFound.ogTitle": "404: Seite nicht gefunden | TraceVisor",
 
     // Dashboard
-    "dashboard.pageTitle": "PeekVisor | Dashboard",
+    "dashboard.pageTitle": "TraceVisor | Dashboard",
     "dashboard.title": "Dashboard",
     "dashboard.welcome": "Willkommen zurück",
     "dashboard.userCard.title": "Ihr Profil",
@@ -4479,7 +4479,7 @@ export const ui = {
     "dashboard.quickActions.subscriptionDetails": "Abonnementdetails",
 
     // Websites Management
-    "websites.pageTitle": "PeekVisor | Domains",
+    "websites.pageTitle": "TraceVisor | Domains",
     "websites.title": "Domains",
     "websites.addWebsite": "Domain hinzufügen",
     "websites.noWebsites": "Noch keine Domains hinzugefügt",
@@ -4530,7 +4530,7 @@ export const ui = {
     "websites.deleteModal.invalidDomain": "Domainname stimmt nicht überein",
 
     // Analytics
-    "analytics.pageTitle": "PeekVisor | Analysen",
+    "analytics.pageTitle": "TraceVisor | Analysen",
     "analytics.title": "Analysen",
     "analytics.overview": "Übersicht",
     "analytics.realtime": "Echtzeit",
@@ -4618,7 +4618,7 @@ export const ui = {
     "analytics.session": "Sitzung",
     "analytics.mapUnavailable": "Karte nicht verfügbar",
     "analytics.noDataToExport": "Keine Analysedaten zum Exportieren vorhanden.",
-    "analytics.reportFor": "PeekVisor Analysebericht für {websiteName}",
+    "analytics.reportFor": "TraceVisor Analysebericht für {websiteName}",
     "analytics.generatedOn": "Erstellt am: {date}",
     "analytics.metric": "Metrik",
     "analytics.value": "Wert",
@@ -4636,7 +4636,7 @@ export const ui = {
     "analytics.showingPages": "Zeige Seite {page} von {pages}",
 
     // Settings
-    "settings.pageTitle": "PeekVisor | Einstellungen",
+    "settings.pageTitle": "TraceVisor | Einstellungen",
     "settings.title": "Einstellungen",
     "settings.profile.title": "Profileinstellungen",
     "settings.profile.personalInfo": "Persönliche Informationen",
@@ -4714,25 +4714,25 @@ export const ui = {
     "footer.resources.contact": "Kontakt",
 
     // FAQ Page
-    "faq.pageTitle": "PeekVisor | FAQ",
-    "faq.metaDescription": "Finden Sie Antworten auf häufig gestellte Fragen zu PeekVisor, einschließlich der Einrichtung des Trackings, Datenschutzfunktionen und Analysen.",
-    "faq.ogTitle": "Häufig gestellte Fragen | PeekVisor",
+    "faq.pageTitle": "TraceVisor | FAQ",
+    "faq.metaDescription": "Finden Sie Antworten auf häufig gestellte Fragen zu TraceVisor, einschließlich der Einrichtung des Trackings, Datenschutzfunktionen und Analysen.",
+    "faq.ogTitle": "Häufig gestellte Fragen | TraceVisor",
     "faq.title": "Häufig<br />gestellte Fragen",
 
     // Terms & Privacy
     "terms.title": "Nutzungsbedingungen",
     "terms.effectiveDate": "Gültig ab: 31. Juli 2025",
     "terms.section1.title": "1. Annahme der Bedingungen",
-    "terms.section1.content": "Durch den Zugriff auf oder die Nutzung von <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> (der „Dienst“) erklären Sie sich mit diesen Nutzungsbedingungen („Bedingungen“) und unserer <a href=\"/de/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Datenschutzrichtlinie</a> einverstanden. Durch den Zugriff auf oder die Nutzung dieser Website, einschließlich ihrer Domainnamen oder IP-Adressen, Inhalte oder jeglicher Interaktion (wie das Klicken auf Links), erkennen Sie an und erklären, dass Sie diese Nutzungsbedingungen akzeptieren und 18 Jahre oder älter sind. Ihr Zugriff und Ihre Nutzung zeigen Ihre Anerkennung, Annahme und bedingungslose Zustimmung zu allen hierin enthaltenen Bedingungen ohne Änderung, und diese Vereinbarung tritt sofort in Kraft. Um abzulehnen, unterlassen Sie einfach die Nutzung der Website und schließen Sie alle ihre Fenster. Sie dürfen diese Website jedoch nicht nutzen, wenn Sie (oder Ihr Vormund oder gesetzlicher Vertreter) keinen verbindlichen Vertrag abschließen können oder in einer Rechtsordnung, in der diese Nutzungsvereinbarung nicht durchsetzbar ist. Sie stimmen zu, dass Ihre Nutzung die Anerkennung darstellt, dass Sie alle Bedingungen gelesen, verstanden und akzeptiert haben. Wenn Sie der Eigentümer oder Betreiber des Geräts sind, das für den Zugriff auf diese Website verwendet wird, stimmen Sie durch die Zulassung einer solchen Nutzung den Bedingungen dieser Nutzungsvereinbarung zu und sind an diese gebunden. Wenn Sie im Namen von Organisationen handeln, erklären Sie, dass Sie befugt sind, als Vertreter zu handeln und diese Nutzungsvereinbarung im Namen Ihres Arbeitgebers und Ihrer Organisationen zu akzeptieren. Sie stimmen zu, die Website nur in Übereinstimmung mit diesen Nutzungsrechten und allen anwendbaren Gesetzen und Vorschriften zu nutzen.",
+    "terms.section1.content": "Durch den Zugriff auf oder die Nutzung von <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> (der „Dienst“) erklären Sie sich mit diesen Nutzungsbedingungen („Bedingungen“) und unserer <a href=\"/de/privacy\" style=\"color: oklch(0.673 0.182 276.935);;\">Datenschutzrichtlinie</a> einverstanden. Durch den Zugriff auf oder die Nutzung dieser Website, einschließlich ihrer Domainnamen oder IP-Adressen, Inhalte oder jeglicher Interaktion (wie das Klicken auf Links), erkennen Sie an und erklären, dass Sie diese Nutzungsbedingungen akzeptieren und 18 Jahre oder älter sind. Ihr Zugriff und Ihre Nutzung zeigen Ihre Anerkennung, Annahme und bedingungslose Zustimmung zu allen hierin enthaltenen Bedingungen ohne Änderung, und diese Vereinbarung tritt sofort in Kraft. Um abzulehnen, unterlassen Sie einfach die Nutzung der Website und schließen Sie alle ihre Fenster. Sie dürfen diese Website jedoch nicht nutzen, wenn Sie (oder Ihr Vormund oder gesetzlicher Vertreter) keinen verbindlichen Vertrag abschließen können oder in einer Rechtsordnung, in der diese Nutzungsvereinbarung nicht durchsetzbar ist. Sie stimmen zu, dass Ihre Nutzung die Anerkennung darstellt, dass Sie alle Bedingungen gelesen, verstanden und akzeptiert haben. Wenn Sie der Eigentümer oder Betreiber des Geräts sind, das für den Zugriff auf diese Website verwendet wird, stimmen Sie durch die Zulassung einer solchen Nutzung den Bedingungen dieser Nutzungsvereinbarung zu und sind an diese gebunden. Wenn Sie im Namen von Organisationen handeln, erklären Sie, dass Sie befugt sind, als Vertreter zu handeln und diese Nutzungsvereinbarung im Namen Ihres Arbeitgebers und Ihrer Organisationen zu akzeptieren. Sie stimmen zu, die Website nur in Übereinstimmung mit diesen Nutzungsrechten und allen anwendbaren Gesetzen und Vorschriften zu nutzen.",
     "terms.section2.title": "2. Beschreibung des Dienstes",
-    "terms.section2.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> ist eine datenschutzfreundliche Analyseplattform, die umfassende Einblicke in das Publikum liefert, ohne die Benutzerdaten zu gefährden. Unser Dienst ermöglicht es Ihnen, unbegrenzte Seitenaufrufe zu verfolgen, Marketingkampagnen zu überwachen, die Umweltauswirkungen Ihrer digitalen Präsenz zu messen und detaillierte Analysen zu erhalten, während die vollständige DSGVO-Konformität gewahrt bleibt. Wir bieten eine kostenlose Stufe mit grundlegenden Analysefunktionen und eine Premium-Abonnementstufe („PeekVisor Pro“) mit erweiterten Einblicken, verlängerter Datenaufbewahrung und verbessertem Tracking der Umweltauswirkungen.",
+    "terms.section2.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> ist eine datenschutzfreundliche Analyseplattform, die umfassende Einblicke in das Publikum liefert, ohne die Benutzerdaten zu gefährden. Unser Dienst ermöglicht es Ihnen, unbegrenzte Seitenaufrufe zu verfolgen, Marketingkampagnen zu überwachen, die Umweltauswirkungen Ihrer digitalen Präsenz zu messen und detaillierte Analysen zu erhalten, während die vollständige DSGVO-Konformität gewahrt bleibt. Wir bieten eine kostenlose Stufe mit grundlegenden Analysefunktionen und eine Premium-Abonnementstufe („TraceVisor Pro“) mit erweiterten Einblicken, verlängerter Datenaufbewahrung und verbessertem Tracking der Umweltauswirkungen.",
     "terms.section3.title": "3. Analysedaten und Datenschutzkonformität",
-    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Datenschutz an erster Stelle:</strong> <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> verarbeitet Analysedaten mit Datenschutz als oberstem Anliegen. Wir erheben nur die minimal notwendigen Daten, um aussagekräftige Einblicke zu liefern, und speichern niemals personenbezogene Daten ohne ausdrückliche Zustimmung. Alle Datenverarbeitungen entsprechen der DSGVO, dem CCPA und anderen anwendbaren Datenschutzbestimmungen.",
+    "terms.section3.dataProcessing": "<strong class=\"!uppercase !text-[10px]\">Datenschutz an erster Stelle:</strong> <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> verarbeitet Analysedaten mit Datenschutz als oberstem Anliegen. Wir erheben nur die minimal notwendigen Daten, um aussagekräftige Einblicke zu liefern, und speichern niemals personenbezogene Daten ohne ausdrückliche Zustimmung. Alle Datenverarbeitungen entsprechen der DSGVO, dem CCPA und anderen anwendbaren Datenschutzbestimmungen.",
     "terms.section3.dataOwnership": "<strong class=\"!uppercase !text-[10px]\">Dateneigentum:</strong> Sie behalten das volle Eigentum an allen Daten, die über unsere Analyseplattform gesammelt werden. Wir handeln ausschließlich als Datenverarbeiter in Ihrem Auftrag. Sie haben die vollständige Kontrolle über Ihre Daten, einschließlich des Rechts, Daten jederzeit zu exportieren, zu löschen oder die Datenerfassungseinstellungen zu ändern.",
     "terms.section3.technicalOperation": "<strong class=\"!uppercase !text-[10px]\">Technischer Betrieb:</strong> Unsere Analyseplattform sammelt anonymisierte Besuchermetriken, Seitenleistungsdaten, Kampagnen-Attributionsinformationen und Berechnungen der Umweltauswirkungen. Wir verwenden fortschrittliche Datenschutztechniken wie Datenanonymisierung, IP-Maskierung und cookielose Tracking-Optionen, um die Privatsphäre der Besucher zu schützen und gleichzeitig genaue Einblicke zu liefern.",
     "terms.section4.title": "4. Benutzerkonten und Abonnements",
     "terms.section4.accountCreation": "<strong class=\"!uppercase !text-[10px]\">Kontoerstellung:</strong> Um auf Analysefunktionen, Dashboard-Anpassungen und Datenexportfunktionen zugreifen zu können, müssen Sie ein Konto erstellen. Sie sind für die Wahrung der Vertraulichkeit Ihrer Anmeldeinformationen und API-Schlüssel verantwortlich.",
-    "terms.section4.peekvisorPro": "<strong class=\"!uppercase !text-[10px]\">PeekVisor Pro:</strong> Abonnements für PeekVisor Pro werden auf wiederkehrender Basis wie zum Zeitpunkt des Kaufs angegeben abgerechnet. Zahlungen werden von einem sicheren Drittanbieter-Zahlungsabwickler verarbeitet. Sie können Ihr Abonnement jederzeit über Ihr Kontodashboard kündigen.",
+    "terms.section4.tracevisorPro": "<strong class=\"!uppercase !text-[10px]\">TraceVisor Pro:</strong> Abonnements für TraceVisor Pro werden auf wiederkehrender Basis wie zum Zeitpunkt des Kaufs angegeben abgerechnet. Zahlungen werden von einem sicheren Drittanbieter-Zahlungsabwickler verarbeitet. Sie können Ihr Abonnement jederzeit über Ihr Kontodashboard kündigen.",
     "terms.section4.proFeatures": "Pro-Abonnements bieten erweiterte Analysefunktionen, einschließlich unbegrenztem Website-Tracking, verlängerten Datenaufbewahrungsfristen, erweiterter Kampagnenattribution, detaillierten Berichten über die Umweltauswirkungen, benutzerdefinierten Dashboard-Konfigurationen und priorisiertem Support. Benutzer der kostenlosen Stufe haben Einschränkungen bei der Anzahl der getrackten Websites, der Datenaufbewahrungsfrist und dem Zugriff auf erweiterte Funktionen.",
     "terms.section5.title": "5. Verbotenes Verhalten",
     "terms.section5.intro": "Sie stimmen zu, <strong class=\"font-bold\">NICHT</strong>:",
@@ -4743,21 +4743,21 @@ export const ui = {
     "terms.section5.item5": "- den Dienst zu nutzen, um Benutzer über Websites hinweg ohne deren Wissen oder Zustimmung zu verfolgen, oder für illegale oder nicht autorisierte Zwecke.",
     "terms.section5.item6": "- bei der Nutzung unserer Analyseplattform gegen geltende Datenschutzgesetze, -vorschriften oder -anforderungen zu verstoßen.",
     "terms.section6.title": "6. Haftungsausschlüsse und Haftungsbeschränkung",
-    "terms.section6.warranty": "DER DIENST WIRD „WIE BESEHEN“ UND „WIE VERFÜGBAR“ OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG BEREITGESTELLT. <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> SCHLIESST ALLE GEWÄHRLEISTUNGEN AUS, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, DIE STILLSCHWEIGENDEN GEWÄHRLEISTUNGEN DER MARKTGÄNGIGKEIT, EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND NICHTVERLETZUNG VON RECHTEN DRITTER.",
-    "terms.section6.liability": "IN KEINEM FALL HAFTET <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PEEKVISOR.COM</a> FÜR INDIREKTE, ZUFÄLLIGE, BESONDERE, FOLGE- ODER STRAFSCHÄDEN, DIE SICH AUS ODER IM ZUSAMMENHANG MIT IHRER NUTZUNG DES DIENSTES ODER JEGLICHER ÜBER UNSERE PLATTFORM VERARBEITETER ANALYSEDATEN ERGEBEN.",
+    "terms.section6.warranty": "DER DIENST WIRD „WIE BESEHEN“ UND „WIE VERFÜGBAR“ OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG BEREITGESTELLT. <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> SCHLIESST ALLE GEWÄHRLEISTUNGEN AUS, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, DIE STILLSCHWEIGENDEN GEWÄHRLEISTUNGEN DER MARKTGÄNGIGKEIT, EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND NICHTVERLETZUNG VON RECHTEN DRITTER.",
+    "terms.section6.liability": "IN KEINEM FALL HAFTET <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TRACEVISOR.COM</a> FÜR INDIREKTE, ZUFÄLLIGE, BESONDERE, FOLGE- ODER STRAFSCHÄDEN, DIE SICH AUS ODER IM ZUSAMMENHANG MIT IHRER NUTZUNG DES DIENSTES ODER JEGLICHER ÜBER UNSERE PLATTFORM VERARBEITETER ANALYSEDATEN ERGEBEN.",
     "terms.section7.title": "7. Änderungen der Bedingungen",
     "terms.section7.content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Wir werden Sie über alle Änderungen informieren, indem wir die neuen Bedingungen auf dieser Seite veröffentlichen. Ihre fortgesetzte Nutzung des Dienstes nach einer solchen Änderung stellt Ihre Annahme der neuen Bedingungen dar.",
     "terms.section8.title": "8. Kontaktieren Sie uns",
-    "terms.section8.content": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte über unsere <a href=\"/de/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">Kontaktseite</a> oder per E-Mail an <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "terms.section8.content": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte über unsere <a href=\"/de/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">Kontaktseite</a> oder per E-Mail an <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
 
     "privacy.title": "Datenschutzrichtlinie",
     "privacy.effectiveDate": "Gültig ab: 31. Juli 2025",
     "privacy.section1.title": "1. Einleitung",
-    "privacy.section1.content": "<a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> („wir“, „unser“, „uns“) verpflichtet sich, Ihre Privatsphäre und die Privatsphäre Ihrer Website-Besucher zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere datenschutzfreundliche Analyseplattform nutzen. Als DSGVO-konformer Dienst legen wir Wert auf Datenschutz und transparente Datenpraktiken. Durch die Nutzung von <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">PeekVisor.com</a> stimmen Sie den in dieser Richtlinie beschriebenen Datenpraktiken zu.",
+    "privacy.section1.content": "<a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> („wir“, „unser“, „uns“) verpflichtet sich, Ihre Privatsphäre und die Privatsphäre Ihrer Website-Besucher zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere datenschutzfreundliche Analyseplattform nutzen. Als DSGVO-konformer Dienst legen wir Wert auf Datenschutz und transparente Datenpraktiken. Durch die Nutzung von <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">TraceVisor.com</a> stimmen Sie den in dieser Richtlinie beschriebenen Datenpraktiken zu.",
     "privacy.section2.title": "2. Informationen, die wir sammeln",
     "privacy.section2.intro": "Wir sammeln verschiedene Arten von Informationen, je nachdem, wie Sie unseren Dienst nutzen:",
     "privacy.section2.personal": "<strong class=\"!uppercase !text-[10px]\">Kontoinformationen:</strong> Wenn Sie ein Konto erstellen, erfassen wir Ihren Namen, Ihre E-Mail-Adresse und Ihre Rechnungsinformationen. Diese Informationen sind notwendig, um den Dienst bereitzustellen und Zahlungen abzuwickeln.",
-    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Zahlungsinformationen:</strong> Für PeekVisor Pro-Abonnements werden Zahlungen von einem Drittanbieter-Zahlungsabwickler verarbeitet. Wir erheben oder speichern Ihre vollständigen Zahlungskartendaten nicht. Wir erhalten nur Informationen über Ihren Abonnementstatus und Ihre Rechnungshistorie.",
+    "privacy.section2.payment": "<strong class=\"!uppercase !text-[10px]\">Zahlungsinformationen:</strong> Für TraceVisor Pro-Abonnements werden Zahlungen von einem Drittanbieter-Zahlungsabwickler verarbeitet. Wir erheben oder speichern Ihre vollständigen Zahlungskartendaten nicht. Wir erhalten nur Informationen über Ihren Abonnementstatus und Ihre Rechnungshistorie.",
     "privacy.section2.usage": "<strong class=\"!uppercase !text-[10px]\">Plattform-Nutzungsdaten:</strong> Wir sammeln Informationen darüber, wie Sie unsere Analyseplattform nutzen, wie z. B. Dashboard-Ansichten, Berichterstellung, Funktionsnutzung und Konfigurationseinstellungen, um unseren Dienst zu verbessern.",
     "privacy.section2.analytics": "<strong class=\"!uppercase !text-[10px]\">Website-Analysedaten:</strong> Über unseren Analysedienst verarbeiten wir anonymisierte Besucherdaten von Ihren Websites, einschließlich Seitenaufrufen, Referrer-Informationen, Gerätetypen und geografischen Regionen. Diese Daten werden mit datenschutzwahrenden Techniken verarbeitet und enthalten niemals personenbezogene Daten, es sei denn, Sie haben dies ausdrücklich mit entsprechenden Einwilligungsmechanismen konfiguriert.",
     "privacy.section3.title": "3. Wie wir Ihre Informationen verwenden",
@@ -4783,12 +4783,12 @@ export const ui = {
     "privacy.section8.title": "8. Änderungen dieser Datenschutzrichtlinie",
     "privacy.section8.content": "Wir können diese Datenschutzrichtlinie aktualisieren, um Änderungen in unseren Praktiken oder rechtlichen Anforderungen widerzuspiegeln. Wir werden Sie über wesentliche Änderungen über Ihr Konto-Dashboard und per E-Mail benachrichtigen. Die fortgesetzte Nutzung des Dienstes nach Änderungen stellt die Annahme der aktualisierten Richtlinie dar.",
     "privacy.section9.title": "9. Kontaktieren Sie uns",
-    "privacy.section9.content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie, Datenschutzpraktiken haben oder Ihre Datenrechte ausüben möchten, kontaktieren Sie uns bitte über unsere <a href=\"/de/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">Kontaktseite</a> oder per E-Mail an <a href=\"mailto:info@peekvisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@peekvisor.com</a>.",
+    "privacy.section9.content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie, Datenschutzpraktiken haben oder Ihre Datenrechte ausüben möchten, kontaktieren Sie uns bitte über unsere <a href=\"/de/contact\" style=\"color: oklch(0.673 0.182 276.935);;\">Kontaktseite</a> oder per E-Mail an <a href=\"mailto:info@tracevisor.com\" style=\"color: oklch(0.673 0.182 276.935);;\">info@tracevisor.com</a>.",
 
     // Contact Page
-    "contact.pageTitle": "PeekVisor | Kontakt",
-    "contact.metaDescription": "Kontaktieren Sie PeekVisor für Support, Analysefragen oder andere Anfragen. Wir sind hier, um Ihnen zu helfen, das Beste aus Ihrer datenschutzfreundlichen Analyse herauszuholen.",
-    "contact.ogTitle": "Kontaktieren Sie uns | PeekVisor",
+    "contact.pageTitle": "TraceVisor | Kontakt",
+    "contact.metaDescription": "Kontaktieren Sie TraceVisor für Support, Analysefragen oder andere Anfragen. Wir sind hier, um Ihnen zu helfen, das Beste aus Ihrer datenschutzfreundlichen Analyse herauszuholen.",
+    "contact.ogTitle": "Kontaktieren Sie uns | TraceVisor",
     "contact.title": "Kontaktieren Sie uns",
     "contact.subTitle": "Haben Sie eine Frage, einen Vorschlag oder ein Problem? Wir sind hier, um zu helfen.",
     "contact.form.title": "Füllen Sie das untenstehende Formular aus",
@@ -4813,10 +4813,10 @@ export const ui = {
     "contact.blocks.email.content": "Bevorzugen Sie das geschriebene Wort? Senden Sie uns eine E-Mail an",
 
     // Changelog Page
-    "changelog.pageTitle": "PeekVisor | Änderungsprotokoll",
+    "changelog.pageTitle": "TraceVisor | Änderungsprotokoll",
     "changelog.title": "Änderungsprotokoll",
-    "changelog.metaDescription": "Bleiben Sie auf dem Laufenden mit den neuesten Funktionen, Verbesserungen und Fehlerbehebungen in PeekVisor.",
-    "changelog.ogTitle": "Änderungsprotokoll | PeekVisor",
+    "changelog.metaDescription": "Bleiben Sie auf dem Laufenden mit den neuesten Funktionen, Verbesserungen und Fehlerbehebungen in TraceVisor.",
+    "changelog.ogTitle": "Änderungsprotokoll | TraceVisor",
     "changelog.loading": "Änderungsprotokoll wird geladen...",
     "changelog.error": "Fehler beim Laden des Änderungsprotokolls",
     "changelog.noReleases": "Keine Versionen gefunden",
@@ -4825,11 +4825,11 @@ export const ui = {
     "changelog.viewOnGitHub": "Auf GitHub ansehen",
 
     // Pricing Page
-    "pricing.pageTitle": "PeekVisor | Preise",
+    "pricing.pageTitle": "TraceVisor | Preise",
     "pricing.title": "Einfache, transparente Preisgestaltung",
     "pricing.subtitle": "Wählen Sie den Plan, der zu Ihren Bedürfnissen passt. Starten Sie kostenlos, upgraden Sie, wenn Sie wachsen.",
-    "pricing.metaDescription": "Wählen Sie den perfekten PeekVisor-Plan für Ihre Analysebedürfnisse. Starten Sie kostenlos mit unserem Basis-Plan oder upgraden Sie auf Pro für erweiterte Funktionen.",
-    "pricing.ogTitle": "Preispläne | PeekVisor",
+    "pricing.metaDescription": "Wählen Sie den perfekten TraceVisor-Plan für Ihre Analysebedürfnisse. Starten Sie kostenlos mit unserem Basis-Plan oder upgraden Sie auf Pro für erweiterte Funktionen.",
+    "pricing.ogTitle": "Preispläne | TraceVisor",
     "pricing.currentPlan": "Aktueller Plan",
     "pricing.subscribe": "Abonnieren",
     "pricing.getStarted": "Loslegen",
@@ -4875,7 +4875,7 @@ export const ui = {
     "pricing.features.prioritySupport": "Prioritäts-Support",
 
     // Login Page
-    "login.pageTitle": "PeekVisor | Anmelden",
+    "login.pageTitle": "TraceVisor | Anmelden",
 
     // Homepage
     "homepage.hero.title": "Kennen Sie Ihr Publikum, schützen Sie deren Privatsphäre.",
@@ -4890,13 +4890,13 @@ export const ui = {
     "homepage.features.setup.title": "Einfache Einrichtung",
     "homepage.features.setup.description": "Fügen Sie eine Zeile Code hinzu und beginnen Sie mit dem Tracking. Keine komplexe Konfiguration erforderlich.",
     "homepage.stats.title": "Vertraut von Entwicklern weltweit",
-    "homepage.stats.subtitle": "Schließen Sie sich Hunderten von Websites an, die PeekVisor für datenschutzfreundliche Analysen nutzen",
+    "homepage.stats.subtitle": "Schließen Sie sich Hunderten von Websites an, die TraceVisor für datenschutzfreundliche Analysen nutzen",
     "homepage.stats.websites": "Getrackte Websites",
     "homepage.stats.pageviews": "Analysierte Seitenaufrufe",
     "homepage.stats.countries": "Bediente Länder",
     "homepage.stats.co2": "CO₂ eingespart",
     "homepage.howItWorks.title": "So funktioniert's",
-    "homepage.howItWorks.subtitle": "Starten Sie mit PeekVisor in nur wenigen einfachen Schritten",
+    "homepage.howItWorks.subtitle": "Starten Sie mit TraceVisor in nur wenigen einfachen Schritten",
     "homepage.howItWorks.step1.title": "Tracking-Code hinzufügen",
     "homepage.howItWorks.step1.description": "Kopieren und fügen Sie eine Zeile Code in Ihre Website ein. Keine komplexe Einrichtung erforderlich.",
     "homepage.howItWorks.step2.title": "Datenerfassung starten",
@@ -4911,9 +4911,9 @@ export const ui = {
     "homepage.cta.getStarted": "Kostenlos starten",
     "homepage.cta.viewPricing": "Preise ansehen",
 
-    "subscription.pageTitle": "PeekVisor | Abonnementdetails",
+    "subscription.pageTitle": "TraceVisor | Abonnementdetails",
     "subscription.title": "Abonnement",
-    "subscription.description": "Verwalten Sie Ihr PeekVisor-Abonnement und Ihre Abrechnung",
+    "subscription.description": "Verwalten Sie Ihr TraceVisor-Abonnement und Ihre Abrechnung",
     "subscription.planOverview": "Planübersicht",
     "subscription.billingInfo": "Rechnungsinformationen",
     "subscription.customer": "Kunde",

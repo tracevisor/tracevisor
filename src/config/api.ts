@@ -2,14 +2,14 @@ export const API_CONFIG = {
   BACKEND_URL:
     import.meta.env.BACKEND_API_URL ||
     import.meta.env.BACKEND_API_URL_PROD ||
-    "https://script.peekvisor.com",
+    "https://script.tracevisor.com",
 
   ENDPOINTS: {
     WEBSITES: "/api/websites",
     ANALYTICS: "/api/analytics",
     TRACK: "/api/track",
     USER_PROFILE: "/api/user/profile",
-    TRACKING_SCRIPT: "/peekvisor.js",
+    TRACKING_SCRIPT: "/tracevisor.js",
   },
 
   DEFAULT_HEADERS: {

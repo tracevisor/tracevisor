@@ -33,7 +33,7 @@ let apiKey = null;
 let websites = [];
 
 try {
-  const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.peekvisor.com';
+  const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.tracevisor.com';
   const profileRes = await fetch(`${backendUrl}/api/user/profile`, {
     headers: {
       'Authorization': `Bearer ${sessionToken}`,
@@ -63,7 +63,7 @@ try {
   console.error('Failed to fetch data:', error);
 }
 
-const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.peekvisor.com';
+const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.tracevisor.com';
 
 const categorizedEndpoints: Record<string, ApiCategory & { endpoints: ApiEndpoint[] }> = {};
 API_CATEGORIES.forEach(cat => {

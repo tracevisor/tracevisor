@@ -1,19 +1,19 @@
 <div align="center">
-  <a href="https://peekvisor.com" target="_blank">
-    <img width="768" src="public/peekvisor-banner-02.png" alt="Peekvisor Logo">
+  <a href="https://tracevisor.com" target="_blank">
+    <img width="768" src="public/tracevisor-banner-02.png" alt="Tracevisor Logo">
   </a>
 
   [![License](https://img.shields.io/badge/license-MPL--2.0-4E5675)](LICENSE)
   [![connect linkedin](https://custom-icon-badges.demolab.com/badge/linkedin-4E5675?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/company/peekvisor-analytics)
 
-  [Get Started](https://peekvisor.com) •  [Pricing](https://peekvisor.com/pricing) • [Support](https://peekvisor.com/contact)
+  [Get Started](https://tracevisor.com) •  [Pricing](https://tracevisor.com/pricing) • [Support](https://tracevisor.com/contact)
 </div>
 
 ---
 
 ## Overview
 
-Peekvisor is the intelligent, privacy-first alternative to Google Analytics. Designed for modern websites and businesses, Peekvisor delivers real-time insights with an AI-guided setup that takes just 5 minutes. No cookies, no complex configurations — just powerful analytics that respect user privacy and comply with GDPR regulations.
+Tracevisor is the intelligent, privacy-first alternative to Google Analytics. Designed for modern websites and businesses, Tracevisor delivers real-time insights with an AI-guided setup that takes just 5 minutes. No cookies, no complex configurations — just powerful analytics that respect user privacy and comply with GDPR regulations.
 
 Track visitors, campaigns, devices, and geography with unlimited page views across all plans, starting completely free.
 
@@ -21,15 +21,15 @@ Track visitors, campaigns, devices, and geography with unlimited page views acro
 
 <div align="center">
   
-  <a href="https://peekvisor.com" target="_blank">
-      <img width="768" src="public/peekvisor-preview-rounded.png" alt="Peekvisor Logo">
+  <a href="https://tracevisor.com" target="_blank">
+      <img width="768" src="public/tracevisor-preview-rounded.png" alt="Tracevisor Logo">
   </a>
 
 </div>
 
-## Why Choose Peekvisor?
+## Why Choose Tracevisor?
 
-In a world of complex analytics tools, Peekvisor stands out by combining powerful features with simplicity and privacy. Unlike traditional platforms that require days of setup and compromise user data, Peekvisor empowers you with:
+In a world of complex analytics tools, Tracevisor stands out by combining powerful features with simplicity and privacy. Unlike traditional platforms that require days of setup and compromise user data, Tracevisor empowers you with:
 
 <div align="center">
 
@@ -73,7 +73,7 @@ Our intelligent setup wizard makes implementation effortless:
 
 ## Subscription Plans
 
-Peekvisor offers flexible, transparent pricing powered by [Lemon Squeezy](https://www.lemonsqueezy.com/) for seamless billing and subscription management. All plans include unlimited page views and real-time analytics.
+Tracevisor offers flexible, transparent pricing powered by [Lemon Squeezy](https://www.lemonsqueezy.com/) for seamless billing and subscription management. All plans include unlimited page views and real-time analytics.
 
 <table align="center">
   <thead>
@@ -130,14 +130,14 @@ All subscriptions are managed through Lemon Squeezy, ensuring secure payments, a
 
 <div align="center">
   
-[**→ Start Your Free Plan**](https://peekvisor.com/pricing)
+[**→ Start Your Free Plan**](https://tracevisor.com/pricing)
 
 </div>
 
 
 ## Trust & Security
 
-Your data is our priority. Peekvisor is built with enterprise-grade security:
+Your data is our priority. Tracevisor is built with enterprise-grade security:
 
 <table align="center">
   <thead>
@@ -185,7 +185,7 @@ Your data is our priority. Peekvisor is built with enterprise-grade security:
 
 ```html
 <!-- Add this single line to your website -->
-<script src="https://script.peekvisor.com/hello.js"></script>
+<script src="https://script.tracevisor.com/hello.js"></script>
 ```
 
 The AI wizard will detect if you're using:
@@ -194,13 +194,13 @@ The AI wizard will detect if you're using:
 - **Platforms**: WordPress, Shopify, Webflow
 - **Operating Systems**: macOS, Linux, Windows
 
-[**→ Get Started Today**](https://peekvisor.com)
+[**→ Get Started Today**](https://tracevisor.com)
 
 ## What Makes Us Different
 
 <div align="center">
   
-| Traditional Analytics | Peekvisor |
+| Traditional Analytics | Tracevisor |
 |----------------------|-----------|
 | Complex setup (hours/days) | 5-minute AI-guided setup |
 | Cookie-dependent tracking | Cookie-free, privacy-first |
@@ -215,7 +215,7 @@ The AI wizard will detect if you're using:
 
 ## Community & Support
 
-Join the Peekvisor community for updates, discussions, and support:
+Join the Tracevisor community for updates, discussions, and support:
 
 
 - **Documentation**: Full guides and API references available
@@ -253,5 +253,5 @@ Join the Peekvisor community for updates, discussions, and support:
   </a>
 
   
-  ##### © 2025 Peekvisor Analytics. All rights reserved.
+  ##### © 2025 Tracevisor Analytics. All rights reserved.
 </div>

@@ -1,5 +1,5 @@
 {
-  "name": "peekvisor",
+  "name": "tracevisor",
   "type": "module",
   "version": "0.9.1",
   "scripts": {

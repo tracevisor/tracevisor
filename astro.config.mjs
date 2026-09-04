@@ -10,7 +10,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   output: "server",
   adapter: vercel(),
-  site: "https://peekvisor.com",
+  site: "https://tracevisor.com",
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -26,7 +26,7 @@ export default defineConfig({
     react(),
     sitemap(),
     starlight({
-      title: "PeekVisor",
+      title: "TraceVisor",
       sidebar: [
         {
           label: "Quick Start Guides",
@@ -60,7 +60,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/peekvisor",
+          href: "https://github.com/tracevisor",
         },
       ],
       disable404Route: true,
@@ -78,14 +78,14 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://peekvisor.com" + "/social.webp",
+            content: "https://tracevisor.com" + "/social.webp",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content: "https://peekvisor.com" + "/social.webp",
+            content: "https://tracevisor.com" + "/social.webp",
           },
         },
       ],

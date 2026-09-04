@@ -182,7 +182,7 @@ if (!userInfo?.user) return Astro.redirect(`/${lang}/`);
 const user = userInfo.user;
 let userWebsites: any[] = [];
 try {
-  const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.peekvisor.com';
+  const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.tracevisor.com';
   const response = await fetch(`${backendUrl}/api/websites`, {
     headers: {
       'Authorization': `Bearer ${sessionToken}`,
@@ -200,7 +200,7 @@ try {
 
 let syncedPlan = 'basic';
   try {
-    const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.peekvisor.com';
+    const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.tracevisor.com';
     const syncRes = await fetch(`${backendUrl}/api/user/sync-subscription`, {
       method: 'POST',
       headers: {
@@ -224,7 +224,7 @@ let planLabelKey = 'dashboard.planCard.basicPlan';
 let manageOrUpgradeKey = 'dashboard.planCard.upgrade';
 
 try {
-  const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.peekvisor.com';
+  const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.tracevisor.com';
   const profileRes = await fetch(`${backendUrl}/api/user/profile`, {
     headers: {
       'Authorization': `Bearer ${sessionToken}`,
@@ -261,7 +261,7 @@ try {
 
 let globalImpactChangePct: number | null = null;
 try {
-  const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.peekvisor.com';
+  const backendUrl = import.meta.env.BACKEND_API_URL || 'https://script.tracevisor.com';
   const insightsRes = await fetch(`${backendUrl}/api/insights/global`, {
     headers: {
       'Authorization': `Bearer ${sessionToken}`,
@@ -299,7 +299,7 @@ if (reachedBasicLimit || reachedFlexLimit) {
 
 <MainLayout
   title={t("dashboard.pageTitle")}
-  customDescription="Your PeekVisor analytics dashboard"
+  customDescription="Your TraceVisor analytics dashboard"
 >
   <div class="rounded-[24px] shadow-2xl mt-8 mb-8 bg-gray-50 border dark:border-neutral-700/40 dark:bg-[#171717]">
     <div class="dashboard-container mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8 lg:px-8">
@@ -1162,7 +1162,7 @@ if (reachedBasicLimit || reachedFlexLimit) {
         if (!currentWebsiteData) return;
 
         try {
-          const backendUrl = 'https://script.peekvisor.com';
+          const backendUrl = 'https://script.tracevisor.com';
           const response = await fetch(`${backendUrl}/api/websites/${currentWebsiteData.websiteId}/public-toggle`, {
             method: 'PUT',
             headers: {

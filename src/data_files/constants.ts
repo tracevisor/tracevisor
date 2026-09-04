@@ -1,12 +1,12 @@
 export const SITE = {
-  title: "PeekVisor",
+  title: "TraceVisor",
   tagline: "Know your audience, protect their privacy",
   description:
-    "PeekVisor is a privacy-first analytics platform that delivers comprehensive audience insights without compromising user data. Track unlimited page views, monitor campaigns, and measure environmental impact while maintaining complete GDPR compliance.",
+    "TraceVisor is a privacy-first analytics platform that delivers comprehensive audience insights without compromising user data. Track unlimited page views, monitor campaigns, and measure environmental impact while maintaining complete GDPR compliance.",
   description_short:
     "Privacy-first analytics platform for comprehensive audience insights.",
-  url: "https://peekvisor.com",
-  author: "PeekVisor Team",
+  url: "https://tracevisor.com",
+  author: "TraceVisor Team",
 };
 
 export const SEO = {
@@ -36,7 +36,7 @@ export const OG = {
   title: `${SITE.title}: Privacy-First Analytics Platform`,
   description:
     "Get comprehensive audience insights without compromising user privacy. Track unlimited page views, monitor campaigns, and measure environmental impact with GDPR-compliant analytics.",
-  image: "https://peekvisor.com/social.webp",
+  image: "https://tracevisor.com/social.webp",
 };
 
 export const partnersData = [

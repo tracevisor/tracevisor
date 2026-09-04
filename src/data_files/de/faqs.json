@@ -1,24 +1,24 @@
 {
-  "subTitle": "Finden Sie schnelle Antworten auf häufige Fragen zu PeekVisor und seinen datenschutzfreundlichen Analysefunktionen.",
+  "subTitle": "Finden Sie schnelle Antworten auf häufige Fragen zu TraceVisor und seinen datenschutzfreundlichen Analysefunktionen.",
   "faqs": [
     {
-      "question": "Was ist PeekVisor und wie schützt es die Privatsphäre der Nutzer?",
-      "answer": "PeekVisor ist eine datenschutzfreundliche Analyseplattform, die umfassende Einblicke in das Publikum liefert, ohne die Benutzerdaten zu gefährden. Wir sind vollständig DSGVO-konform und verwenden keine Cookies oder sammeln persönliche Informationen, wodurch ein vollständiger Datenschutz für Website-Besucher gewährleistet wird."
+      "question": "Was ist TraceVisor und wie schützt es die Privatsphäre der Nutzer?",
+      "answer": "TraceVisor ist eine datenschutzfreundliche Analyseplattform, die umfassende Einblicke in das Publikum liefert, ohne die Benutzerdaten zu gefährden. Wir sind vollständig DSGVO-konform und verwenden keine Cookies oder sammeln persönliche Informationen, wodurch ein vollständiger Datenschutz für Website-Besucher gewährleistet wird."
     },
     {
-      "question": "Wie viele Websites kann ich mit PeekVisor tracken?",
+      "question": "Wie viele Websites kann ich mit TraceVisor tracken?",
       "answer": "Die Anzahl der Websites hängt von Ihrem Plan ab. Der Basis-Plan ermöglicht das Tracking für 1 Website, während höhere Pläne mehrere Websites unterstützen, wobei unser Top-Plan unbegrenztes Website-Tracking bietet."
     },
     {
-      "question": "Welche Analysedaten bietet PeekVisor?",
-      "answer": "PeekVisor bietet Kernanalysen einschließlich Seitenaufrufen, Besucherzahlen, geografischen Daten (Länder), Geräteinformationen und Browser-Statistiken. Erweiterte Pläne umfassen auch benutzerdefiniertes Event-Tracking, UTM-Kampagnenüberwachung und Umweltauswirkungsberichte."
+      "question": "Welche Analysedaten bietet TraceVisor?",
+      "answer": "TraceVisor bietet Kernanalysen einschließlich Seitenaufrufen, Besucherzahlen, geografischen Daten (Länder), Geräteinformationen und Browser-Statistiken. Erweiterte Pläne umfassen auch benutzerdefiniertes Event-Tracking, UTM-Kampagnenüberwachung und Umweltauswirkungsberichte."
     },
     {
       "question": "Wie lange werden meine Analysedaten aufbewahrt?",
       "answer": "Die Datenaufbewahrung variiert je nach Plan. Der Basis-Plan bewahrt Daten für 30 Tage auf, während Premium-Pläne verlängerte Aufbewahrungsfristen bieten, wobei unsere höchste Stufe unbegrenzte Datenaufbewahrung bietet."
     },
     {
-      "question": "Bietet PeekVisor Umweltauswirkungs-Tracking?",
+      "question": "Bietet TraceVisor Umweltauswirkungs-Tracking?",
       "answer": "Ja, unsere erweiterten Pläne umfassen CO₂- und Umwelt-Tracking-Funktionen, mit denen Sie die Umweltauswirkungen Ihres Website-Traffics und Ihrer digitalen Aktivitäten überwachen und messen können."
     },
     {
@@ -34,12 +34,12 @@
       "answer": "Global Impact Score ist eine kombinierte Metrik, die Ihre Gesamtleistung in den Dimensionen Digital und Umwelt (Eco) misst. Er wird als Durchschnitt der digitalen Veränderung (% WoW) und der normalisierten Eco-Veränderung (% WoW) über alle Sites berechnet, wobei niedrigere CO₂-Werte als positive Verbesserung zählen. Der Score ist auf ±100 begrenzt, um Ausreißer zu reduzieren. Diese Funktion ist ausschließlich für Flex- und Pro-Abonnenten mit mehreren Websites verfügbar."
     },
     {
-      "question": "Bietet PeekVisor API-Zugriff?",
+      "question": "Bietet TraceVisor API-Zugriff?",
       "answer": "Der API-Zugriff ist für alle Pläne mit unterschiedlichen Ratenbegrenzungen aktiviert. Die Limits sind:\nBasic: 150 Anfragen / 15 Minuten\nFlex: 400 Anfragen / 15 Minuten\nPro: 1000 Anfragen / 15 Minuten"
     },
     {
       "question": "Welche Zahlungsmethoden werden akzeptiert und wie verwalte ich die Abrechnung?",
-      "answer": "Zahlungen werden sicher über LemonSqueezy, unseren vertrauenswürdigen Zahlungspartner, abgewickelt. Sie können direkt von Ihrem PeekVisor-Dashboard auf Ihr Abrechnungsportal zugreifen, um Abonnements zu verwalten, Zahlungsmethoden zu aktualisieren und Rechnungen einzusehen. LemonSqueezy akzeptiert gängige Kreditkarten und verschiedene internationale Zahlungsmethoden."
+      "answer": "Zahlungen werden sicher über LemonSqueezy, unseren vertrauenswürdigen Zahlungspartner, abgewickelt. Sie können direkt von Ihrem TraceVisor-Dashboard auf Ihr Abrechnungsportal zugreifen, um Abonnements zu verwalten, Zahlungsmethoden zu aktualisieren und Rechnungen einzusehen. LemonSqueezy akzeptiert gängige Kreditkarten und verschiedene internationale Zahlungsmethoden."
     },
     {
       "question": "Kann ich eine Rückerstattung erhalten, wenn ich mit meinem Abonnement nicht zufrieden bin?",
@@ -51,7 +51,7 @@
     },
     {
       "question": "Gibt es Beschränkungen bei den Seitenaufrufen?",
-      "answer": "Nein, PeekVisor bietet unbegrenztes Tracking von Seitenaufrufen über alle Pläne hinweg, sodass Sie Ihren Website-Traffic überwachen können, ohne sich um Nutzungsgrenzen oder zusätzliche Gebühren sorgen zu müssen."
+      "answer": "Nein, TraceVisor bietet unbegrenztes Tracking von Seitenaufrufen über alle Pläne hinweg, sodass Sie Ihren Website-Traffic überwachen können, ohne sich um Nutzungsgrenzen oder zusätzliche Gebühren sorgen zu müssen."
     }
   ]
 }

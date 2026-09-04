@@ -1,24 +1,24 @@
 {
-  "subTitle": "Find quick answers to common questions about PeekVisor and its privacy-first analytics features.",
+  "subTitle": "Find quick answers to common questions about TraceVisor and its privacy-first analytics features.",
   "faqs": [
     {
-      "question": "What is PeekVisor and how does it protect user privacy?",
-      "answer": "PeekVisor is a privacy-first analytics platform that delivers comprehensive audience insights without compromising user data. We are fully GDPR compliant and do not use cookies or collect personal information, ensuring complete privacy protection for website visitors."
+      "question": "What is TraceVisor and how does it protect user privacy?",
+      "answer": "TraceVisor is a privacy-first analytics platform that delivers comprehensive audience insights without compromising user data. We are fully GDPR compliant and do not use cookies or collect personal information, ensuring complete privacy protection for website visitors."
     },
     {
-      "question": "How many websites can I track with PeekVisor?",
+      "question": "How many websites can I track with TraceVisor?",
       "answer": "The number of websites depends on your plan. The Basic plan allows tracking for 1 website, while higher-tier plans support multiple websites, with our top plan offering unlimited website tracking."
     },
     {
-      "question": "What analytics data does PeekVisor provide?",
-      "answer": "PeekVisor provides core analytics including page views, visitor counts, geographic data (countries), device information, and browser statistics. Advanced plans also include custom events tracking, UTM campaign monitoring, and environmental impact reporting."
+      "question": "What analytics data does TraceVisor provide?",
+      "answer": "TraceVisor provides core analytics including page views, visitor counts, geographic data (countries), device information, and browser statistics. Advanced plans also include custom events tracking, UTM campaign monitoring, and environmental impact reporting."
     },
     {
       "question": "How long is my analytics data retained?",
       "answer": "Data retention varies by plan. The Basic plan retains data for 30 days, while premium plans offer extended retention periods, with our highest tier providing unlimited data retention."
     },
     {
-      "question": "Does PeekVisor offer environmental impact tracking?",
+      "question": "Does TraceVisor offer environmental impact tracking?",
       "answer": "Yes, our advanced plans include CO₂ and environmental tracking features, allowing you to monitor and measure the environmental impact of your website traffic and digital activities."
     },
     {
@@ -34,12 +34,12 @@
       "answer": "Global Impact Score is a combined metric that measures your overall performance across Digital and Environmental (Eco) dimensions. It's calculated as the average of your Digital change (% WoW) and normalized Eco change (% WoW) across all sites, where lower CO₂ counts as positive improvement. The score is capped at ±100 to reduce outliers. This feature is available exclusively for Flex and Pro subscribers with multiple websites."
     },
     {
-      "question": "Does PeekVisor provide API access?",
+      "question": "Does TraceVisor provide API access?",
       "answer": "API Access is enabled for all plans with different rate limiting. The limits are:\nBasic: 150 requests / 15 minutes\nFlex: 400 requests / 15 minutes\nPro: 1000 requests / 15 minutes"
     },
     {
       "question": "What payment methods are accepted and how do I manage billing?",
-      "answer": "Payments are processed securely through LemonSqueezy, our trusted payment partner. You can access your billing portal directly from your PeekVisor dashboard to manage subscriptions, update payment methods, and view invoices. LemonSqueezy accepts major credit cards and various international payment methods."
+      "answer": "Payments are processed securely through LemonSqueezy, our trusted payment partner. You can access your billing portal directly from your TraceVisor dashboard to manage subscriptions, update payment methods, and view invoices. LemonSqueezy accepts major credit cards and various international payment methods."
     },
     {
       "question": "Can I get a refund if I'm not satisfied with my subscription?",
@@ -51,7 +51,7 @@
     },
     {
       "question": "Are there any limits on page views?",
-      "answer": "No, PeekVisor offers unlimited page view tracking across all plans, ensuring you can monitor your website traffic without worrying about usage limits or additional charges."
+      "answer": "No, TraceVisor offers unlimited page view tracking across all plans, ensuring you can monitor your website traffic without worrying about usage limits or additional charges."
     }
   ]
 }
