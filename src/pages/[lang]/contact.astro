@@ -1,36 +1,79 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import ContactSection from "@components/sections/misc/ContactSection.astro";
-import { SITE } from "@data/constants";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+export function getStaticPaths() {
+  return ["en", "es", "fr", "pt", "de"].map((lang) => ({ params: { lang } }));
+}
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Icon from "../../ui/Icon.astro";
+import { dictionary, localeFromPath } from "../../i18n/dictionary";
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const locale = localeFromPath(Astro.url.pathname);
+const t = await dictionary(locale);
+const c = t.contact;
+const reasons = ["tracking", "analytics", "privacy", "billing", "feedback", "other"] as const;
 
-const pageTitle = `${t("contact.pageTitle")} | ${SITE.title}`;
+const state = "idle";
+const values = { firstName: "", lastName: "", email: "", reason: "", details: "" };
 ---
 
-<MainLayout
-  title={pageTitle}
-  customDescription={t("contact.metaDescription")}
-  customOgTitle={t("contact.ogTitle")}
-  structuredData={{
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": `https://tracevisor.com/${lang}/contact`,
-    url: `https://tracevisor.com/${lang}/contact`,
-    name: `${t("contact.ogTitle")} | TraceVisor`,
-    description: t("contact.metaDescription"),
-    isPartOf: {
-      "@type": "WebSite",
-      url: "https://tracevisor.com",
-      name: "TraceVisor",
-      description:
-        "Privacy-first analytics platform for comprehensive audience insights without compromising user data.",
-    },
-    inLanguage: lang,
-  }}
->
+<SiteLayout title={c.title} description={c.metaDescription}>
+  <section class="mx-auto grid max-w-site gap-10 px-4 pt-14 pb-16 sm:px-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:pt-20">
+    <div class="flex flex-col gap-6">
+      <div>
+        <h1>{c.title}</h1>
+        <p class="mt-2 max-w-sm text-text">{c.subTitle}</p>
+      </div>
+      <dl class="divide-y divide-line rounded-lg border border-line">
+        <div class="flex flex-col gap-1 p-4">
+          <dt class="text-[0.8125rem] font-medium text-fg">{c.blocks.faq.heading}</dt>
+          <dd class="text-[0.8125rem] text-muted">{c.blocks.faq.content}</dd>
+          <a href={`/${locale}/faq`} class="mt-1 inline-flex items-center gap-1 text-[0.8125rem] text-fg underline decoration-line-strong underline-offset-4 hover:decoration-fg">
+            {c.blocks.faq.linkTitle}
+          </a>
+        </div>
+        <div class="flex flex-col gap-1 p-4">
+          <dt class="text-[0.8125rem] font-medium text-fg">{c.blocks.email.heading}</dt>
+          <dd class="text-[0.8125rem] text-muted">{c.blocks.email.content}</dd>
+          <a href="mailto:info@tracevisor.com" class="mt-1 font-mono text-[0.8125rem] text-fg underline decoration-line-strong underline-offset-4 hover:decoration-fg">info@tracevisor.com</a>
+        </div>
+      </dl>
+    </div>
 
-  <ContactSection />
-</MainLayout>
+    <form action="mailto:info@tracevisor.com" method="post" enctype="text/plain" class="panel flex flex-col gap-4 p-5 sm:p-6">
+      <h2 class="text-base">{c.form.title}</h2>
+      {state === "sent" && <p class="rounded-md border border-ok/30 bg-ok/8 px-3 py-2 text-[0.8125rem] text-ok" role="status">{c.form.result}</p>}
+      {state === "invalid" && <p class="rounded-md border border-danger/30 bg-danger/8 px-3 py-2 text-[0.8125rem] text-danger" role="alert">{c.required}</p>}
+      {state === "failed" && <p class="rounded-md border border-danger/30 bg-danger/8 px-3 py-2 text-[0.8125rem] text-danger" role="alert">{c.errors}</p>}
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label class="label" for="firstName">{c.form.firstName}</label>
+          <input class="field" id="firstName" name="firstName" type="text" autocomplete="given-name" required value={values.firstName} />
+        </div>
+        <div>
+          <label class="label" for="lastName">{c.form.lastName}</label>
+          <input class="field" id="lastName" name="lastName" type="text" autocomplete="family-name" required value={values.lastName} />
+        </div>
+      </div>
+      <div>
+        <label class="label" for="email">Email</label>
+        <input class="field" id="email" name="email" type="email" autocomplete="email" required value={values.email} />
+      </div>
+      <div>
+        <label class="label" for="reason">{c.form.reason.label}</label>
+        <select class="field" id="reason" name="reason" required>
+          <option value="" selected={!values.reason}>{c.form.reason.select}</option>
+          {reasons.map((r) => <option value={r} selected={values.reason === r}>{c.form.reason[r]}</option>)}
+        </select>
+      </div>
+      <div>
+        <label class="label" for="details">{c.form.details}</label>
+        <textarea class="field min-h-32" id="details" name="details" rows="5" required>{values.details}</textarea>
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <span class="text-2xs text-muted">{c.form.replyTime}</span>
+        <button type="submit" class="btn btn-primary">
+          {c.form.send}
+        </button>
+      </div>
+    </form>
+  </section>
+</SiteLayout>

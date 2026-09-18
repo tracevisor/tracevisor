@@ -29,7 +29,7 @@ Track visitors, campaigns, devices, and geography with unlimited page views acro
 
 ## Why Choose Tracevisor?
 
-In a world of complex analytics tools, Tracevisor stands out by combining powerful features with simplicity and privacy. Unlike traditional platforms that require days of setup and compromise user data, Tracevisor empowers you with:
+In a world of complex analytics tools, Tracevisor stands out by combining powerful features with simplicity and privacy. Unlike traditional platforms that require days of setup and compromise user data, Tracevisor empowers you with :
 
 <div align="center">
 
@@ -241,6 +241,23 @@ Join the Tracevisor community for updates, discussions, and support:
 - [x] Lemon Squeezy Integration
 - [x] GDPR Compliance
 
+## Development
+
+This repository holds the public site and the design system of TraceVisor: the monochrome tokens, the component classes, the marketing pages and the five-locale dictionary, as a static Astro 7 site. The product itself (accounts, tracking, analytics) runs elsewhere.
+
+```bash
+npm install
+npm run dev
+```
+
+| Command | What it does |
+|---|---|
+| `npm run build` | Static build to `dist/` |
+| `npm run icons` | Regenerates the Lucide subset in `src/ui/icons.generated.ts` |
+| `npm run check` | Type-checks every `.astro` and `.ts` file |
+
+Layout of `src/`: `styles/` (tokens, base, components), `ui/` (server components), `layouts/SiteLayout.astro`, `i18n/` (one typed dictionary per locale, `en` is the source of truth), `pages/[lang]/`.
+
 ---
 
 <div align="center">
@@ -248,6 +265,5 @@ Join the Tracevisor community for updates, discussions, and support:
     <img src="public/Lemon-Squeezy-Powered-Badge-Purple-Dark.svg" alt="Lemon Squeezy">
   </a>
 
-  
-  ##### © 2025 Tracevisor Analytics. All rights reserved.
+  ##### © 2026 TraceVisor Analytics. All rights reserved.
 </div>

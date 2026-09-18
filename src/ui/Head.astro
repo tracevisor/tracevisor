@@ -1,0 +1,64 @@
+---
+import { locales, type Locale } from "../i18n/dictionary";
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  noindex?: boolean;
+}
+
+const { locale, title, description, noindex = false } = Astro.props;
+const site = "https://tracevisor.com";
+const path = Astro.url.pathname.replace(/^\/(en|es|fr|pt|de)(?=\/|$)/, "") || "/";
+const canonical = `${site}/${locale}${path === "/" ? "" : path}`;
+const image = `${site}/tracevisor-preview-rounded.png`;
+const ogLocale = { en: "en_US", es: "es_ES", fr: "fr_FR", pt: "pt_BR", de: "de_DE" }[locale];
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  inLanguage: locale,
+  "@id": canonical,
+  url: canonical,
+  name: title,
+  description,
+  isPartOf: { "@type": "WebSite", url: site, name: "TraceVisor" },
+};
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+<link rel="canonical" href={canonical} />
+{locales.map((l) => <link rel="alternate" hreflang={l} href={`${site}/${l}${path === "/" ? "" : path}`} />)}
+<link rel="alternate" hreflang="x-default" href={`${site}/en${path === "/" ? "" : path}`} />
+<meta property="og:locale" content={ogLocale} />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TraceVisor" />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+<link rel="icon" href="/favicons/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/favicons/favicon-180-precomposed.png" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
+<script is:inline>
+  (function () {
+    var stored = null;
+    try {
+      stored = localStorage.getItem("theme") || localStorage.getItem("hs_theme");
+    } catch (e) {}
+    var dark = stored ? stored === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    if (dark) document.documentElement.classList.add("dark");
+  })();
+</script>
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />

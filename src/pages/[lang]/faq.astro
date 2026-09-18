@@ -1,79 +1,46 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import FAQ from "@components/sections/misc/FAQ.astro";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import faqsDataEn from "@data/faqs.json";
-import faqsDataEs from "@data/es/faqs.json";
-import faqsDataFr from "@data/fr/faqs.json";
-import faqsDataPt from "@data/pt/faqs.json";
-import faqsDataDe from "@data/de/faqs.json";
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
-
-let faqsData;
-switch (lang) {
-  case 'es':
-    faqsData = faqsDataEs;
-    break;
-  case 'fr':
-    faqsData = faqsDataFr;
-    break;
-  case 'pt':
-    faqsData = faqsDataPt;
-    break;
-  case 'de':
-    faqsData = faqsDataDe;
-    break;
-  default:
-    faqsData = faqsDataEn;
+export function getStaticPaths() {
+  return ["en", "es", "fr", "pt", "de"].map((lang) => ({ params: { lang } }));
 }
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Icon from "../../ui/Icon.astro";
+import { dictionary, localeFromPath } from "../../i18n/dictionary";
+import en from "../../data_files/faqs.json";
+import es from "../../data_files/es/faqs.json";
+import fr from "../../data_files/fr/faqs.json";
+import pt from "../../data_files/pt/faqs.json";
+import de from "../../data_files/de/faqs.json";
 
-const pageTitle = t("faq.pageTitle");
+const locale = localeFromPath(Astro.url.pathname);
+const t = await dictionary(locale);
+const data = { en, es, fr, pt, de }[locale];
 ---
 
-<MainLayout
-  title={pageTitle}
-  customDescription={t("faq.metaDescription")}
-  customOgTitle={t("faq.ogTitle")}
-  structuredData={{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqsData.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  }}
->
-  <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-    <FAQ title={t("faq.title")} faqs={faqsData} />
-    
-    <div class="flex justify-center mt-8">
-      <button 
-        id="back-button"
-        class="btn-gradient hover:btn-gradient-hover px-6 py-3 rounded-lg font-medium text-white text-sm sm:text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-      >
-        {t('ui.goBack')}
-      </button>
+<SiteLayout title={t.faq.title} description={data.subTitle}>
+  <section class="mx-auto grid max-w-site gap-10 px-4 pt-14 pb-16 sm:px-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:pt-20">
+    <div class="flex flex-col items-start gap-4 lg:sticky lg:top-20 lg:self-start">
+      <h1>{t.faq.title}</h1>
+      <p class="max-w-sm text-text">{data.subTitle}</p>
+      <img src="/faq.svg" alt="" width="220" height="160" class="mt-2 hidden w-56 lg:block" loading="lazy" decoding="async" />
+      <div class="mt-4 flex flex-col gap-2">
+        <span class="text-[0.8125rem] text-muted">{t.faq.more}</span>
+        <a href={`/${locale}/contact`} class="btn btn-secondary">
+          {t.faq.contact}
+        </a>
+      </div>
     </div>
-  </div>
-  <script define:vars={{ lang }}>
-    document.addEventListener('DOMContentLoaded', function() {
-      const backButton = document.getElementById('back-button');
-      
-      if (backButton) {
-        backButton.addEventListener('click', function() {
-          if (window.history.length > 1) {
-            window.history.back();
-          } else {
-            window.location.href = `/${lang}/`;
-          }
-        });
+    <div class="divide-y divide-line rounded-lg border border-line">
+      {
+        data.faqs.map((item) => (
+          <details class="group px-4">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-3.5 text-[0.9375rem] font-medium text-fg [&::-webkit-details-marker]:hidden">
+              {item.question}
+              <Icon name="chevron-down" class="shrink-0 text-muted transition-transform duration-150 group-open:rotate-180" />
+            </summary>
+            <p class="pb-4 text-[0.875rem] leading-relaxed text-text">{item.answer}</p>
+          </details>
+        ))
       }
-    });
-  </script>
-</MainLayout>
+    </div>
+  </section>
+</SiteLayout>

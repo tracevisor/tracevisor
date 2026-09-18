@@ -1,0 +1,39 @@
+---
+export function getStaticPaths() {
+  return ["en", "es", "fr", "pt", "de"].map((lang) => ({ params: { lang } }));
+}
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { dictionary, localeFromPath } from "../../i18n/dictionary";
+
+const locale = localeFromPath(Astro.url.pathname);
+const t = await dictionary(locale);
+const l = t.login;
+---
+
+<SiteLayout title={t.nav.login} noindex>
+  <section class="mx-auto grid max-w-site items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
+    <div class="mx-auto w-full max-w-sm">
+      <div class="panel p-6 sm:p-8">
+        <h1 class="text-2xl">{l.title}</h1>
+        <p class="mt-2 text-[0.875rem] text-muted">{l.subtitle}</p>
+        <a href={`/${locale}`} class="btn btn-primary btn-lg mt-6 w-full">
+          <svg viewBox="0 0 24 24" class="size-4" aria-hidden="true">
+            <path fill="currentColor" d="M21.6 12.23c0-.68-.06-1.36-.19-2.02H12v3.83h5.4a4.62 4.62 0 0 1-2 3.03v2.5h3.23c1.9-1.75 2.97-4.32 2.97-7.34Z" opacity=".9" />
+            <path fill="currentColor" d="M12 21.6c2.7 0 4.97-.9 6.63-2.43l-3.23-2.5c-.9.6-2.04.95-3.4.95-2.61 0-4.82-1.76-5.61-4.13H3.06v2.58A9.99 9.99 0 0 0 12 21.6Z" opacity=".7" />
+            <path fill="currentColor" d="M6.39 13.49a6 6 0 0 1 0-3.83V7.08H3.06a10 10 0 0 0 0 8.99l3.33-2.58Z" opacity=".5" />
+            <path fill="currentColor" d="M12 6.38c1.47 0 2.79.5 3.83 1.5l2.87-2.87A9.6 9.6 0 0 0 12 2.4a9.99 9.99 0 0 0-8.94 5.5l3.33 2.58C7.18 8.14 9.39 6.38 12 6.38Z" opacity=".8" />
+          </svg>
+          {l.google}
+        </a>
+        <p class="mt-4 text-center text-2xs text-muted">{l.passwordless}</p>
+        <p class="mt-6 border-t border-line pt-4 text-center text-2xs text-muted">
+          {l.terms}
+          <a href={`/${locale}/terms`} class="underline decoration-line-strong underline-offset-2 hover:text-fg">{l.termsLink}</a>
+          {" "}{l.and}{" "}
+          <a href={`/${locale}/privacy`} class="underline decoration-line-strong underline-offset-2 hover:text-fg">{l.privacyLink}</a>.
+        </p>
+      </div>
+    </div>
+    <img src="/data_reports.svg" alt="" width="480" height="360" class="mx-auto hidden w-full max-w-md lg:block" loading="lazy" decoding="async" />
+  </section>
+</SiteLayout>

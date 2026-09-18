@@ -1,0 +1,66 @@
+---
+import Logo from "./Logo.astro";
+import type { Dictionary, Locale } from "../i18n/dictionary";
+
+interface Props {
+  locale: Locale;
+  t: Dictionary;
+}
+
+const { locale, t } = Astro.props;
+const year = new Date().getFullYear();
+const groups = [
+  {
+    title: t.footer.product,
+    links: [
+      { href: `/${locale}/pricing`, label: t.nav.pricing },
+      { href: `/${locale}/faq`, label: t.nav.faq },
+    ],
+  },
+  {
+    title: t.footer.resources,
+    links: [
+      { href: `/${locale}/contact`, label: t.nav.contact },
+      { href: "https://github.com/tracevisor", label: "GitHub" },
+    ],
+  },
+  {
+    title: t.footer.legal,
+    links: [
+      { href: `/${locale}/privacy`, label: t.nav.privacy },
+      { href: `/${locale}/terms`, label: t.nav.terms },
+    ],
+  },
+];
+---
+
+<footer class="border-t border-line">
+  <div class="mx-auto grid max-w-site gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_repeat(3,1fr)]">
+    <div class="flex flex-col gap-3">
+      <Logo href={`/${locale}`} />
+      <p class="max-w-xs text-[0.8125rem] text-muted">{t.meta.tagline}</p>
+    </div>
+    {
+      groups.map((group) => (
+        <div>
+          <h4 class="mb-3 text-2xs font-semibold uppercase tracking-[0.1em] text-muted">{group.title}</h4>
+          <ul class="flex flex-col gap-2">
+            {group.links.map((link) => (
+              <li>
+                <a href={link.href} class="text-[0.8125rem] text-text transition-colors duration-150 hover:text-fg">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+  <div class="border-t border-line">
+    <div class="mx-auto flex max-w-site flex-wrap items-center justify-between gap-2 px-4 py-4 text-2xs text-muted sm:px-6">
+      <span>© {year} TraceVisor. {t.footer.rights}</span>
+      <span class="font-mono">tracevisor.com</span>
+    </div>
+  </div>
+</footer>

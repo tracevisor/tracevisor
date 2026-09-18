@@ -1,0 +1,38 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+
+interface Props {
+  title: string;
+  effectiveDate: string;
+  sections: Record<string, Record<string, string>>;
+  description: string;
+}
+
+const { title, effectiveDate, sections, description } = Astro.props;
+const entries = Object.values(sections).map((section) => {
+  const { title: heading, ...rest } = section;
+  return { heading, paragraphs: Object.values(rest) };
+});
+---
+
+<SiteLayout title={title} description={description}>
+  <article class="mx-auto max-w-prose px-4 pt-14 pb-20 sm:px-6 lg:pt-20">
+    <h1>{title}</h1>
+    <p class="mt-2 text-2xs uppercase tracking-[0.1em] text-muted">{effectiveDate}</p>
+    <nav class="mt-8 rounded-lg border border-line bg-surface p-4" aria-label={title}>
+      <ol class="grid gap-1.5 text-[0.8125rem] sm:grid-cols-2">
+        {entries.map((e, i) => <li><a href={`#section-${i + 1}`} class="text-text transition-colors duration-150 hover:text-fg">{e.heading}</a></li>)}
+      </ol>
+    </nav>
+    <div class="prose-plain mt-6">
+      {
+        entries.map((e, i) => (
+          <section id={`section-${i + 1}`}>
+            <h2>{e.heading}</h2>
+            {e.paragraphs.map((p) => <p set:html={p} />)}
+          </section>
+        ))
+      }
+    </div>
+  </article>
+</SiteLayout>

@@ -1,105 +1,15 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
-import compressor from "astro-compressor";
-import starlight from "@astrojs/starlight";
-import vercel from "@astrojs/vercel/serverless";
-import mdx from "@astrojs/mdx";
-import react from "@astrojs/react";
 
 export default defineConfig({
-  output: "server",
-  adapter: vercel(),
+  output: "static",
   site: "https://tracevisor.com",
-  image: {
-    domains: ["images.unsplash.com"],
-  },
   i18n: {
     defaultLocale: "en",
     locales: ["en", "es", "fr", "pt", "de"],
-    routing: {
-      prefixDefaultLocale: true,
-    },
+    routing: { prefixDefaultLocale: true },
   },
-  prefetch: true,
-  integrations: [
-    react(),
-    sitemap(),
-    starlight({
-      title: "TraceVisor",
-      sidebar: [
-        {
-          label: "Quick Start Guides",
-          translations: {
-            de: "Schnellstartanleitungen",
-            es: "Guías de Inicio Rápido",
-            fa: "راهنمای شروع سریع",
-            fr: "Guides de Démarrage Rapide",
-            ja: "クイックスタートガイド",
-            "zh-cn": "快速入门指南",
-          },
-          autogenerate: { directory: "guides" },
-        },
-        {
-          label: "Tools & Equipment",
-          items: [
-            { label: "Tool Guides", link: "tools/tool-guides/" },
-            { label: "Equipment Care", link: "tools/equipment-care/" },
-          ],
-        },
-        {
-          label: "Construction Services",
-          autogenerate: { directory: "construction" },
-        },
-        {
-          label: "Advanced Topics",
-          autogenerate: { directory: "advanced" },
-        },
-      ],
-      social: [
-        {
-          icon: "github",
-          label: "GitHub",
-          href: "https://github.com/tracevisor",
-        },
-      ],
-      disable404Route: true,
-      customCss: ["./src/assets/styles/starlight.css"],
-      favicon: "/favicon.ico",
-      components: {
-        SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",
-        Head: "./src/components/ui/starlight/Head.astro",
-        MobileMenuFooter:
-          "./src/components/ui/starlight/MobileMenuFooter.astro",
-        ThemeSelect: "./src/components/ui/starlight/ThemeSelect.astro",
-      },
-      head: [
-        {
-          tag: "meta",
-          attrs: {
-            property: "og:image",
-            content: "https://tracevisor.com" + "/social.webp",
-          },
-        },
-        {
-          tag: "meta",
-          attrs: {
-            property: "twitter:image",
-            content: "https://tracevisor.com" + "/social.webp",
-          },
-        },
-      ],
-    }),
-    compressor({
-      gzip: false,
-      brotli: true,
-    }),
-    mdx(),
-  ],
-  experimental: {
-    clientPrerender: true,
-  },
-  vite: {
-    plugins: [tailwindcss()],
-  },
+  integrations: [sitemap()],
+  vite: { plugins: [tailwindcss()] },
 });

@@ -1,0 +1,45 @@
+---
+import Icon from "./Icon.astro";
+import { locales, localeNames, localizedPath, type Locale } from "../i18n/dictionary";
+
+interface Props {
+  locale: Locale;
+  label: string;
+  align?: "left" | "right";
+}
+
+const { locale, label, align = "right" } = Astro.props;
+const path = Astro.url.pathname;
+---
+
+<details class="group relative">
+  <summary class="block cursor-pointer list-none [&::-webkit-details-marker]:hidden" aria-label={label} title={label}><span class="btn btn-ghost gap-1.5 px-2.5">
+    <Icon name="languages" />
+    <span class="text-[0.8125rem] uppercase">{locale}</span>
+    <Icon name="chevron-down" class="size-3.5! text-muted transition-transform duration-150 group-open:rotate-180" />
+  </span></summary>
+  <ul
+    class:list={[
+      "absolute z-40 mt-1 min-w-40 rounded-md border border-line bg-elevated p-1 shadow-panel",
+      align === "right" ? "right-0" : "left-0",
+    ]}
+    role="menu"
+  >
+    {
+      locales.map((l) => (
+        <li role="none">
+          <a
+            href={localizedPath(l, path)}
+            hreflang={l}
+            role="menuitem"
+            aria-current={l === locale ? "true" : undefined}
+            class="flex items-center justify-between gap-3 rounded-sm px-2.5 py-1.5 text-[0.8125rem] text-text hover:bg-inset hover:text-fg aria-[current=true]:text-fg"
+          >
+            {localeNames[l]}
+            {l === locale && <Icon name="check" class="size-3.5! text-muted" />}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>

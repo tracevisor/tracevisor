@@ -1,0 +1,106 @@
+---
+import type { Dictionary } from "../../i18n/dictionary";
+
+interface Props {
+  t: Dictionary["home"]["preview"];
+}
+
+const { t } = Astro.props;
+const series = [42, 51, 47, 63, 58, 71, 66, 79, 74, 88, 83, 97, 91, 104, 99, 112, 108, 121, 117, 131, 126, 139, 135, 148, 142, 156, 151, 164, 160, 173];
+const max = Math.max(...series);
+const width = 600;
+const height = 120;
+const gap = 4;
+const bar = (width - gap * (series.length - 1)) / series.length;
+const stats = [
+  { label: t.visitors, value: "12,480", delta: "+8.2%" },
+  { label: t.pageViews, value: "41,905", delta: "+11.4%" },
+  { label: t.sessions, value: "15,212", delta: "+6.9%" },
+  { label: t.bounce, value: "38.1%", delta: "−2.3%" },
+];
+const pages = [
+  ["/", 9820],
+  ["/pricing", 6130],
+  ["/blog", 4415],
+  ["/docs", 2942],
+  ["/about", 1876],
+];
+const countries = [
+  ["United States", 31],
+  ["Germany", 22],
+  ["United Kingdom", 14],
+  ["Brazil", 11],
+  ["Japan", 8],
+];
+---
+
+<div class="panel overflow-hidden shadow-panel" aria-hidden="true">
+  <div class="panel-head">
+    <div class="flex items-center gap-2">
+      <span class="dot dot-ok"></span>
+      <span class="text-[0.8125rem] font-medium text-fg">{t.site}</span>
+      <span class="text-2xs text-muted">· 38 {t.live}</span>
+    </div>
+    <span class="badge">{t.range}</span>
+  </div>
+  <div class="grid grid-cols-2 divide-x divide-line border-b border-line sm:grid-cols-4">
+    {
+      stats.map((s) => (
+        <div class="stat">
+          <span class="stat-label">{s.label}</span>
+          <span class="stat-value text-xl">{s.value}</span>
+          <span class="text-2xs text-muted tabular-nums">{s.delta}</span>
+        </div>
+      ))
+    }
+  </div>
+  <div class="border-b border-line px-4 py-3">
+    <svg viewBox={`0 0 ${width} ${height}`} class="h-24 w-full text-fg" preserveAspectRatio="none">
+      {
+        series.map((v, i) => (
+          <rect
+            x={i * (bar + gap)}
+            y={height - (v / max) * height}
+            width={bar}
+            height={(v / max) * height}
+            rx="1.5"
+            fill="currentColor"
+            opacity={0.25 + (i / series.length) * 0.75}
+          />
+        ))
+      }
+    </svg>
+  </div>
+  <div class="grid divide-y divide-line sm:grid-cols-2 sm:divide-x sm:divide-y-0">
+    <table class="table">
+      <thead>
+        <tr><th>{t.pages}</th><th class="text-right">{t.pageViews}</th></tr>
+      </thead>
+      <tbody>
+        {pages.map(([path, n]) => <tr><td class="font-mono text-xs">{path}</td><td class="num">{n.toLocaleString("en-US")}</td></tr>)}
+      </tbody>
+    </table>
+    <table class="table">
+      <thead>
+        <tr><th>{t.countries}</th><th class="text-right">%</th></tr>
+      </thead>
+      <tbody>
+        {
+          countries.map(([name, pct]) => (
+            <tr>
+              <td>
+                <span class="flex items-center gap-2 whitespace-nowrap">
+                  <span class="h-1 w-14 shrink-0 overflow-hidden rounded-full bg-inset">
+                    <span class="block h-full bg-fg" style={`width: ${pct}%`} />
+                  </span>
+                  {name}
+                </span>
+              </td>
+              <td class="num">{pct}%</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

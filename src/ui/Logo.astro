@@ -1,0 +1,14 @@
+---
+interface Props {
+  href?: string;
+  wordmark?: boolean;
+  class?: string;
+}
+
+const { href = "/", wordmark = true, class: className } = Astro.props;
+---
+
+<a href={href} class:list={["inline-flex items-center gap-2.5 text-fg", className]} aria-label="TraceVisor">
+  <img src="/favicons/favicon-96.png" alt="" width="28" height="28" class="size-7 rounded-full" decoding="async" />
+  {wordmark && <span class="text-[0.9375rem] font-semibold tracking-tight">TraceVisor</span>}
+</a>

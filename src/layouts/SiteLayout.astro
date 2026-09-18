@@ -1,0 +1,33 @@
+---
+import "../styles/app.css";
+import Head from "../ui/Head.astro";
+import SiteHeader from "../ui/SiteHeader.astro";
+import SiteFooter from "../ui/SiteFooter.astro";
+import { dictionary, localeFromPath } from "../i18n/dictionary";
+
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+  bare?: boolean;
+}
+
+const locale = localeFromPath(Astro.url.pathname);
+const t = await dictionary(locale);
+const { title, description = t.meta.description, noindex = false, bare = false } = Astro.props;
+const signedIn = false;
+---
+
+<!doctype html>
+<html lang={locale} class="h-full">
+  <head>
+    <Head locale={locale} title={`${title} · TraceVisor`} description={description} noindex={noindex} />
+  </head>
+  <body class="flex min-h-full flex-col">
+    {!bare && <SiteHeader locale={locale} t={t} signedIn={signedIn} />}
+    <main class="flex-1">
+      <slot />
+    </main>
+    {!bare && <SiteFooter locale={locale} t={t} />}
+  </body>
+</html>

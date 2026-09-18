@@ -1,0 +1,26 @@
+---
+import Icon from "./Icon.astro";
+
+interface Props {
+  label: string;
+  class?: string;
+}
+
+const { label, class: className } = Astro.props;
+---
+
+<button type="button" class:list={["btn btn-ghost btn-icon", className]} data-theme-toggle aria-label={label} title={label}>
+  <Icon name="sun" class="dark:hidden" />
+  <Icon name="moon" class="hidden dark:block" />
+</button>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>("[data-theme-toggle]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const dark = document.documentElement.classList.toggle("dark");
+      try {
+        localStorage.setItem("theme", dark ? "dark" : "light");
+      } catch {}
+    });
+  });
+</script>

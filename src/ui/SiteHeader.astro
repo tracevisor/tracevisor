@@ -1,0 +1,69 @@
+---
+import Icon from "./Icon.astro";
+import Logo from "./Logo.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import LanguageMenu from "./LanguageMenu.astro";
+import type { Dictionary, Locale } from "../i18n/dictionary";
+
+interface Props {
+  locale: Locale;
+  t: Dictionary;
+  signedIn: boolean;
+}
+
+const { locale, t, signedIn } = Astro.props;
+const current = Astro.url.pathname.replace(/\/$/, "");
+const links = [
+  { href: `/${locale}/pricing`, label: t.nav.pricing },
+  { href: `/${locale}/faq`, label: t.nav.faq },
+  { href: `/${locale}/contact`, label: t.nav.contact },
+];
+---
+
+<header class="sticky top-0 z-30 border-b border-line bg-bg/85 backdrop-blur-sm">
+  <div class="mx-auto flex h-14 max-w-site items-center gap-4 px-4 sm:px-6">
+    <Logo href={`/${locale}`} />
+    <nav class="ml-4 hidden items-center gap-1 md:flex" aria-label={t.nav.menu}>
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="btn btn-ghost h-8 px-2.5 text-[0.8125rem] font-medium aria-[current=page]:text-fg"
+            aria-current={current === link.href ? "page" : undefined}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+    <div class="ml-auto flex items-center gap-1">
+      <LanguageMenu locale={locale} label={t.language.label} />
+      <ThemeToggle label={t.theme.toggle} />
+      {
+        signedIn ? (
+          <a href={`/${locale}/dashboard`} class="btn btn-primary ml-1 h-8 px-3 text-[0.8125rem]">
+            {t.nav.dashboard}
+          </a>
+        ) : (
+          <a href={`/${locale}/login`} class="btn btn-primary ml-1 h-8 px-3 text-[0.8125rem]">
+            {t.nav.login}
+          </a>
+        )
+      }
+      <details class="relative md:hidden">
+        <summary class="block cursor-pointer list-none [&::-webkit-details-marker]:hidden" aria-label={t.nav.menu}><span class="btn btn-ghost btn-icon">
+          <Icon name="menu" />
+        </span></summary>
+        <nav class="absolute right-0 z-40 mt-1 w-48 rounded-md border border-line bg-elevated p-1 shadow-panel" aria-label={t.nav.menu}>
+          {
+            links.map((link) => (
+              <a href={link.href} class="block rounded-sm px-2.5 py-1.5 text-[0.8125rem] text-text hover:bg-inset hover:text-fg">
+                {link.label}
+              </a>
+            ))
+          }
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>

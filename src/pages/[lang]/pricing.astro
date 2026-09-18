@@ -1,382 +1,185 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import { eq } from "drizzle-orm";
-import { db } from "../../db/index";
-import { sessions, users } from "../../db/schema";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import Icon from "@components/ui/icons/Icon.astro";
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
-
-let userPlan = 'basic';
-const sessionToken = Astro.cookies.get("app_auth_token")?.value;
-
-if (sessionToken) {
-  const userInfo = await db.query.sessions.findFirst({
-    where: eq(sessions.id, sessionToken),
-    with: {
-      user: {
-        columns: {
-          plan: true
-        }
-      }
-    }
-  });
-  
-  if (userInfo?.user?.plan) {
-    userPlan = userInfo.user.plan;
-  }
+export function getStaticPaths() {
+  return ["en", "es", "fr", "pt", "de"].map((lang) => ({ params: { lang } }));
 }
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Icon from "../../ui/Icon.astro";
+import { dictionary, localeFromPath } from "../../i18n/dictionary";
 
-const paymentLinks: Record<string, { monthly: string; annual: string }> = {
-  flex: {
-    monthly: 'https://tracevisor.lemonsqueezy.com/buy/5e5239ef-7323-41d7-9d68-34de61a19efd',
-    annual: 'https://tracevisor.lemonsqueezy.com/buy/b2518b69-e832-4f8e-ae59-3e7b1f632a01'
-  },
-  pro: {
-    monthly: 'https://tracevisor.lemonsqueezy.com/buy/1c589ba0-cd2e-4384-8eb3-4a3252c90562',
-    annual: 'https://tracevisor.lemonsqueezy.com/buy/3b3ca709-9997-49d2-8d82-8a09a1b75c2c'
-  }
-};
+const locale = localeFromPath(Astro.url.pathname);
+const t = await dictionary(locale);
+const p = t.pricing;
+const f = p.features;
+const userPlan: string | null = null;
 
-const plans = [
+
+type Feature = { text: string; included: boolean; highlight?: boolean };
+const plans: {
+  id: "basic" | "flex" | "pro";
+  name: string;
+  description: string;
+  monthly: number;
+  annual: number;
+  popular: boolean;
+  features: Feature[];
+}[] = [
   {
-    id: 'basic',
-    name: t('pricing.basic.name'),
-    description: t('pricing.basic.description'),
-    price: {
-      monthly: t('pricing.free'),
-      annual: t('pricing.free')
-    },
-    priceAmount: {
-      monthly: 0,
-      annual: 0
-    },
+    id: "basic",
+    ...p.plans.basic,
+    monthly: 0,
+    annual: 0,
     popular: false,
     features: [
-      { text: `1 ${t('pricing.features.website')}`, included: true },
-      { text: `30 ${t('pricing.features.days')} ${t('pricing.features.dataRetention')}`, included: true },
-      { text: t('pricing.features.pageViews'), included: true },
-      { text: t('pricing.features.coreAnalytics'), included: true },
-      { text: t('pricing.features.basicExport'), included: true },
-      { text: t('pricing.features.co2Reporting'), included: false },
-      { text: t('pricing.features.customEvents'), included: false },
-      { text: t('pricing.features.emailReports'), included: false },
-      { text: t('pricing.features.apiAccess'), included: true }
-    ]
+      { text: `1 ${f.website}`, included: true },
+      { text: `30 ${f.days} ${f.dataRetention}`, included: true },
+      { text: f.pageViews, included: true },
+      { text: f.coreAnalytics, included: true },
+      { text: f.basicExport, included: true },
+      { text: f.apiAccess, included: true },
+      { text: f.customEvents, included: false },
+      { text: f.emailReports, included: false },
+      { text: f.co2Reporting, included: false },
+    ],
   },
   {
-    id: 'flex',
-    name: t('pricing.flex.name'),
-    description: t('pricing.flex.description'),
-    price: {
-      monthly: '$12',
-      annual: '$79.99'
-    },
-    priceAmount: {
-      monthly: 12,
-      annual: 79.99
-    },
+    id: "flex",
+    ...p.plans.flex,
+    monthly: 12,
+    annual: 79.99,
     popular: true,
     features: [
-      { text: `5 ${t('pricing.features.websites')}`, included: true },
-      { text: `6 ${t('pricing.features.months')} ${t('pricing.features.dataRetention')}`, included: true },
-      { text: t('pricing.features.pageViews'), included: true },
-      { text: t('pricing.features.coreAnalytics'), included: true },
-      { text: t('pricing.features.customEvents'), included: true },
-      { text: t('pricing.features.utmTracking'), included: true },
-      { text: t('pricing.features.gis'), included: true },
-      { text: t('pricing.features.dataExport'), included: true },
-      { text: t('pricing.features.emailReports'), included: true },
-      { text: t('pricing.features.co2Reporting'), included: false },
-      { text: t('pricing.features.apiAccess'), included: true },
-      { text: t('pricing.features.publicDashboards'), included: false },     
-    ]
+      { text: `5 ${f.websites}`, included: true },
+      { text: `6 ${f.months} ${f.dataRetention}`, included: true },
+      { text: f.pageViews, included: true },
+      { text: f.coreAnalytics, included: true },
+      { text: f.customEvents, included: true },
+      { text: f.utmTracking, included: true },
+      { text: f.gis, included: true },
+      { text: f.dataExport, included: true },
+      { text: f.emailReports, included: true },
+      { text: f.apiAccess, included: true },
+      { text: f.co2Reporting, included: false },
+      { text: f.publicDashboards, included: false },
+    ],
   },
   {
-    id: 'pro',
-    name: t('pricing.pro.name'),
-    description: t('pricing.pro.description'),
-    price: {
-      monthly: '$15',
-      annual: '$99.99'
-    },
-    priceAmount: {
-      monthly: 15,
-      annual: 99.99
-    },
+    id: "pro",
+    ...p.plans.pro,
+    monthly: 15,
+    annual: 99.99,
     popular: false,
     features: [
-      { text: `${t('pricing.unlimited')} ${t('pricing.features.websites')}`, included: true },
-      { text: `${t('pricing.unlimited')} ${t('pricing.features.dataRetention')}`, included: true },
-      { text: t('pricing.features.pageViews'), included: true },
-      { text: `${t('pricing.included')} Flex ${t('pricing.plus')}`, included: true, highlight: true },
-      { text: t('pricing.features.co2Reporting'), included: true },
-      { text: t('pricing.features.publicDashboards'), included: true },
-      { text: t('pricing.features.prioritySupport'), included: true }
-    ]
-  }
+      { text: `${p.unlimited} ${f.websites}`, included: true },
+      { text: `${p.unlimited} ${f.dataRetention}`, included: true },
+      { text: f.pageViews, included: true },
+      { text: `${p.everythingIn} Flex +`, included: true, highlight: true },
+      { text: f.co2Reporting, included: true },
+      { text: f.publicDashboards, included: true },
+      { text: f.prioritySupport, included: true },
+    ],
+  },
 ];
+
+const money = (n: number) => (Number.isInteger(n) ? `$${n}` : `$${n.toFixed(2)}`);
 ---
 
-<MainLayout 
-  title={t('pricing.pageTitle')}
-  customDescription={t('pricing.metaDescription')}
-  customOgTitle={t('pricing.ogTitle')}
->
-  <section class="py-8 sm:py-12 lg:py-16">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      
-      <!-- Header -->
-      <div class="text-center mb-8 sm:mb-12 lg:mb-16">
-        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-800 dark:text-neutral-200 tracking-tight mb-3 sm:mb-4">
-          {t('pricing.title')}
-        </h1>
-        <p class="text-sm sm:text-base lg:text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto px-4">
-          {t('pricing.subtitle')}
-        </p>
+<SiteLayout title={p.title} description={p.metaDescription}>
+  <section class="mx-auto max-w-site px-4 pt-14 pb-16 sm:px-6 lg:pt-20">
+    <div class="flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between">
+      <div class="max-w-xl">
+        <h1>{p.title}</h1>
+        <p class="mt-2 text-text">{p.subtitle}</p>
       </div>
-
-      <!-- Billing Toggle -->
-      <div class="flex justify-center mb-8 sm:mb-12">
-        <div class="bg-neutral-100 dark:bg-[#171717] rounded-lg p-1 inline-flex">
-          <button 
-            id="monthly-toggle"
-            class="billing-toggle px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 bg-white dark:bg-neutral-700 text-neutral-800 dark:text-neutral-200 shadow-sm"
-          >
-            {t('pricing.billingToggle.monthly')}
-          </button>
-          <button 
-            id="annual-toggle"
-            class="billing-toggle px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 text-neutral-600 dark:text-neutral-400"
-          >
-            {t('pricing.billingToggle.annual')}
-            <span class="ml-2 text-xs text-[#7C86FF] dark:text-[#A2B3FF] font-semibold">
-              ({t('pricing.billingToggle.savePercent').replace('{percent}', '44')})
-            </span>
-          </button>
+      <fieldset class="flex items-center gap-2">
+        <legend class="sr-only">{p.monthly} / {p.annual}</legend>
+        <div class="flex rounded-md border border-line bg-surface p-0.5">
+          <input type="radio" name="billing" id="billing-monthly" value="monthly" class="peer/monthly sr-only" checked />
+          <label for="billing-monthly" class="cursor-pointer rounded-sm px-3 py-1.5 text-[0.8125rem] font-medium text-muted transition-colors duration-150 peer-checked/monthly:bg-elevated peer-checked/monthly:text-fg peer-checked/monthly:shadow-soft">
+            {p.monthly}
+          </label>
+          <input type="radio" name="billing" id="billing-annual" value="annual" class="peer/annual sr-only" />
+          <label for="billing-annual" class="cursor-pointer rounded-sm px-3 py-1.5 text-[0.8125rem] font-medium text-muted transition-colors duration-150 peer-checked/annual:bg-elevated peer-checked/annual:text-fg peer-checked/annual:shadow-soft">
+            {p.annual}
+          </label>
         </div>
-      </div>
-
-      <!-- Pricing Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
-        {plans.map((plan) => (
-          <div class={`relative flex flex-col bg-white dark:bg-[#171717] rounded-xl sm:rounded-2xl border-2 transition-all duration-300 hover:shadow-xl ${
-            plan.popular 
-              ? 'border-brand-coral shadow-lg md:scale-105' 
-              : 'border-neutral-200 dark:border-neutral-700 hover:border-neutral-300 dark:hover:border-neutral-600'
-          }`}>
-            
-            {/* Popular Badge */}
-            {plan.popular && (
-              <div class="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <span class="bg-brand-coral text-white px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap">
-                  {t('pricing.mostPopular')}
-                </span>
-              </div>
-            )}
-
-            <div class="p-4 sm:p-6 lg:p-8 flex flex-col flex-1">
-              <!-- Plan Header -->
-              <div class="text-center mb-6 sm:mb-8">
-                <h3 class="text-xl sm:text-2xl font-bold text-neutral-800 dark:text-neutral-200 mb-2">
-                  {plan.name}
-                </h3>
-                <p class="text-neutral-600 dark:text-neutral-400 text-xs sm:text-sm mb-4 sm:mb-6 min-h-[2.5rem] sm:min-h-[3rem]">
-                  {plan.description}
-                </p>
-                
-                <!-- Price -->
-                <div class="mb-4 sm:mb-6">
-                  <span class="price-display text-3xl sm:text-4xl font-bold text-neutral-800 dark:text-neutral-200" data-monthly={plan.price.monthly} data-annual={plan.price.annual}>
-                    {plan.price.monthly}
-                  </span>
-                  {plan.priceAmount.monthly > 0 && (
-                    <>
-                      <span class="period-display text-neutral-600 dark:text-neutral-400 text-base sm:text-lg">
-                        {t('pricing.perMonth')}
-                      </span>
-                      <div class="annual-info hidden text-xs text-neutral-500 dark:text-neutral-400 mt-1">
-                        {t('pricing.billedAnnually')}
-                      </div>
-                    </>
-                  )}
-                </div>
-
-                <!-- CTA Button -->
-                <button 
-                  class={`pricing-cta w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-medium text-sm sm:text-base transition-all duration-200 ${
-                    userPlan === plan.id
-                      ? 'bg-neutral-100 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-400 cursor-not-allowed'
-                      : plan.popular
-                        ? 'bg-brand-coral text-white hover:bg-brand-coral/90 shadow-lg hover:shadow-xl'
-                        : 'bg-neutral-800 dark:bg-neutral-700 text-white hover:bg-neutral-700 dark:hover:bg-neutral-600'
-                  }`}
-                  data-plan={plan.id}
-                  data-monthly-link={paymentLinks[plan.id]?.monthly || ''}
-                  data-annual-link={paymentLinks[plan.id]?.annual || ''}
-                  disabled={userPlan === plan.id}
-                >
-                  {userPlan === plan.id 
-                    ? t('pricing.currentPlan')
-                    : plan.priceAmount.monthly === 0 
-                      ? t('pricing.getStarted')
-                      : t('pricing.subscribe')
-                  }
-                </button>
-              </div>
-
-              <!-- Features List -->
-              <div class="space-y-3 sm:space-y-4 flex-1">
-                {plan.features.map((feature) => (
-                  <div class="flex items-start space-x-2 sm:space-x-3">
-                    <div class="flex-shrink-0 mt-0.5">
-                      {feature.included ? (
-                        <div class="w-4 h-4 sm:w-5 sm:h-5 bg-neutral-100 dark:bg-neutral-900/30 rounded-full flex items-center justify-center">
-                          <svg class="w-2.5 h-2.5 sm:w-3 sm:h-3 text-neutral-600 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                          </svg>
-                        </div>
-                      ) : (
-                        <div class="w-4 h-4 sm:w-5 sm:h-5 bg-neutral-100 dark:bg-neutral-700 rounded-full flex items-center justify-center">
-                          <svg class="w-2.5 h-2.5 sm:w-3 sm:h-3 text-neutral-400 dark:text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                          </svg>
-                        </div>
-                      )}
-                    </div>
-                    <span class={`text-xs sm:text-sm ${
-                      feature.included 
-                        ? (feature as any).highlight 
-                          ? 'text-[#7C86FF] dark:text-[#A2B3FF] font-medium' 
-                          : 'text-neutral-700 dark:text-neutral-300'
-                        : 'text-neutral-500 dark:text-neutral-400'
-                    }`}>
-                      {feature.text}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <!-- Back Button -->
-      <div class="flex justify-center mt-8 sm:mt-12 lg:mt-16">
-        <button 
-          id="back-button"
-          class="btn-gradient hover:btn-gradient-hover px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium text-white text-sm sm:text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-        >
-          {t('ui.goBack')}
-        </button>
-      </div>
+        <span class="badge">{p.save}</span>
+      </fieldset>
     </div>
-  </section>
 
-  <script define:vars={{ lang }} is:inline>
-    document.addEventListener('DOMContentLoaded', function() {
-      const backButton = document.getElementById('back-button');
-      const monthlyToggle = document.getElementById('monthly-toggle');
-      const annualToggle = document.getElementById('annual-toggle');
-      const priceDisplays = document.querySelectorAll('.price-display');
-      const periodDisplays = document.querySelectorAll('.period-display');
-      const annualInfos = document.querySelectorAll('.annual-info');
-      const pricingCTAs = document.querySelectorAll('.pricing-cta');
-      
-      let currentBilling = 'monthly';
-      
-      if (backButton) {
-        backButton.addEventListener('click', function() {
-          if (window.history.length > 1) {
-            window.history.back();
-          } else {
-            window.location.href = `/${lang}/`;
-          }
-        });
+    <div class="mt-10 grid gap-px overflow-hidden rounded-lg border border-line bg-line lg:grid-cols-3">
+      {
+        plans.map((plan) => {
+          const current = userPlan === plan.id;
+          const links = null;
+          return (
+            <div class="flex flex-col bg-bg p-6">
+              <div class="flex items-center justify-between gap-2">
+                <h2 class="text-lg">{plan.name}</h2>
+                {plan.popular && <span class="badge">{p.mostPopular}</span>}
+              </div>
+              <p class="mt-1 min-h-10 text-[0.8125rem] text-muted">{plan.description}</p>
+              <div class="mt-5 flex items-baseline gap-1.5 tabular-nums">
+                {plan.monthly === 0 ? (
+                  <span class="text-3xl font-semibold tracking-tight text-fg">{p.free}</span>
+                ) : (
+                  <>
+                    <span data-billing="monthly" class="text-3xl font-semibold tracking-tight text-fg">{money(plan.monthly)}</span>
+                    <span data-billing="monthly" class="text-[0.8125rem] text-muted">{p.perMonth}</span>
+                    <span data-billing="annual" class="text-3xl font-semibold tracking-tight text-fg">{money(plan.annual)}</span>
+                    <span data-billing="annual" class="text-[0.8125rem] text-muted">{p.perYear}</span>
+                  </>
+                )}
+              </div>
+              <p class="mt-1 h-4 text-2xs text-muted">
+                {plan.monthly > 0 && (
+                  <>
+                    <span data-billing="monthly">{p.billedMonthly}</span>
+                    <span data-billing="annual">{p.billedAnnually}</span>
+                  </>
+                )}
+              </p>
+              <div class="mt-5">
+                {current ? (
+                  <span class="btn btn-secondary w-full" aria-disabled="true">{p.currentPlan}</span>
+                ) : links ? (
+                  <>
+                    <a data-billing="monthly" href={links.monthly} target="_blank" rel="noopener" class:list={["btn w-full", plan.popular ? "btn-primary" : "btn-secondary"]}>
+                      {p.subscribe}
+                    </a>
+                    <a data-billing="annual" href={links.annual} target="_blank" rel="noopener" class:list={["btn w-full", plan.popular ? "btn-primary" : "btn-secondary"]}>
+                      {p.subscribe}
+                    </a>
+                  </>
+                ) : (
+                  <a href={`/${locale}/login`} class="btn btn-secondary w-full">{p.getStarted}</a>
+                )}
+              </div>
+              <ul class="mt-6 flex flex-col gap-2.5 border-t border-line pt-5">
+                {plan.features.map((feature) => (
+                  <li class:list={["flex items-start gap-2.5 text-[0.8125rem]", feature.included ? "text-text" : "text-faint line-through decoration-line-strong"]}>
+                    {feature.included ? <Icon name="check" class="mt-0.5 size-3.5! shrink-0 text-fg" /> : <span class="mt-0.5 flex size-3.5 shrink-0 items-center justify-center text-faint">–</span>}
+                    <span class:list={[feature.highlight && "font-medium text-fg"]}>{feature.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })
       }
-      
-      function updateBillingDisplay(billing) {
-        currentBilling = billing;
-        
-        if (billing === 'annual') {
-          monthlyToggle.classList.remove('bg-white', 'dark:bg-neutral-700', 'text-neutral-800', 'dark:text-neutral-200', 'shadow-sm');
-          monthlyToggle.classList.add('text-neutral-600', 'dark:text-neutral-400');
-          
-          annualToggle.classList.add('bg-white', 'dark:bg-neutral-700', 'text-neutral-800', 'dark:text-neutral-200', 'shadow-sm');
-          annualToggle.classList.remove('text-neutral-600', 'dark:text-neutral-400');
-          
-          priceDisplays.forEach(display => {
-            const annualPrice = display.dataset.annual;
-            if (annualPrice) {
-              display.textContent = annualPrice;
-            }
-          });
-          
-          periodDisplays.forEach(display => {
-            const perYearText = display.closest('[data-plan]') ? '/year' : '';
-            if (perYearText && display.parentElement.querySelector('.price-display').dataset.annual !== 'Free') {
-              display.textContent = perYearText;
-            }
-          });
-          
-          annualInfos.forEach(info => {
-            info.classList.remove('hidden');
-          });
-        } else {
-          annualToggle.classList.remove('bg-white', 'dark:bg-neutral-700', 'text-neutral-800', 'dark:text-neutral-200', 'shadow-sm');
-          annualToggle.classList.add('text-neutral-600', 'dark:text-neutral-400');
-          
-          monthlyToggle.classList.add('bg-white', 'dark:bg-neutral-700', 'text-neutral-800', 'dark:text-neutral-200', 'shadow-sm');
-          monthlyToggle.classList.remove('text-neutral-600', 'dark:text-neutral-400');
-          
-          priceDisplays.forEach(display => {
-            const monthlyPrice = display.dataset.monthly;
-            if (monthlyPrice) {
-              display.textContent = monthlyPrice;
-            }
-          });
-          
-          periodDisplays.forEach(display => {
-            const perMonthText = display.closest('[data-plan]') ? '/month' : '';
-            if (perMonthText && display.parentElement.querySelector('.price-display').dataset.monthly !== 'Free') {
-              display.textContent = perMonthText;
-            }
-          });
-          
-          annualInfos.forEach(info => {
-            info.classList.add('hidden');
-          });
-        }
-      }
-      
-      monthlyToggle.addEventListener('click', function() {
-        updateBillingDisplay('monthly');
-      });
-      
-      annualToggle.addEventListener('click', function() {
-        updateBillingDisplay('annual');
-      });
-      
-      pricingCTAs.forEach(button => {
-        button.addEventListener('click', function() {
-          if (button.disabled) return;
-          
-          const plan = button.dataset.plan;
-          if (plan === 'basic') {
-            window.location.href = `/${lang}/login`;
-          } else {
-            const link = currentBilling === 'annual' 
-              ? button.dataset.annualLink 
-              : button.dataset.monthlyLink;
-            
-            if (link) {
-              window.open(link, '_blank');
-            }
-          }
-        });
-      });
-    });
-  </script>
-</MainLayout>
+    </div>
+    <p class="mt-4 text-2xs text-muted">{p.footnote}</p>
+  </section>
+</SiteLayout>
+
+<style>
+  [data-billing="annual"],
+  body:has(#billing-annual:checked) [data-billing="monthly"] {
+    display: none;
+  }
+  body:has(#billing-annual:checked) a[data-billing="annual"] {
+    display: inline-flex;
+  }
+  body:has(#billing-annual:checked) span[data-billing="annual"] {
+    display: inline;
+  }
+</style>
