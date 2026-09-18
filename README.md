@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://tracevisor.com" target="_blank">
-    <img width="768" src="public/tracevisor-banner-02.png" alt="Tracevisor Logo">
+    <img width="768" src="public/tracevisor-banner-02.png" alt="TraceVisor">
   </a>
 
   [![License](https://img.shields.io/badge/license-MPL--2.0-4E5675)](LICENSE)
@@ -22,7 +22,7 @@ Track visitors, campaigns, devices, and geography with unlimited page views acro
 <div align="center">
   
   <a href="https://tracevisor.com" target="_blank">
-      <img width="768" src="public/tracevisor-preview-rounded.png" alt="Tracevisor Logo">
+      <img width="768" src="public/tracevisor-preview-rounded.png" alt="TraceVisor">
   </a>
 
 </div>
