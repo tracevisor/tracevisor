@@ -183,12 +183,7 @@ Your data is our priority. Tracevisor is built with enterprise-grade security:
 
 ### Quick Installation
 
-```html
-<!-- Add this single line to your website -->
-<script src="https://script.tracevisor.com/hello.js"></script>
-```
-
-The AI wizard will detect if you're using:
+After signing up, the setup wizard gives you a one-line snippet for your site and detects if you're using:
 - **Frontend Frameworks**: React, Vue, Angular, Svelte
 - **Meta-Frameworks**: Next.js, Nuxt, Gatsby, Astro
 - **Platforms**: WordPress, Shopify, Webflow

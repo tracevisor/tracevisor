@@ -11,7 +11,6 @@ const t = await dictionary(locale);
 const c = t.contact;
 const reasons = ["tracking", "analytics", "privacy", "billing", "feedback", "other"] as const;
 
-const state = "idle";
 const values = { firstName: "", lastName: "", email: "", reason: "", details: "" };
 ---
 
@@ -40,9 +39,6 @@ const values = { firstName: "", lastName: "", email: "", reason: "", details: ""
 
     <form action="mailto:info@tracevisor.com" method="post" enctype="text/plain" class="panel flex flex-col gap-4 p-5 sm:p-6">
       <h2 class="text-base">{c.form.title}</h2>
-      {state === "sent" && <p class="rounded-md border border-ok/30 bg-ok/8 px-3 py-2 text-[0.8125rem] text-ok" role="status">{c.form.result}</p>}
-      {state === "invalid" && <p class="rounded-md border border-danger/30 bg-danger/8 px-3 py-2 text-[0.8125rem] text-danger" role="alert">{c.required}</p>}
-      {state === "failed" && <p class="rounded-md border border-danger/30 bg-danger/8 px-3 py-2 text-[0.8125rem] text-danger" role="alert">{c.errors}</p>}
       <div class="grid gap-4 sm:grid-cols-2">
         <div>
           <label class="label" for="firstName">{c.form.firstName}</label>

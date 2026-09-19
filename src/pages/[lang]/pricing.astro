@@ -10,7 +10,6 @@ const locale = localeFromPath(Astro.url.pathname);
 const t = await dictionary(locale);
 const p = t.pricing;
 const f = p.features;
-const userPlan: string | null = null;
 
 
 type Feature = { text: string; included: boolean; highlight?: boolean };
@@ -109,8 +108,6 @@ const money = (n: number) => (Number.isInteger(n) ? `$${n}` : `$${n.toFixed(2)}`
     <div class="mt-10 grid gap-px overflow-hidden rounded-lg border border-line bg-line lg:grid-cols-3">
       {
         plans.map((plan) => {
-          const current = userPlan === plan.id;
-          const links = null;
           return (
             <div class="flex flex-col bg-bg p-6">
               <div class="flex items-center justify-between gap-2">
@@ -139,20 +136,7 @@ const money = (n: number) => (Number.isInteger(n) ? `$${n}` : `$${n.toFixed(2)}`
                 )}
               </p>
               <div class="mt-5">
-                {current ? (
-                  <span class="btn btn-secondary w-full" aria-disabled="true">{p.currentPlan}</span>
-                ) : links ? (
-                  <>
-                    <a data-billing="monthly" href={links.monthly} target="_blank" rel="noopener" class:list={["btn w-full", plan.popular ? "btn-primary" : "btn-secondary"]}>
-                      {p.subscribe}
-                    </a>
-                    <a data-billing="annual" href={links.annual} target="_blank" rel="noopener" class:list={["btn w-full", plan.popular ? "btn-primary" : "btn-secondary"]}>
-                      {p.subscribe}
-                    </a>
-                  </>
-                ) : (
-                  <a href={`/${locale}/login`} class="btn btn-secondary w-full">{p.getStarted}</a>
-                )}
+                <a href={`/${locale}/login`} class:list={["btn w-full", plan.popular ? "btn-primary" : "btn-secondary"]}>{p.getStarted}</a>
               </div>
               <ul class="mt-6 flex flex-col gap-2.5 border-t border-line pt-5">
                 {plan.features.map((feature) => (
