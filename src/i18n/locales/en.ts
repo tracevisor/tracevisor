@@ -174,7 +174,7 @@ export const en = {
       basicExport: "Basic data export",
       customEvents: "Custom events tracking",
       utmTracking: "UTM campaign tracking",
-      gis: "Global Impact Score",
+      eco: "Eco report: measured page weight and CO₂",
       dataExport: "Data export (Excel/PDF/CSV)",
       emailReports: "Weekly email reports",
       co2Reporting: "CO₂ & environmental tracking",

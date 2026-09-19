@@ -176,7 +176,7 @@ export const fr: Dictionary = {
       basicExport: "Exportation de données de base",
       customEvents: "Suivi d'événements personnalisés",
       utmTracking: "Suivi de campagnes UTM",
-      gis: "Score d'Impact Global",
+      eco: "Rapport Éco : poids de page mesuré et CO₂",
       dataExport: "Exportation de données (Excel/PDF/CSV)",
       emailReports: "Rapports hebdomadaires par e-mail",
       co2Reporting: "Suivi CO₂ et environnemental",
